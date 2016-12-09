@@ -1,0 +1,208 @@
+{
+	cpId:"press_button",
+	type:"div",
+	group:"common",
+	template:"press_button",
+	templateTpl:"",
+	target:"TestItemView",
+	attrlayer:"3",
+	title:"添加按钮模块",
+	btns: ["edit","setStyle", "setAnimation","hideBorder","textFloat"],
+	publicAttributes:{
+		isGlobal:false,
+		isFloat:true
+	},
+	cpAttributes:{
+		tab1:{
+			tabname:"按钮样式",
+			value:{
+				buttontitle : {
+				  	label:'标题',
+					value:'按钮',
+					name:'buttontitle',
+					savetype:"input",
+					type:"input"
+				},
+				setlink : {
+				  	label:'设置链接',
+					value:'',
+					name:'setlink',
+					savetype:"input",
+					type:"input"
+				},
+				
+				ccccc: {
+				  type: "block2",
+				  savetype: "block",
+				  label: "样式",
+				  value: 0,//当前选择的值
+				  //选择块的值列表
+				  listvalue : [{
+					label : "默认",
+					value : "0"
+				  },{
+					label : "自定义",
+					value : "1"
+				  }],
+				  //选择值为1的时候显示的小组件集合
+				 
+				  listvalue0 : {
+					buttonstyle : {
+					  	label:'按钮样式',
+						value:'J_styleItem_item101',
+						name:'buttonstyle',
+						savetype:"input",
+						type:"button_style"
+					}
+				  },
+				  listvalue1: {
+					buttoncolor : {
+					  type: "color",
+					  savetype: "input",
+					  label: '颜色',
+					  name: 'buttoncolor',
+					  //<input name="foo"/>输入域的name
+					  value: '',
+					  //初始值,默认值
+					},
+					buttonpic : {
+					  type: "picture",
+					  savetype: "input",
+					  label: '图片',
+					  name: 'buttonpic',
+					  //<input name="foo"/>输入域的name
+					  value: '',
+					  //初始值,默认值
+					},
+					buttonrepeat : {
+					  type: "select",
+					  savetype: "select",
+					  label: '显示方式',
+					  name: 'buttonrepeat',
+					  //<input name="foo"/>输入域的name
+					  value:[{
+						  label:"不使用背景图片",
+						  selected:true,
+						  value:"-1"
+						},{
+						  label:"不平铺（居中）",
+						  selected:false,
+						  value:"0"
+					  },{
+						  label:"完全平铺",
+						  selected:false,
+						  value:"1"
+					  },{
+						  label:"拉伸平铺",
+						  selected:false,
+						  value:"2"
+					  },{
+						  label:"缩放平铺（等比例）",
+						  selected:false,
+						  value:"3"
+					  },{
+						  label:"纵向平铺（左边对齐）",
+						  selected:false,
+						  value:"4"
+					  }],
+					  //初始值,默认值
+					}
+				  }
+				},
+				
+				
+			}
+		},
+
+	tab2:{
+			tabname:"字体样式",
+			value:{
+				color:{
+					label:'颜色',
+					value:'',
+					savetype:"input",
+					name:'color',
+					type:"color"
+				},
+				fontfamily:{
+					label:'字体',
+					value:'',
+					savetype:"input",
+					name:'fontfamily',
+					type:"fontfamily"
+				},
+				fontsize:{
+					label:'大小',
+					value:'',
+					savetype:"input",
+					name:'fontsize',
+					type:"fontsize"
+				}
+			}
+	},
+	tab3:{
+			tabname:"边框样式",
+			value:{
+				bordercolor:{
+					label:'颜色',
+					value:'',
+					savetype:"input",
+					name:'bordercolor',
+					type:"color"
+				},
+				setopacity : {
+					type : "opacity",
+					savetype : "input",
+					label : "大小",
+					value : "1",
+					max:"8",
+					unit:"px"
+				},
+			}
+	},
+	tab3:{
+			tabname:"阴影样式",
+			value:{
+				shadowX:{
+					type : "opacity",
+					savetype : "input",
+					name:"shadowX",
+					label : "X轴",
+					value : "0",
+					max:"100",
+					unit:""
+				},
+				shadowY : {
+					type : "opacity",
+					savetype : "input",
+					name:"shadowY",
+					label : "Y轴",
+					value : "0",
+					max:"100",
+					unit:""
+				},
+				shadowstyle : {
+					type : "opacity",
+					savetype : "input",
+					name:"shadowstyle",
+					label : "阴影",
+					value : "0",
+					max:"100",
+					unit:""
+				},
+				shadowcolor:{
+					label:'颜色',
+					value:'',
+					savetype:"input",
+					name:'shadowcolor',
+					type:"color"
+				}
+			}
+	}
+
+
+
+		
+	},
+	children:[]
+}

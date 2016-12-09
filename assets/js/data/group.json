@@ -1,0 +1,320 @@
+[{
+	groupName : '常用',
+	groupId : 'common',
+	collection : [
+		{
+			cpId : "simpleText",
+			cpData : "common/simpleText",//保存组件jason数据路径
+			cpName : "文本",
+			cpImg : "",
+			typeclass : "simpleText"
+		},
+		{
+			cpId : "picture",
+			cpData : "common/pictrue",//保存组件jason数据路径
+			cpName : "图片",
+			cpImg : "",
+			typeclass : "simplePicture"
+		},
+		{
+			cpId : "press_button",
+			cpData : "common/press_button",//保存组件jason数据路径
+			cpName : "按钮",
+			cpImg : "",
+			typeclass : "simpleButton"
+		}
+	]
+},{
+	groupName : '基础',
+	groupId : 'basic',
+	collection : [
+		{
+			cpId : "article",
+			cpData : "basic/article",//已安排处理
+			cpName : "文章列表",
+			cpImg : "",
+			typeclass : "simpleArticle"
+		},
+		{
+			cpId : "imageText",
+			cpData : "common/imageText",//保存组件jason数据路径
+			cpName : "图文展示",
+			cpImg : "",
+			typeclass : "simpleText"
+		},
+		{
+			cpId : "cp1",
+			cpData : "cp1",//保存组件jason数据路径
+			cpName : "Banner图片",
+			cpImg : "",
+			typeclass : "simplePicture"
+		},
+		{
+			cpId : "cp12",
+			cpData : "cp12",//保存组件jason数据路径
+			cpName : "菜单导航3",
+			cpImg : "",
+			typeclass : "simpleText"
+		},{
+			cpId : "cp13",
+			cpData : "cp13",//保存组件jason数据路径
+			cpName : "菜单导航异步测试",
+			cpImg : "",
+			typeclass : "simpleText"
+		},
+		{
+			cpId : "cp4",
+			cpData : "cp4",//保存组件jason数据路径
+			cpName : "二级编辑器测试",
+			cpImg : "",
+			typeclass : "simpleText"
+		},
+		{
+			cpId : "listPhoto",
+			cpData : "common/listPhoto",//保存组件jason数据路径
+			cpName : "列表多图",
+			cpImg : "",
+			typeclass : "simplePicture"
+		},
+		{
+			cpId : "tcml",
+			cpData : "altas",//保存组件jason数据路径
+			cpName : "图册组件",
+			cpImg : "",
+			typeclass : "simplePicture"
+		},
+		{
+			cpId : "tcml2",
+			cpData : "altas1",//保存组件jason数据路径
+			cpName : "图册组件异步测试",
+			cpImg : "",
+			typeclass : "simplePicture"
+		},
+		{
+			cpId : "photoGroup",
+			cpData : "basic/photoGroup",//保存组件jason数据路径
+			cpName : "相册目录",
+			cpImg : "",
+			typeclass : "simplephotoGroup"
+		},
+		{
+			cpId : "carouselPhoto",
+			cpData : "basic/carouselPhoto",//保存组件jason数据路径
+			cpName : "轮播多图",
+			cpImg : "",
+			typeclass : "simplecarouselPhoto"
+		},
+		{
+			cpId : "toolTest",
+			cpData : "basic/toolTest",//保存组件jason数据路径
+			cpName : "小组件专区",
+			cpImg : "",
+			typeclass : "simpleText"
+		},
+		{
+			cpId : "weather",
+			cpData : "interaction/weather",//保存组件jason数据路径
+			cpName : "天气信息",
+			cpImg : "",
+			typeclass : "simpleText"
+		},
+		{
+			cpId : "picture_bak",
+			cpData : "common/pictrue_bak",//保存组件jason数据路径
+			cpName : "小组件组合",
+			cpImg : "",
+			typeclass : "simpleText"
+		},
+		{
+			cpId : "menu",
+			cpData : "menu/menu",//保存组件jason数据路径
+			cpName : "主栏目菜单",
+			cpImg : "",
+			typeclass : "simpleText"
+		}
+	]
+},{
+	groupName : '排版',
+	groupId : 'typeset',
+	collection : [
+		{
+			cpId : "cp31",
+			cpData : "cp31",//保存组件jason数据路径
+			cpName : "动画容器",
+			cpImg : "",
+			typeclass : "simplePicture"
+		},
+		{
+			cpId : "cp40",
+			cpData : "cp40",//保存组件jason数据路径
+			cpName : "模块组",
+			cpImg : "",
+			typeclass : "simplePicture"
+		},
+		{
+			cpId : "twoColumn",
+			cpData : "typeset/twoColumn",//保存组件jason数据路径
+			cpName:'二列排版',
+			typeclass : "simplePicture"
+		},
+		{
+			cpId : "threeColumn",
+			cpData : "typeset/threeColumn",//保存组件jason数据路径
+			cpName : "三列排版",
+			typeclass : "simplePicture"
+		},
+		{
+			cpId : "fourColumn",
+			cpData : "typeset/fourColumn",//保存组件jason数据路径
+			cpName : "四列排版",
+			typeclass : "simplePicture"
+		},
+		{
+			cpId : "oneColumn",
+			cpData : "typeset/oneColumn",//保存组件jason数据路径
+			cpName : "通栏排版",
+			typeclass : "simplePicture"
+		}
+	]
+},{
+	groupName : '产品',
+	groupId : 'products',
+	collection : [
+		{
+			cpId : "products",
+			cpData : "common/products",//保存组件jason数据路径
+			cpName : "产品展示",
+			cpImg : "",
+			typeclass : "simpleProducts"
+		},{
+			cpId : "productSearch",
+			cpData : "products/productSearch",//已安排处理
+			cpName : "产品搜索",
+			cpImg : "",
+			typeclass : "simpleProductSearch"
+		},{
+			cpId : "productNav",
+			cpData : "products/productNav",//保存组件jason数据路径
+			cpName : "产品导航",
+			cpImg : "",
+			typeclass : ""
+		},{
+			cpId : "cp31",
+			cpData : "cp31",//保存组件jason数据路径
+			cpName : "商城分类",
+			cpImg : "",
+			typeclass : ""
+		}
+	]
+},{
+	groupName : '互动',
+	groupId : 'interaction',
+	collection : [
+		{
+			cpId : "productSearch",
+			cpData : "products/productSearch",//已安排处理
+			cpName : "全站搜索",
+			cpImg : "",
+			typeclass : "simpleSearch"
+		},
+		{
+			cpId : "memberLogin",
+			cpData : "interaction/memberLogin",//保存组件jason数据路径
+			cpName : "会员登陆",
+			cpImg : "",
+			typeclass : "simplePicture"
+		},
+		{
+			cpId : "memberReg",
+			cpData : "interaction/memberReg",//保存组件jason数据路径
+			cpName : "会员注册",
+			cpImg : "",
+			typeclass : "simplePicture"
+		},
+
+		{
+			cpId : "msgSubmit",
+			cpData : "interaction/msgSubmit",//保存组件jason数据路径
+			cpName : "留言提交",
+			cpImg : "",
+			typeclass : "simplePicture"
+		},
+		{
+			cpId : "shoppingCart",
+			cpData : "interaction/shoppingCart",//保存组件jason数据路径
+			cpName : "购物车",
+			cpImg : "",
+			typeclass : "simplePicture"
+		},
+
+		{
+			cpId : "qrcode",
+			cpData : "interaction/qrcode",//保存组件jason数据路径
+			cpName : "网站二维码",
+			cpImg : "",
+			typeclass : "simplePicture"
+		}
+	]
+},{
+	groupName : '高级',
+	groupId : 'senior',
+	collection : [
+		{
+			cpId : "photoMore",
+			cpData : "senior/photoMore",//保存组件jason数据路径
+			cpName : "魔方多图",
+			cpImg : "",
+			typeclass : "simplephotoMore"
+		},
+		{
+			cpId : "currentTime",
+			cpData : "interaction/currentTime",//保存组件jason数据路径
+			cpName : "当前时间",
+			cpImg : "",
+			typeclass : "simplePicture"
+		},
+		{
+			cpId : "indexFavorite",
+			cpData : "interaction/indexFavorite",//保存组件jason数据路径
+			cpName : "收藏本站",
+			cpImg : "",
+			typeclass : "simplePicture"
+		},
+
+		{
+			cpId : "onlineVideo",
+			cpData : "senior/onlineVideo",//已安排处理
+			cpName : "在线视频",
+			cpImg : "",
+			typeclass : "simpleVideo"
+		},
+		{
+			cpId : "flash",
+			cpData : "senior/flash",//已安排处理
+			cpName : "Flash",
+			cpImg : "",
+			typeclass : "simpleFlash"
+		},
+		{
+			cpId : "code",
+			cpData : "senior/code",//已安排处理
+			cpName : "插件代码",
+			cpImg : "",
+			typeclass : "simpleCode"
+		},
+		{
+			cpId : "fileDownload",
+			cpData : "senior/fileDownload",//已安排处理
+			cpName : "文件下载",
+			cpImg : "",
+			typeclass : "simpleFileDownload"
+		},
+		{
+			cpId : "iframe",
+			cpData : "senior/iframe",//已安排处理
+			cpName : "嵌入页面",
+			cpImg : "",
+			typeclass : "simpleIframe"
+		}
+	]	
+}]

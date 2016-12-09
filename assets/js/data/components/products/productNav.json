@@ -1,0 +1,79 @@
+{
+	cpId:"productNav",
+	type:"div",
+	group:"products",
+	template:"productNav",
+	templateTpl:"",
+	target:"TestItemView",
+	classname:'default',
+	attrlayer:"3",
+	title:"产品导航",
+	btns:["edit", "copy","textFloat"],
+	cpStyle:{
+		test:"test",
+		pleft:"12px",
+		pright:"12px",
+		position:{
+			type:"",
+			label:"产品导航",
+			value:"test"
+		}
+	},
+	publicAttributes:{
+		isGlobal:false,
+		isFloat:true
+	},
+	cpAttributes:{
+		tab1:{
+			tabname:"常规",
+			value:{
+				name:{
+					label:'模块标题',
+					value:'产品导航',
+					savetype:"input",
+					type:"input"
+				},
+				navType:{
+					label:'模块样式',
+					value:"0",
+					savetype:"input",
+					type:"productNavStyle"
+				},
+				nav: {
+				  savetype: "block",
+				  type: "block2",
+				  label: "导航项",
+				  value: 1,//当前选择的值
+				  //选择块的值列表
+				  listvalue : [{
+						label : "使用产品分类",
+						value : "1"
+					},{
+						label : "自定义",
+						value : "0"
+				  }],
+				  listvalue0 : {
+					  proNav: {
+						  label : "自定义",  
+						  value: "", 
+						  type: 'productTypeItem', 
+						  savetype : "input"
+					  }					  
+
+				  },
+				  listvalue1 : {
+					  proNav: {
+						  label : "使用产品分类" , 
+						  value: "", 
+						  type: 'productType', 
+						  savetype : "input"
+					  }		  
+
+				  }
+				}
+			}
+					
+		}
+	},
+	children:[]
+}

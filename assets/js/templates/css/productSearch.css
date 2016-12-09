@@ -1,0 +1,1044 @@
+/* CSS Document */
+.clear{
+	clear:both;
+	height:0;
+	display:block;
+}
+.kenfor_productSearch{
+	max-width:500px;
+	border:1px solid #333;
+	padding:0 0 10px 0;
+	margin:0 auto;
+}
+.kenfor_productSearch .tn{
+	background:#308cf3;
+	color:white;
+	font-size:14px;
+	line-height:32px;
+	padding:0 0 0 12px;
+}
+.kenfor_productSearch form{
+	display:block;
+	margin:10px 10px 0;
+	background:white;
+	position:relative;
+}
+.kenfor_productSearch .input{
+	display:block;
+	margin-bottom:0;
+	margin-right:32px;
+}
+.kenfor_productSearch .input input{
+	width:100%;
+	height:28px;
+	background:white;
+	border:1px solid #CCC;
+}
+.kenfor_productSearch .button{
+	width:33px;
+	height:28px;
+	border:0;
+	overflow:hidden;
+	background:white;
+	position:absolute;
+	right:0;
+	top:0;
+	cursor:pointer;
+	text-indent:-9999px;
+}
+.kenfor_productSearch .kenfor_keyword{
+	font-size:0;
+	letter-spacing:-1px;
+	margin:10px 10px 0;
+}
+.kenfor_productSearch .kenfor_keyword span,
+.kenfor_productSearch .kenfor_keyword a{
+	display:inline-block;
+	letter-spacing:0;
+	vertical-align:top;
+	font-size:12px;
+	line-height:24px;
+}
+.kenfor_productSearch .kenfor_keyword a{
+	margin:0 6px 0 5px;
+}
+.kenfor_productSearch .kenfor_keyword span{
+	font-weight:bold;
+}
+/* desfult 搜索模板样式 */
+.kenfor_productSearch.default .input{
+	margin-right:70px;
+}
+.kenfor_productSearch.default .button{
+	width:60px;
+	border:1px solid #CCC;
+	background:#EEE;
+	text-indent:0;
+}
+/* s1 搜索模板样式 */
+.kenfor_productSearch.s1 .input input{
+	border-color:#333;
+}
+.kenfor_productSearch.s1 .button{
+	background:url(../images/productSearch/btn/1.gif);
+}
+/* s2 搜索模板样式 */
+.kenfor_productSearch.s2 .input input{
+	border-color:#aaaaaa;
+}
+.kenfor_productSearch.s2 .button{
+	background:url(../images/productSearch/btn/2.gif);
+}
+/* s3 搜索模板样式 */
+.kenfor_productSearch.s3 .input input{
+	border-color:#aaaaaa;
+}
+.kenfor_productSearch.s3 .button{
+	background:url(../images/productSearch/btn/3.gif);
+}
+/* s4 搜索模板样式 */
+.kenfor_productSearch.s4 .input input{
+	border-color:#aaaaaa;
+}
+.kenfor_productSearch.s4 .button{
+	background:url(../images/productSearch/btn/4.gif);
+}
+/* s5 搜索模板样式 */
+.kenfor_productSearch.s5 .input input{
+	border-color:#aaaaaa;
+}
+.kenfor_productSearch.s5 .button{
+	background:url(../images/productSearch/btn/5.gif);
+}
+/* s6 搜索模板样式 */
+.kenfor_productSearch.s6 .input input{
+	border-color:#aaaaaa;
+}
+.kenfor_productSearch.s6 .button{
+	background:url(../images/productSearch/btn/6.gif);
+}
+/* s7 搜索模板样式 */
+.kenfor_productSearch.s7 .input input{
+	border-color:#aaaaaa;
+}
+.kenfor_productSearch.s7 .button{
+	background:url(../images/productSearch/btn/7.gif);
+}
+/* s8 搜索模板样式 */
+.kenfor_productSearch.s8 .input input{
+	border-color:#aaaaaa;
+}
+.kenfor_productSearch.s8 .button{
+	background:url(../images/productSearch/btn/8.gif);
+}
+/* s9 搜索模板样式 */
+.kenfor_productSearch.s9 .input input{
+	border-color:#aaaaaa;
+}
+.kenfor_productSearch.s9 .button{
+	background:url(../images/productSearch/btn/9.gif);
+}
+/* s10 搜索模板样式 */
+.kenfor_productSearch.s10 .input input{
+	border-color:#aaaaaa;
+}
+.kenfor_productSearch.s10 .button{
+	background:url(../images/productSearch/btn/10.gif);
+}
+/* s11 搜索模板样式 */
+.kenfor_productSearch.s11 .input input{
+	border-color:#aaaaaa;
+}
+.kenfor_productSearch.s11 .button{
+	background:url(../images/productSearch/btn/11.gif);
+}
+/* s12 搜索模板样式 */
+.kenfor_productSearch.s12 .input input{
+	border-color:#aaaaaa;
+}
+.kenfor_productSearch.s12 .button{
+	background:url(../images/productSearch/btn/12.gif);
+}
+/* s13 搜索模板样式 */
+.kenfor_productSearch.s13 .input{
+	margin-right:42px;
+}
+.kenfor_productSearch.s13 .input input{
+	height:30px;
+	border-color:#aaaaaa;
+	border-radius:3px;
+}
+.kenfor_productSearch.s13 .button{
+	width:36px;
+	height:30px;
+	background:url(../images/productSearch/btn/13.gif);
+}
+/* s14 搜索模板样式 */
+.kenfor_productSearch.s14 .input{
+	margin-right:42px;
+}
+.kenfor_productSearch.s14 .input input{
+	height:30px;
+	border-color:#aaaaaa;
+	border-radius:3px;
+}
+.kenfor_productSearch.s14 .button{
+	width:36px;
+	height:30px;
+	background:url(../images/productSearch/btn/14.gif);
+}
+/* s15 搜索模板样式 */
+.kenfor_productSearch.s15 .input{
+	margin-right:42px;
+}
+.kenfor_productSearch.s15 .input input{
+	height:30px;
+	border-color:#aaaaaa;
+	border-radius:3px;
+}
+.kenfor_productSearch.s15 .button{
+	width:36px;
+	height:30px;
+	background:url(../images/productSearch/btn/15.gif);
+}
+/* s16 搜索模板样式 */
+.kenfor_productSearch.s16 .input{
+	margin-right:42px;
+}
+.kenfor_productSearch.s16 .input input{
+	height:30px;
+	border-color:#aaaaaa;
+	border-radius:3px;
+}
+.kenfor_productSearch.s16 .button{
+	width:36px;
+	height:30px;
+	background:url(../images/productSearch/btn/16.gif);
+}
+/* s17 搜索模板样式 */
+.kenfor_productSearch.s17 .input{
+	margin-right:42px;
+}
+.kenfor_productSearch.s17 .input input{
+	height:30px;
+	border-color:#aaaaaa;
+	border-radius:3px;
+}
+.kenfor_productSearch.s17 .button{
+	width:36px;
+	height:30px;
+	background:url(../images/productSearch/btn/17.gif);
+}
+/* s18 搜索模板样式 */
+.kenfor_productSearch.s18 .input{
+	margin-right:42px;
+}
+.kenfor_productSearch.s18 .input input{
+	height:30px;
+	border-color:#aaaaaa;
+	border-radius:3px;
+}
+.kenfor_productSearch.s18 .button{
+	width:36px;
+	height:30px;
+	background:url(../images/productSearch/btn/18.gif);
+}
+/* s19 搜索模板样式 */
+.kenfor_productSearch.s19 .input{
+	margin-right:40px;
+}
+.kenfor_productSearch.s19 .input input{
+	height:30px;
+	border-color:#aaaaaa;
+	border-radius:3px;
+}
+.kenfor_productSearch.s19 .button{
+	width:34px;
+	height:30px;
+	background:url(../images/productSearch/btn/19.gif);
+}
+/* s20 搜索模板样式 */
+.kenfor_productSearch.s20 .input{
+	margin-right:40px;
+}
+.kenfor_productSearch.s20 .input input{
+	height:30px;
+	border-color:#aaaaaa;
+	border-radius:3px;
+}
+.kenfor_productSearch.s20 .button{
+	width:34px;
+	height:30px;
+	background:url(../images/productSearch/btn/20.gif);
+}
+/* s21 搜索模板样式 */
+.kenfor_productSearch.s21 .input{
+	margin-right:40px;
+}
+.kenfor_productSearch.s21 .input input{
+	height:30px;
+	border-color:#aaaaaa;
+	border-radius:3px;
+}
+.kenfor_productSearch.s21 .button{
+	width:34px;
+	height:30px;
+	background:url(../images/productSearch/btn/21.gif);
+}
+/* s22 搜索模板样式 */
+.kenfor_productSearch.s22 .input{
+	margin-right:40px;
+}
+.kenfor_productSearch.s22 .input input{
+	height:30px;
+	border-color:#aaaaaa;
+	border-radius:3px;
+}
+.kenfor_productSearch.s22 .button{
+	width:34px;
+	height:30px;
+	background:url(../images/productSearch/btn/22.gif);
+}
+/* s23 搜索模板样式 */
+.kenfor_productSearch.s23 .input{
+	margin-right:40px;
+}
+.kenfor_productSearch.s23 .input input{
+	height:30px;
+	border-color:#aaaaaa;
+	border-radius:3px;
+}
+.kenfor_productSearch.s23 .button{
+	width:34px;
+	height:30px;
+	background:url(../images/productSearch/btn/23.gif);
+}
+/* s24 搜索模板样式 */
+.kenfor_productSearch.s24 .input{
+	margin-right:40px;
+}
+.kenfor_productSearch.s24 .input input{
+	height:30px;
+	border-color:#aaaaaa;
+	border-radius:3px;
+}
+.kenfor_productSearch.s24 .button{
+	width:34px;
+	height:30px;
+	background:url(../images/productSearch/btn/24.gif);
+}
+/* s25 搜索模板样式 */
+.kenfor_productSearch.s25 .input input{
+	height:30px;
+	border-color:#333333;
+	background:#444444;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+.kenfor_productSearch.s25 .button{
+	width:34px;
+	height:30px;
+	background:url(../images/productSearch/btn/25.gif);
+}
+/* s26 搜索模板样式 */
+.kenfor_productSearch.s26 .input input{
+	height:30px;
+	background:#ededed;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+.kenfor_productSearch.s26 .button{
+	width:34px;
+	height:30px;
+	background:url(../images/productSearch/btn/26.gif);
+}
+/* s27 搜索模板样式 */
+.kenfor_productSearch.s27 .input input{
+	height:30px;
+	background:#0ea0d9;
+	border-color:#017db5;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+.kenfor_productSearch.s27 .button{
+	width:34px;
+	height:30px;
+	background:url(../images/productSearch/btn/27.gif);
+}
+/* s28 搜索模板样式 */
+.kenfor_productSearch.s28 .input input{
+	height:30px;
+	background:#60a411;
+	border-color:#468101;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+.kenfor_productSearch.s28 .button{
+	width:34px;
+	height:30px;
+	background:url(../images/productSearch/btn/28.gif);
+}
+/* s29 搜索模板样式 */
+.kenfor_productSearch.s29 .input input{
+	height:30px;
+	background:#b10105;
+	border-color:#980003;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+.kenfor_productSearch.s29 .button{
+	width:34px;
+	height:30px;
+	background:url(../images/productSearch/btn/29.gif);
+}
+/* s30 搜索模板样式 */
+.kenfor_productSearch.s30 .input input{
+	height:30px;
+	background:#ff7a1a;
+	border-color:#e55902;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+.kenfor_productSearch.s30 .button{
+	width:34px;
+	height:30px;
+	background:url(../images/productSearch/btn/30.gif);
+}
+/* s31 搜索模板样式 */
+.kenfor_productSearch.s31 form{
+	background:#eeeeee;
+	border:1px solid #CCC;
+	border-radius:3px;
+}
+.kenfor_productSearch.s31 .input{
+	margin:3px 30px 3px 4px;
+}
+.kenfor_productSearch.s31 .input input{
+	height:24px;
+	border-color:#aeaeaf;
+	border-radius:4px;
+}
+.kenfor_productSearch.s31 .button{
+	width:28px;
+	height:30px;
+	background:url(../images/productSearch/btn/31.gif) center center no-repeat;
+}
+/* s32 搜索模板样式 */
+.kenfor_productSearch.s32 form{
+	background:#666666;
+	border:1px solid #eeeeee;
+	border-radius:4px;
+}
+.kenfor_productSearch.s32 .input{
+	margin:3px 30px 3px 4px;
+}
+.kenfor_productSearch.s32 .input input{
+	height:24px;
+	border-color:#999999;
+	border-radius:3px;
+}
+.kenfor_productSearch.s32 .button{
+	width:28px;
+	height:30px;
+	background:url(../images/productSearch/btn/32.gif) center center no-repeat;
+}
+/* s33 搜索模板样式 */
+.kenfor_productSearch.s33 form{
+	background:#0fa2db;
+	border:1px solid #017bb4;
+	border-radius:4px;
+}
+.kenfor_productSearch.s33 .input{
+	margin:3px 30px 3px 4px;
+}
+.kenfor_productSearch.s33 .input input{
+	height:24px;
+	border-color:#017bb4;
+	border-radius:3px;
+}
+.kenfor_productSearch.s33 .button{
+	width:28px;
+	height:30px;
+	background:url(../images/productSearch/btn/33.gif) center center no-repeat;
+}
+/* s34 搜索模板样式 */
+.kenfor_productSearch.s34 form{
+	background:#2fac04;
+	border:1px solid #1f7900;
+	border-radius:4px;
+}
+.kenfor_productSearch.s34 .input{
+	margin:3px 30px 3px 4px;
+}
+.kenfor_productSearch.s34 .input input{
+	height:24px;
+	border-color:#1f7900;
+	border-radius:3px;
+}
+.kenfor_productSearch.s34 .button{
+	width:28px;
+	height:30px;
+	background:url(../images/productSearch/btn/34.gif) center center no-repeat;
+}
+/* s35 搜索模板样式 */
+.kenfor_productSearch.s35 form{
+	background:#d20308;
+	border:1px solid #a30206;
+	border-radius:4px;
+}
+.kenfor_productSearch.s35 .input{
+	margin:3px 30px 3px 4px;
+}
+.kenfor_productSearch.s35 .input input{
+	height:24px;
+	border-color:#a30206;
+	border-radius:3px;
+}
+.kenfor_productSearch.s35 .button{
+	width:28px;
+	height:30px;
+	background:url(../images/productSearch/btn/35.gif) center center no-repeat;
+}
+/* s36 搜索模板样式 */
+.kenfor_productSearch.s36 form{
+	background:#fe922e;
+	border:1px solid #ef5e03;
+	border-radius:4px;
+}
+.kenfor_productSearch.s36 .input{
+	margin:3px 30px 3px 4px;
+}
+.kenfor_productSearch.s36 .input input{
+	height:24px;
+	border-color:#ef5e03;
+	border-radius:3px;
+}
+.kenfor_productSearch.s36 .button{
+	width:28px;
+	height:30px;
+	background:url(../images/productSearch/btn/36.gif) center center no-repeat;
+}
+/* s37 搜索模板样式 */
+.kenfor_productSearch.s37 form{
+	border:1px solid #CCC;
+}
+.kenfor_productSearch.s37 .input{
+	margin-right:28px;
+}
+.kenfor_productSearch.s37 .input input{
+	height:24px;
+	border:0;
+	margin:2px;
+}
+.kenfor_productSearch.s37 .button{
+	width:51px;
+	height:24px;
+	top:2px;
+	right:2px;
+	background:url(../images/productSearch/btn/37.gif);
+}
+/* s38 搜索模板样式 */
+.kenfor_productSearch.s38 form{
+	border:1px solid #CCC;
+}
+.kenfor_productSearch.s38 .input{
+	margin:2px 30px 2px 2px;
+}
+.kenfor_productSearch.s38 .input input{
+	height:24px;
+	border:0;
+}
+.kenfor_productSearch.s38 .button{
+	width:51px;
+	height:24px;
+	top:2px;
+	right:2px;
+	background:url(../images/productSearch/btn/38.gif);
+}
+/* s39 搜索模板样式 */
+.kenfor_productSearch.s39 form{
+	border:1px solid #CCC;
+}
+.kenfor_productSearch.s39 .input{
+	margin:2px 30px 2px 2px;
+}
+.kenfor_productSearch.s39 .input input{
+	height:24px;
+	border:0;
+}
+.kenfor_productSearch.s39 .button{
+	width:51px;
+	height:24px;
+	top:2px;
+	right:2px;
+	background:url(../images/productSearch/btn/39.gif);
+}
+/* s40 搜索模板样式 */
+.kenfor_productSearch.s40 form{
+	border:1px solid #CCC;
+}
+.kenfor_productSearch.s40 .input{
+	margin:2px 30px 2px 2px;
+}
+.kenfor_productSearch.s40 .input input{
+	height:24px;
+	border:0;
+}
+.kenfor_productSearch.s40 .button{
+	width:51px;
+	height:24px;
+	top:2px;
+	right:2px;
+	background:url(../images/productSearch/btn/40.gif);
+}
+/* s41 搜索模板样式 */
+.kenfor_productSearch.s41 form{
+	border:1px solid #CCC;
+}
+.kenfor_productSearch.s41 .input{
+	margin:2px 30px 2px 2px;
+}
+.kenfor_productSearch.s41 .input input{
+	height:24px;
+	border:0;
+}
+.kenfor_productSearch.s41 .button{
+	width:51px;
+	height:24px;
+	top:2px;
+	right:2px;
+	background:url(../images/productSearch/btn/41.gif);
+}
+/* s42 搜索模板样式 */
+.kenfor_productSearch.s42 form{
+	border:1px solid #CCC;
+}
+.kenfor_productSearch.s42 .input{
+	margin:2px 30px 2px 2px;
+}
+.kenfor_productSearch.s42 .input input{
+	height:24px;
+	border:0;
+}
+.kenfor_productSearch.s42 .button{
+	width:51px;
+	height:24px;
+	top:2px;
+	right:2px;
+	background:url(../images/productSearch/btn/42.gif);
+}
+/* s43 搜索模板样式 */
+.kenfor_productSearch.s43 form{
+	border:1px solid #666666;
+	border-radius:14px;
+}
+.kenfor_productSearch.s43 .input{
+	margin-right:38px;
+	margin-left:12px;
+}
+.kenfor_productSearch.s43 .input input{
+	border:0;
+	height:30px;
+}
+.kenfor_productSearch.s43 .button{
+	width:34px;
+	height:30px;
+	right:2px;
+	background:url(../images/productSearch/btn/43.png) center center no-repeat;
+}
+/* s44 搜索模板样式 */
+.kenfor_productSearch.s44 form{
+	border:1px solid #CCC;
+	border-radius:14px;
+}
+.kenfor_productSearch.s44 .input{
+	margin-right:38px;
+	margin-left:12px;
+}
+.kenfor_productSearch.s44 .input input{
+	border:0;
+	height:30px;
+}
+.kenfor_productSearch.s44 .button{
+	width:34px;
+	height:30px;
+	right:2px;
+	background:url(../images/productSearch/btn/44.png) center center no-repeat;
+}
+/* s45 搜索模板样式 */
+.kenfor_productSearch.s45 form{
+	border:1px solid #0181be;
+	border-radius:14px;
+}
+.kenfor_productSearch.s45 .input{
+	margin-right:38px;
+	margin-left:12px;
+}
+.kenfor_productSearch.s45 .input input{
+	border:0;
+	height:30px;
+}
+.kenfor_productSearch.s45 .button{
+	width:34px;
+	height:30px;
+	right:2px;
+	background:url(../images/productSearch/btn/45.png) center center no-repeat;
+}
+/* s46 搜索模板样式 */
+.kenfor_productSearch.s46 form{
+	border:1px solid #2fae03;
+	border-radius:14px;
+}
+.kenfor_productSearch.s46 .input{
+	margin-right:38px;
+	margin-left:12px;
+}
+.kenfor_productSearch.s46 .input input{
+	border:0;
+	height:30px;
+}
+.kenfor_productSearch.s46 .button{
+	width:34px;
+	height:30px;
+	right:2px;
+	background:url(../images/productSearch/btn/46.png) center center no-repeat;
+}
+/* s47 搜索模板样式 */
+.kenfor_productSearch.s47 form{
+	border:1px solid #d20308;
+	border-radius:14px;
+}
+.kenfor_productSearch.s47 .input{
+	margin-right:38px;
+	margin-left:12px;
+}
+.kenfor_productSearch.s47 .input input{
+	border:0;
+	height:30px;
+}
+.kenfor_productSearch.s47 .button{
+	width:34px;
+	height:30px;
+	right:2px;
+	background:url(../images/productSearch/btn/47.png) center center no-repeat;
+}
+/* s48 搜索模板样式 */
+.kenfor_productSearch.s48 form{
+	border:1px solid #ff7a1a;
+	border-radius:14px;
+}
+.kenfor_productSearch.s48 .input{
+	margin-right:38px;
+	margin-left:12px;
+}
+.kenfor_productSearch.s48 .input input{
+	border:0;
+	height:30px;
+}
+.kenfor_productSearch.s48 .button{
+	width:34px;
+	height:30px;
+	right:2px;
+	background:url(../images/productSearch/btn/48.png) center center no-repeat;
+}
+/* s49 搜索模板样式 */
+.kenfor_productSearch.s49 .input{
+	margin-right:65px;
+}
+.kenfor_productSearch.s49 .input input{
+	height:34px;
+	border:2px solid #e4393f;
+}
+.kenfor_productSearch.s49 .button{
+	width:67px;
+	height:34px;
+	background:url(../images/productSearch/btn/49.jpg);
+}
+/* s50 搜索模板样式 */
+.kenfor_productSearch.s50 .input{
+	margin-right:65px;
+}
+.kenfor_productSearch.s50 .input input{
+	height:34px;
+	border:2px solid #e4393f;
+}
+.kenfor_productSearch.s50 .button{
+	width:67px;
+	height:34px;
+	background:url(../images/productSearch/btn/50.jpg);
+}
+/* s51 搜索模板样式 */
+.kenfor_productSearch.s51 .input{
+	margin-right:65px;
+}
+.kenfor_productSearch.s51 .input input{
+	height:34px;
+	border:2px solid #e4393f;
+}
+.kenfor_productSearch.s51 .button{
+	width:67px;
+	height:34px;
+	background:url(../images/productSearch/btn/51.jpg);
+}
+/* s52 搜索模板样式 */
+.kenfor_productSearch.s52 .input{
+	margin-right:65px;
+}
+.kenfor_productSearch.s52 .input input{
+	height:34px;
+	border:2px solid #2e6ff7;
+}
+.kenfor_productSearch.s52 .button{
+	width:67px;
+	height:34px;
+	background:url(../images/productSearch/btn/52.jpg);
+}
+/* s53 搜索模板样式 */
+.kenfor_productSearch.s53 .input{
+	margin-right:65px;
+}
+.kenfor_productSearch.s53 .input input{
+	height:34px;
+	border:2px solid #2e6ff7;
+}
+.kenfor_productSearch.s53 .button{
+	width:67px;
+	height:34px;
+	background:url(../images/productSearch/btn/53.jpg);
+}
+/* s54 搜索模板样式 */
+.kenfor_productSearch.s54 .input{
+	margin-right:65px;
+}
+.kenfor_productSearch.s54 .input input{
+	height:34px;
+	border:2px solid #2e6ff7;
+}
+.kenfor_productSearch.s54 .button{
+	width:67px;
+	height:34px;
+	background:url(../images/productSearch/btn/54.jpg);
+}
+/* s55 搜索模板样式 */
+.kenfor_productSearch.s55 .input{
+	margin-right:65px;
+}
+.kenfor_productSearch.s55 .input input{
+	height:34px;
+	border:2px solid #ff5500;
+}
+.kenfor_productSearch.s55 .button{
+	width:67px;
+	height:34px;
+	background:url(../images/productSearch/btn/55.jpg);
+}
+/* s56 搜索模板样式 */
+.kenfor_productSearch.s56 .input{
+	margin-right:65px;
+}
+.kenfor_productSearch.s56 .input input{
+	height:34px;
+	border:2px solid #ff5500;
+}
+.kenfor_productSearch.s56 .button{
+	width:67px;
+	height:34px;
+	background:url(../images/productSearch/btn/56.jpg);
+}
+/* s57 搜索模板样式 */
+.kenfor_productSearch.s57 .input{
+	margin-right:65px;
+}
+.kenfor_productSearch.s57 .input input{
+	height:34px;
+	border:2px solid #ff5500;
+}
+.kenfor_productSearch.s57 .button{
+	width:67px;
+	height:34px;
+	background:url(../images/productSearch/btn/57.jpg);
+}
+/* s58 搜索模板样式 */
+.kenfor_productSearch.s58 .input{
+	margin-right:65px;
+}
+.kenfor_productSearch.s58 .input input{
+	height:34px;
+	border:2px solid #c40000;
+}
+.kenfor_productSearch.s58 .button{
+	width:67px;
+	height:34px;
+	background:url(../images/productSearch/btn/58.jpg);
+}
+/* s59 搜索模板样式 */
+.kenfor_productSearch.s59 .input{
+	margin-right:65px;
+}
+.kenfor_productSearch.s59 .input input{
+	height:34px;
+	border:2px solid #c40000;
+}
+.kenfor_productSearch.s59 .button{
+	width:67px;
+	height:34px;
+	background:url(../images/productSearch/btn/59.jpg);
+}
+/* s60 搜索模板样式 */
+.kenfor_productSearch.s60 .input{
+	margin-right:65px;
+}
+.kenfor_productSearch.s60 .input input{
+	height:34px;
+	border:2px solid #c40000;
+}
+.kenfor_productSearch.s60 .button{
+	width:67px;
+	height:34px;
+	background:url(../images/productSearch/btn/60.jpg);
+}
+/* s61 搜索模板样式 */
+.kenfor_productSearch.s61 .input{
+	margin-right:65px;
+}
+.kenfor_productSearch.s61 .input input{
+	height:34px;
+	border:2px solid #000;
+}
+.kenfor_productSearch.s61 .button{
+	width:67px;
+	height:34px;
+	background:url(../images/productSearch/btn/61.jpg);
+}
+/* s62 搜索模板样式 */
+.kenfor_productSearch.s62 .input{
+	margin-right:65px;
+}
+.kenfor_productSearch.s62 .input input{
+	height:34px;
+	border:2px solid #000;
+}
+.kenfor_productSearch.s62 .button{
+	width:67px;
+	height:34px;
+	background:url(../images/productSearch/btn/62.jpg);
+}
+/* s63 搜索模板样式 */
+.kenfor_productSearch.s63 .input{
+	margin-right:65px;
+}
+.kenfor_productSearch.s63 .input input{
+	height:34px;
+	border:2px solid #000;
+}
+.kenfor_productSearch.s63 .button{
+	width:67px;
+	height:34px;
+	background:url(../images/productSearch/btn/63.jpg);
+}
+/* s64 搜索模板样式 */
+.kenfor_productSearch.s64 .input{
+	margin-right:65px;
+}
+.kenfor_productSearch.s64 .input input{
+	height:34px;
+	border:2px solid #CCC;
+}
+.kenfor_productSearch.s64 .button{
+	width:67px;
+	height:34px;
+	background:url(../images/productSearch/btn/64.jpg);
+}
+/* s65 搜索模板样式 */
+.kenfor_productSearch.s65 .input{
+	margin-right:65px;
+}
+.kenfor_productSearch.s65 .input input{
+	height:34px;
+	border:2px solid #CCC;
+}
+.kenfor_productSearch.s65 .button{
+	width:67px;
+	height:34px;
+	background:url(../images/productSearch/btn/65.jpg);
+}
+/* s66 搜索模板样式 */
+.kenfor_productSearch.s66 .input{
+	margin-right:65px;
+}
+.kenfor_productSearch.s66 .input input{
+	height:34px;
+	border:2px solid #CCC;
+}
+.kenfor_productSearch.s66 .button{
+	width:67px;
+	height:34px;
+	background:url(../images/productSearch/btn/66.jpg);
+}
+/* s67 搜索模板样式 */
+.kenfor_productSearch.s67 .input{
+	margin-right:35px;
+}
+.kenfor_productSearch.s67 .input input{
+	height:36px;
+	border-color:transparent;
+}
+.kenfor_productSearch.s67 .button{
+	width:35px;
+	height:36px;
+	background:url(../images/productSearch/btn/67.jpg);
+}
+/* s68 搜索模板样式 */
+.kenfor_productSearch.s68 .input{
+	margin-right:35px;
+}
+.kenfor_productSearch.s68 .input input{
+	height:36px;
+	border-color:transparent;
+}
+.kenfor_productSearch.s68 .button{
+	width:35px;
+	height:36px;
+	background:url(../images/productSearch/btn/68.jpg);
+}
+/* s69 搜索模板样式 */
+.kenfor_productSearch.s69 .input{
+	margin-right:35px;
+}
+.kenfor_productSearch.s69 .input input{
+	height:36px;
+	border-color:transparent;
+}
+.kenfor_productSearch.s69 .button{
+	width:35px;
+	height:36px;
+	background:url(../images/productSearch/btn/69.jpg);
+}
+/* s70 搜索模板样式 */
+.kenfor_productSearch.s70 .input{
+	margin-right:35px;
+}
+.kenfor_productSearch.s70 .input input{
+	height:36px;
+	background:#000;
+	border-color:#000;
+}
+.kenfor_productSearch.s70 .button{
+	width:35px;
+	height:36px;
+	background:url(../images/productSearch/btn/70.jpg);
+}
+/* s71 搜索模板样式 */
+.kenfor_productSearch.s71 .input{
+	margin-right:35px;
+}
+.kenfor_productSearch.s71 .input input{
+	height:36px;
+	background:#000;
+	border-color:#000;
+}
+.kenfor_productSearch.s71 .button{
+	width:35px;
+	height:36px;
+	background:url(../images/productSearch/btn/71.jpg);
+}

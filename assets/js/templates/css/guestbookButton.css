@@ -1,0 +1,20 @@
+/* CSS Document */
+.clear { clear:both; height:0; display:block; }
+/*imageEffects*/
+.guestbookButton .control-label { line-height:40px; }
+.guestbookButton .listType {letter-spacing:0;width: 385px;height: 165px;overflow-y: auto;overflow-x: hidden;border: 1px solid #ebeaef;text-align: left;}
+.guestbookButton .listType > a { cursor:pointer; display:inline-block; vertical-align:top; letter-spacing:0; position:relative; width: 165px; height: 37px; float: left; cursor: pointer; margin: 8px; _margin: 8px 6px 8px 4px; text-align:center; line-height:37px; color:#fff;}
+.guestbookButton .listType > a.selected:before, .guestbookButton .listType > a:hover:before { content:""; display:block; position:absolute; left:-2px; right:-2px; top:-2px; bottom:-2px; border:2px solid #b4b4b4; }
+.guestbookButton .listType > a.selected:after, .guestbookButton .listType > a:hover:after { content:''; position:absolute; right:0; bottom:0; width:165px; height:37px; display:block;border:1px solid #ffffff;}
+#guestbookButton1 {background: url(../../../img/buttonStyle.png) 1px 1px no-repeat;}
+#guestbookButton2 {background: url(../../../img/buttonStyle.png) 1px -69px no-repeat;}
+#guestbookButton3 {background: url(../../../img/buttonStyle.png) 1px -139px no-repeat;}
+#guestbookButton4 {background: url(../../../img/buttonStyle.png) 1px -209px no-repeat;}
+#guestbookButton5 {background: url(../../../img/buttonStyle.png) 1px -279px no-repeat;}
+#guestbookButton6 {background: url(../../../img/buttonStyle.png) 1px -348px no-repeat;}
+#guestbookButton7 {background: url(../../../img/buttonStyle.png) 1px -417px no-repeat;}
+#guestbookButton8 {background: url(../../../img/buttonStyle.png) 1px -487px no-repeat;}
+#guestbookButton9 {background: url(../../../img/buttonStyle.png) 1px -557px no-repeat;}
+#guestbookButton10 {background: url(../../../img/buttonStyle.png) 1px -627px no-repeat;}
+#guestbookButton11 {background: url(../../../img/buttonStyle.png) 1px -697px no-repeat;}
+#guestbookButton12 {background: url(../../../img/buttonStyle.png) 1px -767px no-repeat;}

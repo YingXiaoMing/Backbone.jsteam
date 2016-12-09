@@ -1,0 +1,42 @@
+/* CSS Document */
+.clear { clear:both; height:0; display:block; }
+/*backTopIcon*/
+.backTopIcon .control-label { line-height:40px; }
+.backTopIcon .listType { font-size:0; letter-spacing:0; }
+.backTopIcon .listType > a { cursor:pointer; display:inline-block; vertical-align:top; letter-spacing:0; position:relative; margin: 12px 1px 5px 15px; width: 52px; height: 52px; float:left; background-repeat:no-repeat; background-position:center center; }
+.backTopIcon .listType > a.selected:before, .backTopIcon .listType > a:hover:before { content:""; display:block; position:absolute; left:-2px; right:-2px; top:-2px; bottom:-2px; border:2px solid #8bc429; border-radius: 5px; }
+.guestbookButton .listType > a.selected:after, .guestbookButton .listType > a:hover:after { content:''; display:block; position:absolute; right:0; bottom:0; border:1px solid #ffffff; border-radius:5px; }
+.backTopIcon_box { width:425px; height:215px; border: 1px solid #B5C8EB; }
+#siteBackToTop_default { background:url(../images/backTopIcon/backtotop.png) 6px 7px no-repeat; }
+#siteBackToTop_special_01 { background-image:url(../images/backTopIcon/01.png) }
+#siteBackToTop_special_01:hover { background-image:url(../images/backTopIcon/01_hover.png) }
+#siteBackToTop_special_02 { background-image:url(../images/backTopIcon/02.png) }
+#siteBackToTop_special_02:hover { background-image:url(../images/backTopIcon/02_hover.png) }
+#siteBackToTop_special_03 { background-image:url(../images/backTopIcon/03.png) }
+#siteBackToTop_special_03:hover { background-image:url(../images/backTopIcon/03_hover.png) }
+#siteBackToTop_special_04 { background-image:url(../images/backTopIcon/04.png) }
+#siteBackToTop_special_04:hover { background-image:url(../images/backTopIcon/04_hover.png) }
+#siteBackToTop_firstStyle_01 { background-image:url(../images/backTopIcon/firstStyle/01.png) }
+#siteBackToTop_firstStyle_01:hover { background-image:url(../images/backTopIcon/firstStyle/01_hover.png) }
+#siteBackToTop_firstStyle_02 { background-image:url(../images/backTopIcon/firstStyle/02.png); }
+#siteBackToTop_firstStyle_02:hover { background-image:url(../images/backTopIcon/firstStyle/02_hover.png) }
+#siteBackToTop_firstStyle_03 { background-image:url(../images/backTopIcon/firstStyle/03.png) }
+#siteBackToTop_firstStyle_03:hover { background-image:url(../images/backTopIcon/firstStyle/03_hover.png) }
+#siteBackToTop_firstStyle_04 { background-image:url(../images/backTopIcon/firstStyle/04.png) }
+#siteBackToTop_firstStyle_04:hover { background-image:url(../images/backTopIcon/firstStyle/04_hover.png) }
+#siteBackToTop_firstStyle_05 { background-image:url(../images/backTopIcon/firstStyle/05.png) }
+#siteBackToTop_firstStyle_05:hover { background-image:url(../images/backTopIcon/firstStyle/05_hover.png) }
+#siteBackToTop_firstStyle_06 { background-image:url(../images/backTopIcon/firstStyle/06.png) }
+#siteBackToTop_firstStyle_06:hover { background-image:url(../images/backTopIcon/firstStyle/06_hover.png) }
+#siteBackToTop_secondStyle_01 { background-image:url(../images/backTopIcon/secondStyle/01.png) }
+#siteBackToTop_secondStyle_01:hover { background-image:url(../images/backTopIcon/secondStyle/01_hover.png) }
+#siteBackToTop_secondStyle_02 { background-image:url(../images/backTopIcon/secondStyle/02.png) }
+#siteBackToTop_secondStyle_02:hover { background-image:url(../images/backTopIcon/secondStyle/02_hover.png) }
+#siteBackToTop_secondStyle_03 { background-image:url(../images/backTopIcon/secondStyle/03.png) }
+#siteBackToTop_secondStyle_03:hover { background-image:url(../images/backTopIcon/secondStyle/03_hover.png) }
+#siteBackToTop_secondStyle_04 { background-image:url(../images/backTopIcon/secondStyle/04.png) }
+#siteBackToTop_secondStyle_04:hover { background-image:url(../images/backTopIcon/secondStyle/04_hover.png) }
+#siteBackToTop_secondStyle_05 { background-image:url(../images/backTopIcon/secondStyle/05.png) }
+#siteBackToTop_secondStyle_05:hover { background-image:url(../images/backTopIcon/secondStyle/05_hover.png) }
+#siteBackToTop_secondStyle_06 { background-image:url(../images/backTopIcon/secondStyle/06.png) }
+#siteBackToTop_secondStyle_06:hover { background-image:url(../images/backTopIcon/secondStyle/06_hover.png) }

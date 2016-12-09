@@ -1,0 +1,941 @@
+<script src="assets/js/templates/js/jquery.minicolors.js"></script>
+<link rel="stylesheet" href="assets/js/templates/css/jquery.minicolors.css"/>
+<style>
+    .modal-body {
+        padding: 0;
+    }
+
+    .ui-widget-header {
+        background: #e4e5e4;
+        border: 0;
+        border-bottom: 1px solid #bfbfbf;
+    }
+
+    .ui-widget-content {
+        border: none;
+        background: none
+    }
+
+    .ui-tabs .ui-tabs-nav {
+        padding: 0;
+        margin-left: 1px;
+    }
+
+    .ui-tabs .ui-tabs-nav li {
+        padding: 0;
+        margin: 0;
+        margin-left: -1px;
+    }
+
+    .kenfor_upload_tabsclass .ui-tabs-nav .ui-tabs-anchor {
+        font-weight: normal;
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr, .ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+        border-radius: 0;
+    }
+
+    .uloadPic_div {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .uloadPic_div input {
+        margin: 0 10px;
+    }
+
+    .kenfor_tab_con {
+        border: 1px solid #BFBFBF;
+        max-height: 500px;
+        margin: -1px 0 0;
+        overflow-y: auto;
+    }
+
+    .scroll_effect_mode {
+        margin: 0 20px 0 0;
+    }
+
+    .scroll_effect span {
+        background-image: url(../design/assets/img/mbg01.png);
+        background-repeat: no-repeat;
+        border: 1px solid #EBEBEB;
+        cursor: pointer;
+        display: block;
+        position: relative;
+        height: 84px;
+        width: 140px;
+    }
+    .scroll_effect [data-mode="0"] {
+        background-position: 4px -875px;
+    }
+    .scroll_effect [data-mode="1"] {
+        background-position: 2px -335px;
+    }
+    .scroll_effect [data-mode="2"] {
+        background-position: 2px -439px;
+    }
+    .scroll_effect [data-mode="3"] {
+        background-position: 2px -533px;
+    }
+    .scroll_effect [data-mode="4"] {
+        background-position: 2px -633px;
+    }
+    .scroll_effect p{ color: #ABABAB; text-align: center; }
+    .scroll_effect span:hover:before, .scroll_effect .selected:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -1px;
+        right: -1px;
+        top: -1px;
+        bottom: -1px;
+        border: 2px solid #7DC8FF;
+    }
+
+    .group-widget .input-group-name {
+        background: #F2F2F2;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 24px;
+        margin: 0 -10px 10px;
+        padding: 0 15px;
+    }
+
+    .one-column-tab .columns-table{
+        border: 1px solid #B8C8E1;
+    }
+
+    .one-column-tab .columns-table {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .one-column-tab .columns-table > thead > tr > th {
+        background: #EFF3FF;
+        border-bottom: none;
+        font-weight: normal;
+    }
+
+    .one-column-tab .columns-table > thead > tr > th, .one-column-tab .columns-table > tbody > tr > th, .one-column-tab .columns-table > tfoot > tr > th, .one-column-tab .columns-table > thead > tr > td, .one-column-tab .columns-table > tbody > tr > td, .one-column-tab .columns-table > tfoot > tr > td {
+        border-color: #B8C8E1;
+    }
+
+    .group-widget .radio-inline, .group-widget .checkbox-inline {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        line-height: 24px;
+    }
+
+    .group-widget .radio-inline input[type="radio"], .group-widget .radio-inline input[type="checkbox"] {
+        margin-top: 6px;
+        line-height: 24px;
+    }
+
+    .lose-margin {
+        margin: 0 -15px;
+    }
+
+    .setting-padding .form-inline, .setting-scroll .form-inline {
+        display: inline-block;
+        padding: 10px 15px;
+    }
+
+    .setting-scroll .form-inline .field {
+        width: 56px;
+    }
+
+    .setting-padding .form-inline .field{
+        width: 56px;
+    }
+    #columnTableGroup span{ border: 1px solid #BBB; display: block; height: 26px; margin: -5px auto; width: 60px; }
+    .innerBackgroundPictures img{ margin-top: 15px; }
+</style>
+<div class="one-column-tab group-widget kenfor_upload_tabsclass ui-widget">
+    <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header">
+        <li class="ui-state-default ui-tabs-active ui-state-active">
+            <a href="#oneColumn-tab1" class="ui-tabs-anchor">常规</a>
+        </li>
+        <li class="ui-state-default">
+            <a href="#oneColumn-tab2" class="ui-tabs-anchor">图片特效</a>
+        </li>
+    </ul>
+    <div class="scrollbar kenfor_tab_con">
+        <div id="oneColumn-tab1" class="clearfix">
+            <div class="form-group col-xs-12">
+                <label class="col-xs-2 control-label">模块标题</label>
+                <div class="col-xs-10">
+                    <input class="form-control field" type="text" name="title" id="title">
+                </div>
+            </div>
+            <div class="form-group col-xs-12">
+                <label class="col-xs-2 control-label">模块样式</label>
+                <div class="col-xs-10">
+                    <div class="form-group scroll_effect">
+                        <div class="clearfix">
+                            <div class="pull-left scroll_effect_mode">
+                                <span data-mode="0"></span>
+                                <p></p>
+                            </div>
+                            <div class="pull-left scroll_effect_mode">
+                                <span data-mode="1"></span>
+                                <p>数字切换</p>
+                            </div>
+                            <div class="pull-left scroll_effect_mode">
+                                <span data-mode="2"></span>
+                                <p>圆点轮播</p>
+                            </div>
+                            <div class="pull-left scroll_effect_mode">
+                                <span data-mode="3"></span>
+                                <p>箭头滑动</p>
+                            </div>
+                            <div class="pull-left scroll_effect_mode">
+                                <span data-mode="4"></span>
+                                <p>方块滑动</p>
+                            </div>
+                        </div>
+                        <input class="form-control field" type="hidden" name="columnMode" id="columnMode">
+                    </div>
+                </div>
+            </div>
+            <div class="columnPageCount form-group col-xs-12" style="display: none;">
+                <label class="col-xs-2 control-label">通栏页数</label>
+                <div class="col-xs-10">
+                    <select class="field form-control" id="page">
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="oneColumn-tab2" class="clearfix ">
+            <p class="input-group-name">背景</p>
+            <table class="columns-table table table-bordered">
+                <thead>
+                <tr>
+                    <th class="text-center">页数</th>
+                    <th class="text-center">背景</th>
+                    <th class="text-center">操作</th>
+                </tr>
+                </thead>
+                <tbody id="columnTableGroup"></tbody>
+            </table>
+            <div class="form-group clearfix">
+                <label class="col-xs-2 control-label">中间背景</label>
+                <div class="col-xs-10">
+                    <div class="clearfix">
+                        <label class="radio-inline">
+                            <input type="radio" value="0" name="innerBackground-mode"> 默认
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" value="1" name="innerBackground-mode"> 自定义
+                        </label>
+                    </div>
+                    <div class="setting-inner-background lose-margin">
+                        <div class="form-group clearfix">
+                            <label class="col-xs-2 control-label">颜色</label>
+                            <div class="col-xs-10">
+                                <input class="form-control field" type="text" name="innerBackgroundColor" id="innerBackgroundColor" color-picker>
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <label class="col-xs-2 control-label">图片</label>
+                            <div class="col-xs-10">
+                                <span class="btn btn-primary" onclick="editorUpImage(innerBackgroundImage);">上传图片</span>
+                                <div id="innerBackgroundPictures" class="innerBackgroundPictures clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <label class="col-xs-2 control-label">显示方式</label>
+                            <div class="col-xs-10">
+                                <select class="field form-control" id="innerBackgroundMode">
+                                    <option value="0">不平铺</option>
+                                    <option value="1">平铺</option>
+                                    <option value="2">横向平铺</option>
+                                    <option value="3">纵向平铺</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group clearfix">
+                <label class="col-xs-2 control-label">边线</label>
+                <div class="col-xs-10">
+                    <div class="clearfix">
+                        <label class="radio-inline">
+                            <input type="radio" value="0" name="border-mode"> 默认
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" value="1" name="border-mode"> 隐藏
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" value="2" name="border-mode"> 自定义
+                        </label>
+                    </div>
+                    <div class="setting-border lose-margin">
+                        <div class="form-group clearfix">
+                            <label class="col-xs-2 control-label">宽度</label>
+                            <div class="col-xs-10">
+                                <select class="field form-control" id="borderWidth">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <label class="col-xs-2 control-label">颜色</label>
+                            <div class="col-xs-10">
+                                <input class="form-control field" type="text" name="borderColor" id="borderColor" color-picker>
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <label class="col-xs-2 control-label">样式</label>
+                            <div class="col-xs-10">
+                                <select class="field form-control" id="borderStyle">
+                                    <option value="solid">实线</option>
+                                    <option value="dotted">点线</option>
+                                    <option value="dashed">虚线</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <label class="col-xs-2 control-label">位置</label>
+                            <div class="col-xs-10">
+                                <select class="field form-control" id="borderPosition">
+                                    <option value="top-bottom">上下边线</option>
+                                    <option value="top">上边线</option>
+                                    <option value="bottom">下边线</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="input-group-name">内容区</p>
+            <div class="form-group clearfix">
+                <label class="col-xs-2 control-label">轮播效果</label>
+                <div class="col-xs-10">
+                    <div class="clearfix">
+                        <label class="radio-inline">
+                            <input type="radio" value="0" name="scroll-mode"> 手动轮播
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" value="1" name="scroll-mode"> 自动轮播
+                        </label>
+                    </div>
+                    <div class="setting-scroll clearfix lose-margin">
+                        <div class="form-inline">
+                            <span>展示时间</span>
+                            <input class="form-control field" type="text" name="showTimeLong" id="showTimeLong">
+                            <span>秒</span>
+                        </div>
+                        <div class="form-inline">
+                            <span>切换速度</span>
+                            <input class="form-control field" type="text" name="delayTimeLong" id="delayTimeLong">
+                            <span>秒</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group clearfix">
+                <label class="col-xs-2 control-label">宽度</label>
+                <div class="col-xs-10">
+                    <div class="clearfix">
+                        <label class="radio-inline">
+                            <input type="radio" value="0" name="width-mode"> 默认
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" value="1" name="width-mode"> 自定义
+                        </label>
+                    </div>
+                    <div class="setting-width row">
+                        <label class="col-xs-2 control-label">自定义</label>
+                        <div class="col-xs-10">
+                            <input class="form-control field" type="text" name="width" id="width">
+                            <p class="help-block">单位：像素(px)或百分比(%)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group clearfix">
+                <label class="col-xs-2 control-label">边距</label>
+                <div class="col-xs-10">
+                    <div class="clearfix">
+                        <label class="radio-inline">
+                            <input type="radio" value="0" name="padding-mode"> 默认
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" value="1" name="padding-mode"> 自定义
+                        </label>
+                    </div>
+                    <div class="setting-padding clearfix lose-margin">
+                        <div class="form-inline">
+                            <span>上</span>
+                            <input class="form-control field" type="text" value="0" name="padding-top">
+                            <span>px</span>
+                        </div>
+                        <div class="form-inline">
+                            <span>右</span>
+                            <input class="form-control field" type="text" value="0" name="padding-right">
+                            <span>px</span>
+                        </div>
+                        <div class="form-inline">
+                            <span>下</span>
+                            <input class="form-control field" type="text" value="0" name="padding-bottom">
+                            <span>px</span>
+                        </div>
+                        <div class="form-inline">
+                            <span>左</span>
+                            <input class="form-control field" type="text" value="0" name="padding-left">
+                            <span>px</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $(".one-column-tab").tabs();
+    });
+    /**
+     * 选择图片回调处理
+     */
+    function innerBackgroundImage() {
+        $(".edui-okbutton").off("click.settingInnerBackground").on("click.settingInnerBackground", function () {
+            var tempPictureList = window.tempPictureList,
+                    html = "";
+            //console.log(tempPictureList);
+            $.map(tempPictureList, function (item, key) {
+                if (key == 0) {
+                    html += '<div class="pull-left"><img height="100" width="100" alt="' + item.alt + '" src="' + item.src + '"/></div>';
+                }
+                else {
+                    html += '<div class="pull-left" style="margin-left: 5px;"><img height="100" width="100" alt="' + item.alt + '" src="' + item.src + '"/></div>';
+                }
+            });
+            $("#innerBackgroundPictures").html(html).data("pictures", tempPictureList);
+            window.tempPictureList = undefined;
+        });
+    }
+    var originData;
+    var initData = function (data) {
+        originData = data;
+
+        /**
+         * 标题初始化
+         */
+        function setTitle() {
+            $("#title").val(data.title);
+        }
+
+        setTitle();
+        /**
+         * 模块样式初始化
+         */
+        function setColumnMode() {
+            $("#columnMode").val(data.columnMode);
+            var $listType = $(".scroll_effect_mode").find("[data-mode]"),
+                    $columnPageCount = $(".columnPageCount");
+            $listType.eq(data.columnMode).addClass("selected");
+            if (data.columnMode != "0") {
+                $columnPageCount.show();
+            }
+            $listType.off("click").on("click", function () {
+                var $page = $("#page");
+                var mode = $(this).data("mode");
+                if (mode == "0") {
+                    var $columnTableGroup = $("#columnTableGroup");
+                    var $trs = $columnTableGroup.find("tr");
+                    var $trs_l = $trs.length;
+                    if ($trs_l > 1) {
+                        $trs.nextAll().remove();
+                    }
+                    $columnPageCount.hide();
+                }
+                else {
+                    $columnPageCount.show();
+                    $page.trigger("change");
+                }
+                $listType.removeClass("selected");
+                $(this).addClass("selected");
+                $("#columnMode").val(mode);
+            });
+        }
+
+        setColumnMode();
+        /**
+         * 调出设置背景模态层
+         */
+        function setColumnBackground() {
+            $(".set-column-background").off("click").on("click", function () {
+                var index = $(this).data("index");
+                $.ajax({
+                    url: "assets/js/templates/public/settingBackgroundModal.html",
+                    type: "GET",
+                    success: function (data) {
+                        art.dialog({
+                            id: new Date().getTime(),
+                            title: ("设置背景"),
+                            lock: true,
+                            width: '50%',
+                            padding: '0',
+                            content: data,
+                            init: function (obj) {
+                                var backgroundModal = new obj.backgroundModal();
+                                backgroundModal.initData(originData, index);
+                                //obj.backgroundModal.background_initData(originData, index);
+                            },
+                            ok: function (obj) {
+                                var backgroundModal = new obj.backgroundModal();
+                                backgroundModal.saveData(index);
+                                setColumnTableGroup();
+                                return true;
+                            },
+                            cancel: true
+                        });
+                    },
+                    error: function () {
+
+                    },
+                    cache: false
+                });
+            });
+        }
+
+        setColumnBackground();
+        /**
+         * 通栏背景初始化
+         */
+        function setColumnTableGroup() {
+            var $columnTableGroup = $("#columnTableGroup");
+            var html = "";
+            $.map(data.background, function (item, key) {
+                var style = "";
+                style += "background-color:" + item.color + ";";
+                if (item.images.src) {
+                    style += "background-image:url(" + item.images.src + ");"
+                }
+                if (item.showMode == 0) {
+                    style += 'background-repeat:no-repeat;';
+                }
+                if (item.showMode == 1) {
+                    style += 'background-repeat:repeat;';
+                }
+                if (item.showMode == 2) {
+                    style += 'background-repeat:repeat-x;';
+                }
+                if (item.showMode == 3) {
+                    style += 'background-repeat:repeat-y;';
+                }
+                html += '<tr>' +
+                        '<td>第' + parseInt(key + 1) + '页</td>' +
+                        '<td>' +
+                        '<span style="' + style + '"></span></td>' +
+                        '<td class="text-center"><i data-index="' + key + '" class="glyphicon glyphicon-edit set-column-background"></i></td>' +
+                        '</tr>';
+                $columnTableGroup.html(html);
+                setColumnBackground();
+            });
+        }
+
+        setColumnTableGroup();
+        /**
+         * 初始化页数管理及绑定改变事件
+         */
+        function setPage() {
+            var $page = $("#page");
+            var $pageOption = $page.find("option");
+            for (var i = 0; i < $pageOption.length; i++) {
+                if ($pageOption.eq(i).val() == data.page) {
+                    $pageOption.eq(i).attr("selected", true);
+                }
+            }
+            $page.off("change").on("change", function () {
+                var $columnTableGroup = $("#columnTableGroup");
+                var $trs = $columnTableGroup.find("tr");
+                var $trs_l = $trs.length,
+                        value = $(this).val(),
+                        html = "";
+                if (($trs_l - value) < 0) {
+                    var j = $trs_l;
+                    for (var i = -($trs_l - value); i > 0; i--) {
+                        j += 1;
+                        html += '<tr><td>第' + j + '页</td><td><span style="background-color:' + data.defaults.background.color + ';"></span></td><td class="text-center"><i data-index="' + parseInt(j - 1) + '" class="glyphicon glyphicon-edit set-column-background"></i></td></tr>';
+                        data.background[j - 1] = {
+                            backgroundMode: 0,
+                            color: data.defaults.background.color,
+                            images: data.defaults.background.images,
+                            showMode: data.defaults.background.showMode
+                        };
+                    }
+                    $columnTableGroup.append(html);
+                    setColumnBackground();
+                }
+                else if (($trs_l - value) > 0) {
+                    var j = $trs_l + 1;
+                    for (var i = ($trs_l - value); i >= 0; i--) {
+                        j -= 1;
+                        data.background.splice(j, 1);
+                        $trs.eq(j).remove();
+                    }
+                }
+            });
+        }
+        setPage();
+
+        /**
+         * 初始化中间背景
+         */
+        function setInnerBackground() {
+            var $innerBackground = $("[name='innerBackground-mode']");
+            var $settinginnerBackground = $(".setting-inner-background");
+            for (var i = 0; i < $innerBackground.length; i++) {
+                if ($innerBackground.eq(i).val() == data.innerBackgroundMode) {
+                    $innerBackground.eq(i).prop("checked", true);
+                    if (data.innerBackgroundMode == 1) {
+                        $settinginnerBackground.show();
+                    }
+                    else {
+                        $settinginnerBackground.hide();
+                    }
+                }
+            }
+            if ("src" in data.innerBackground.images) {
+                var html = '<div class="pull-left"><img height="100" width="100" alt="' + data.innerBackground.images.alt + '" src="' + data.innerBackground.images.src + '"/></div>';
+                $("#innerBackgroundPictures").html(html);
+            }
+            $innerBackground.off("change").on("change", function () {
+                if ($(this).val() == 1) {
+                    $settinginnerBackground.show();
+                }
+                else {
+                    $settinginnerBackground.hide();
+                }
+            });
+            var $innerBackgroundColor = $("#innerBackgroundColor");
+            $innerBackgroundColor.val(data.innerBackground.color);
+            $innerBackgroundColor.off("blur").on("blur",function(){
+                var value = $(this).val(),
+                    reg = new RegExp("^#[0-9a-fA-F]{6}$"),
+                    boole;
+                boole = reg.test(value);
+                if (!boole && value != "transparent") {
+                    toastr.clear();
+                    toastr.error("请使用HEX颜色编码！");
+                    $(this).val(data.defaults.innerBackground.color);
+                }
+            });
+            var innerBackgroundMode = $("#innerBackgroundMode").find("option");
+            for (var i = 0; i < innerBackgroundMode.length; i++) {
+                if (innerBackgroundMode.eq(i).val() == data.page) {
+                    innerBackgroundMode.eq(i).attr("selected", true);
+                }
+            }
+        }
+        setInnerBackground();
+
+        /**
+         * 初始化边框
+         */
+        function setBorder() {
+            var $border = $("[name='border-mode']");
+            var $settingBorder = $(".setting-border");
+            for (var i = 0; i < $border.length; i++) {
+                if ($border.eq(i).val() == data.borderMode) {
+                    $border.eq(i).prop("checked", true);
+                    if (data.borderMode == 2) {
+                        $settingBorder.show();
+                    }
+                    else {
+                        $settingBorder.hide();
+                    }
+                }
+            }
+            $border.off("change").on("change", function () {
+                if ($(this).val() == 2) {
+                    $settingBorder.show();
+                }
+                else {
+                    $settingBorder.hide();
+                }
+            });
+            var $borderWidth = $("#borderWidth").find("option");
+            for (var i = 0; i < $borderWidth.length; i++) {
+                if ($borderWidth.eq(i).val() == data.border.width) {
+                    $borderWidth.eq(i).attr("selected", true);
+                }
+            }
+            var $borderColor = $("#borderColor");
+            $borderColor.val(data.border.color);
+            var $borderStyle = $("#borderStyle").find("option");
+            for (var i = 0; i < $borderStyle.length; i++) {
+                if ($borderStyle.eq(i).val() == data.border.style) {
+                    $borderStyle.eq(i).attr("selected", true);
+                }
+            }
+            $borderColor.off("blur").on("blur", function () {
+                var value = $(this).val(),
+                        reg = new RegExp("^#[0-9a-fA-F]{6}$"),
+                        boole;
+                boole = reg.test(value);
+                if (!boole && value != "transparent") {
+                    toastr.clear();
+                    toastr.error("请使用HEX颜色编码！");
+                    $(this).val(data.defaults.border.color);
+                }
+            });
+            var $borderPosition = $("#borderPosition").find("option");
+            for (var i = 0; i < $borderPosition.length; i++) {
+                if ($borderPosition.eq(i).val() == data.border.position) {
+                    $borderPosition.eq(i).attr("selected", true);
+                }
+            }
+        }
+        setBorder();
+
+        /**
+         * 设置滚动参数
+         */
+        function setScroll() {
+            var $showTimeLong = $("#showTimeLong");
+            $showTimeLong.val(data.scroll.showTimeLong);
+            $showTimeLong.off("blur").on("blur",function(){
+                var value = $(this).val(),
+                        reg = new RegExp("(^[0-9]+(\.[0-9]+)$)|(^[0-9]+$)"),
+                        boole;
+                boole = reg.test(value);
+                if (!boole) {
+                    toastr.clear();
+                    toastr.error("数值格式有误！");
+                    $(this).val(data.defaults.scroll.showTimeLong);
+                }
+            });
+            var $delayTimeLong = $("#delayTimeLong");
+            $delayTimeLong.val(data.scroll.delayTimeLong);
+            $delayTimeLong.off("blur").on("blur",function(){
+                var value = $(this).val(),
+                        reg = new RegExp("(^[0-9]+(\.[0-9]+)$)|(^[0-9]+$)"),
+                        boole;
+                boole = reg.test(value);
+                if (!boole) {
+                    toastr.clear();
+                    toastr.error("数值格式有误！");
+                    $(this).val(data.defaults.scroll.delayTimeLong);
+                }
+            });
+            var $scroll = $("[name='scroll-mode']");
+            var $settingScroll = $(".setting-scroll");
+            for (var i = 0; i < $scroll.length; i++) {
+                if ($scroll.eq(i).val() == data.scrollMode) {
+                    $scroll.eq(i).prop("checked", true);
+                    if (data.scrollMode == 1) {
+                        $settingScroll.show();
+                    }
+                    else {
+                        $settingScroll.hide();
+                    }
+                }
+            }
+            $scroll.off("change").on("change", function () {
+                if ($(this).val() == 1) {
+                    $settingScroll.show();
+                }
+                else {
+                    $settingScroll.hide();
+                }
+            });
+        }
+        setScroll();
+
+        /**
+         * 设置内容宽度
+         */
+        function setWidth() {
+            var $widthMode = $("[name='width-mode']");
+            var $settingWidth = $(".setting-width");
+            for (var i = 0; i < $widthMode.length; i++) {
+                if ($widthMode.eq(i).val() == data.widthMode) {
+                    $widthMode.eq(i).prop("checked", true);
+                    if (data.widthMode == 1) {
+                        $settingWidth.show();
+                    }
+                    else {
+                        $settingWidth.hide();
+                    }
+                }
+            }
+            $widthMode.off("change").on("change", function () {
+                if ($(this).val() == 1) {
+                    $settingWidth.show();
+                }
+                else {
+                    $settingWidth.hide();
+                }
+            });
+            var $width = $("#width");
+            $width.val(data.width);
+            $width.off("blur").on("blur",function(){
+                var value = $(this).val(),
+                        reg = new RegExp("(^([0-9]+(px))$)|(^([0-9]+(\.[0-9]+)*\%)$)"),
+                        boole;
+                boole = reg.test(value);
+                if (!boole) {
+                    toastr.clear();
+                    toastr.error("数值格式有误！");
+                    $(this).val(data.defaults.width);
+                }
+            });
+        }
+        setWidth();
+
+        /**
+         * 设置内边距
+         */
+        function setPadding() {
+            var $padding = $("[name='padding-mode']");
+            var $settingPadding = $(".setting-padding");
+            var $settingPaddings = $settingPadding.find("input");
+
+            $settingPaddings.off("blur").on("blur",function(){
+                var value = $(this).val(),
+                        reg = new RegExp("^[0-9]+$"),
+                        boole;
+                boole = reg.test(value);
+                if (!boole) {
+                    toastr.clear();
+                    toastr.error("数值格式有误！");
+                    $(this).val(0);
+                }
+                if (parseInt(value) >= 100) {
+                    toastr.clear();
+                    toastr.error("内边距范围应在0-100！");
+                    $(this).val(0);
+                }
+            });
+
+            for (var i = 0; i < $padding.length; i++) {
+                if ($padding.eq(i).val() == data.paddingMode) {
+                    $padding.eq(i).prop("checked", true);
+                    if (data.paddingMode == 1) {
+                        $settingPadding.show();
+                    }
+                    else {
+                        $settingPadding.hide();
+                    }
+                }
+            }
+            $padding.off("change").on("change", function () {
+                if ($(this).val() == 1) {
+                    $settingPadding.show();
+                }
+                else {
+                    $settingPadding.hide();
+                }
+            });
+            for (var i = 0; i < 4; i++) {
+                $settingPaddings.eq(i).val(data.paddings[i]);
+            }
+        }
+
+        setPadding();
+        /**
+         * 绑定颜色拾取器
+         */
+        function bindColorPicker() {
+            $("[color-picker]").each(function () {
+                $(this).minicolors({
+                    change: function (hex, opacity) {
+                        if (!hex)
+                            return;
+                        if (opacity)
+                            hex += ', ' + opacity;
+                        try {
+                            console.log(hex);
+                        } catch (e) {
+                        }
+                    },
+                    theme: 'bootstrap'
+                });
+            });
+        }
+
+        bindColorPicker();
+    };
+
+    var saveData = function () {
+        var data = {};
+        data = $.extend(true, originData, data);
+        data.title = $("#title").val();
+        data.columnMode = $("#columnMode").val();
+        if (data.columnMode == 0) {
+            data.page = "1";
+        }
+        else {
+            data.page = $("#page").find("option:selected").val();
+        }
+        data.innerBackgroundMode = $("[name='innerBackground-mode']:checked").val();
+        if (data.innerBackgroundMode == 0) {
+            data.innerBackground.color = data.defaults.innerBackground.color;
+            data.innerBackground.images = data.defaults.innerBackground.images;
+            data.innerBackground.showMode = data.defaults.innerBackground.showMode;
+        }
+        else {
+            data.innerBackground.color = $("#innerBackgroundColor").val();
+            var $innerBackgroundPictures = $("#innerBackgroundPictures");
+            if ($innerBackgroundPictures.data("pictures")) {
+                data.innerBackground.images = $innerBackgroundPictures.data("pictures")[0];
+            }
+            data.innerBackground.showMode = $("#innerBackgroundMode").find("option:selected").val();
+        }
+        data.borderMode = $("[name='border-mode']:checked").val();
+        if (data.borderMode == 0) {
+            data.border.width = data.defaults.border.width;
+            data.border.color = data.defaults.border.color;
+            data.border.style = data.defaults.border.style;
+            data.border.position = data.defaults.border.position;
+        }
+        else {
+            data.border.width = $("#borderWidth").find("option:selected").val();
+            data.border.color = $('#borderColor').val();
+            data.border.style = $("#borderStyle").find("option:selected").val();
+            data.border.position = $("#borderPosition").find("option:selected").val();
+        }
+        data.scrollMode = $("[name='scroll-mode']:checked").val();
+        if (data.scrollMode == 0) {
+            data.scroll.showTimeLong = data.defaults.scroll.showTimeLong;
+            data.scroll.delayTimeLong = data.defaults.scroll.delayTimeLong;
+        }
+        else {
+            data.scroll.showTimeLong = $("#showTimeLong").val();
+            data.scroll.delayTimeLong = $("#delayTimeLong").val();
+        }
+        data.widthMode = $("[name='width-mode']:checked").val();
+        if (data.widthMode == 0) {
+            data.width = data.defaults.width;
+        }
+        else {
+            data.width = $("#width").val();
+        }
+        data.paddingMode = $("[name='padding-mode']:checked").val();
+        if (data.paddingMode == 0) {
+            data.paddings = data.defaults.paddings;
+        }
+        else {
+            var $settingPaddings = $(".setting-padding").find("input");
+            for (var i = 0; i < 4; i++) {
+                data.paddings[i] = $settingPaddings.eq(i).val();
+            }
+        }
+        return data;
+    }
+</script>

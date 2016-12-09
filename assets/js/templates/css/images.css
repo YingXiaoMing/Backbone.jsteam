@@ -1,0 +1,4 @@
+/* CSS Document */
+.clear { clear:both; height:0; display:block; }
+.images_tpl_box{margin-top:5px;}
+.images_tpl_box img{ max-width:180px; max-height:75px; cursor:pointer;}

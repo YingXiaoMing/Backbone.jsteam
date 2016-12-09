@@ -1,0 +1,9 @@
+[{
+	value : "_self",
+	label : "原窗口",
+	selected : 	true		
+},{
+	value : "_blank",
+	label : "新窗口",
+	selected : 	false
+}]

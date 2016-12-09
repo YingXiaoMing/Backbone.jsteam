@@ -1,0 +1,273 @@
+{
+	cpId:"photoMore",
+	type:"div",
+	group:"senior",
+	template:"photoMore",
+	templateTpl:"",
+	target:"TestItemView",
+	attrlayer:"3",
+	title:"魔方多图",
+	btns:["floating", "edit", "copy"],
+	cpStyle : {
+		test : "test",
+		pleft : "200px",
+		position : {
+			type : "",
+			label : "导航位置",
+			value:""
+		},
+	},
+	publicAttributes:{
+		isGlobal:false,
+		isFloat:true
+	},
+	cpAttributes:{
+		tab1:{
+			tabname:"常规",
+			value:{
+				name:{
+					label:'模块标题',
+					value:'魔方多图',
+					savetype:"input",
+					type:"input"
+				},
+				photoMore:{
+					label:'模块样式',
+					value:'cardStyle0',
+					savetype:"input",
+					type:"Rubikscube"
+				},
+				buttonpic : {
+					type: "picture",
+					savetype: "input",
+					label: '图片',
+					name: 'buttonpic',
+					//<input name="foo"/>输入域的name
+					value: '',
+					//初始值,默认值
+				},
+		
+			}
+		},
+		tab2:{
+			tabname:"图片特效",
+			value:{
+				name1:{
+					label:'模块标题',
+					value:'轮播多图',
+					savetype:"input",
+					type:"input"
+				},
+				imageEffects:{
+					label:'鼠标悬停效果',
+					value:'default',
+					savetype:"input",
+					type:"imageEffects"
+				},
+				
+        a: {
+          type: "block2",
+          savetype: "block",
+          label: "效果",
+          value:0,//当前选择的值
+          //选择块的值列表
+          listvalue : [{
+            label : "效果一",
+            value : "0"
+          },{
+            label : "效果二",
+            value : "1"
+          },{
+            label : "效果三",
+            value : "2"
+          },{
+            label : "效果四",
+            value : "3"
+          },{
+            label : "效果五",
+            value : "4"
+          }
+		  ,{
+            label : "效果六",
+            value : "5"
+          }
+		  ,{
+            label : "效果七",
+            value : "6"
+          } ,{
+            label : "效果八",
+            value : "7"
+          }
+		  
+		  ],
+          //选择值为1的时候显示的小组件集合
+          listvalue0 : {
+          },
+	     listvalue1 : {
+			 
+			         b: {
+          type: "block2",
+          savetype: "block",
+          label: "边框",
+          value: 0,//当前选择的值
+          //选择块的值列表
+          listvalue : [{
+            label : "默认",
+            value : "0"
+          },{
+            label : "自定义",
+            value : "1"
+          }
+		  ],
+          //选择值为1的时候显示的小组件集合
+          listvalue1 : {
+			  	color:{
+					label:'颜色',
+					value:'1',
+					savetype:"input",
+					type:"color"
+				},
+				width:{
+					label:'宽度',
+					value:'1',
+					savetype:"input",
+					type:"width"
+				},
+				borderStyle:{
+					label:'样式',
+					value:'solid',
+					savetype:"input",
+					type:"borderStyle"
+				}
+			  
+			
+          }
+
+        }	
+			 
+			 
+          },
+	     listvalue2 : {
+			 			 
+          },
+		  
+	     listvalue3 : {
+			 		 
+			         b: {
+          type: "block2",
+          savetype: "block",
+          label: "背景",
+          value: 0,//当前选择的值
+          //选择块的值列表
+          listvalue : [{
+            label : "默认",
+            value : "0"
+          },{
+            label : "自定义",
+            value : "1"
+          }
+		  ],
+          //选择值为1的时候显示的小组件集合
+          listvalue1 : {
+			  	color:{
+					label:'颜色',
+					value:'1',
+					savetype:"input",
+					type:"color"
+				},
+				shadowstyle : {
+					type : "opacity",
+					savetype : "input",
+					name:"",
+					label : "透明度",
+					value : "0",
+					max:"100",
+					unit:""
+				},
+			  
+			
+          }
+
+        }	
+			 
+          },
+		  	listvalue4 : {
+          },
+		  	listvalue5 : {
+          },
+		  	listvalue6 : {
+          },
+		  	listvalue7 : {
+          }
+		  
+        }
+		
+		
+		
+		
+			}
+		},
+		tab3:{
+			tabname:"展示设置",
+			value:{
+        a: {
+          type: "block2",
+          savetype: "block",
+          label: "点击图片弹出",
+          value:1,//当前选择的值
+          //选择块的值列表
+          listvalue : [{
+            label : "图片链接",
+            value : "1"
+          },{
+            label : "幻灯片",
+            value : "0"
+          }
+		  ],
+          //选择值为1的时候显示的小组件集合
+          listvalue1 : {
+			open1: {
+				label : "打开方式", 
+				class:"open", 
+				value: [{
+							value: "0",
+							label: "当前窗口",
+							selected: true
+						}], 
+				type: 'linkOpen', 
+				savetype : "select",
+			}
+          }
+        },
+        b: {
+          type: "block2",
+          savetype: "block",
+          label: "图片间距",
+          value: 0,//当前选择的值
+          //选择块的值列表
+          listvalue : [{
+            label : "默认",
+            value : "0"
+          },{
+            label : "自定义",
+            value : "1"
+          }
+		  ],
+          //选择值为1的时候显示的小组件集合
+          listvalue1 : {
+				border:{
+					label:'图片间距',
+					value:'15',
+					savetype:"input",
+					type:"width"
+				}
+          }
+
+        }					
+		
+		
+			}
+		}
+	},
+	children:[]
+}

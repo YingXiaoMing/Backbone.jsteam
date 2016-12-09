@@ -1,0 +1,264 @@
+{
+	groupName : '全局样式',
+	groupId : 'Global',
+	value:"body",
+	cpStyle : 
+	{	
+		bgStyle: {
+			tabname: "背景",
+      			value: {
+					width: {
+					  type: "public",
+					  savetype: "style",
+					  label: "宽度",
+					  status:0,//0为显示选项，1为不显示选项，为1时，下面的value必须设为1，2时不显示标题栏,否则显示不出小组键
+					  value: 0,//0为默认状态，hide为隐藏状态，其他状态自行定义，如有自定义的，写法为listvalue+定义的值，如listvalue1，listvalue2等...
+					  listvalue : [
+							{label : "默认",value : "0"},
+							{label : "自定义",value : "1"}
+						],
+					  //选择值为0的时候显示的小组件集合
+					listvalue0 : {
+						width: {label : "宽度", style:"body",  class:"width", value : "100%", type: 'containerWidth', savetype : "input"}
+					  },
+					  listvalue1 : {
+						width: {label : "宽度", style:"body",  class:"width", value : "1920px", type: 'containerWidth', savetype : "input"}
+						//style:样式的对象，class样式的属性，value样式的值，如body{width:1200px;}
+					  }
+					},
+					background: {
+					  type: "public",
+					  savetype: "style",
+					  label: "背景",
+					  status:0,//0为显示选项，1为不显示选项，为1时，下面的value必须设为1，否则显示不出小组键
+					  value: 0,//0为默认状态，hide为隐藏状态，其他状态自行定义，如有自定义的，写法为listvalue+定义的值，如listvalue1，listvalue2等...
+					  listvalue : [
+							{label : "默认",value : "0"},
+							{label : "自定义",value : "1"},
+							{label : "隐藏",value : "hide"}
+						],
+					  //选择值为0的时候显示的小组件集合，样式显示方工为style{class:value}的方式，如：body{background-color:#fff}
+					  listvalue0 : {
+						backgroundcolor: {label : "颜色", style:"body", class:"background-color", value : "#fff", type: 'input', savetype : "input"},
+						backgroundimage: {label : "图片", style:"body", class:"background-image", value : "none", type: 'images', savetype : "input"},
+						backgroundrepeat: {label : "显示方式", style:"body", class:"background-repeat", value : "none", type: 'backgroundRepeat', savetype : "select"},
+						backgroundattachment: {label : "是否锁定", style:"body", class:"background-attachment", value : "scroll", type: 'backgroundAttachment', savetype : "input"}
+					  },  
+					  listvalue1 : {
+						backgroundcolor: {label : "颜色", style:"body", class:"background-color", value : "#fff", type: 'input', savetype : "input"},
+						backgroundimage: {label : "图片", style:"body", class:"background-image", value : "none", type: 'images', savetype : "input"},
+						backgroundrepeat: {label : "显示方式", style:"body", class:"background-repeat", value : "none", type: 'backgroundRepeat', savetype : "select"},
+						backgroundAttachment: {label : "是否锁定", style:"body", class:"background-attachment", value : "scroll", type: 'backgroundAttachment', savetype : "input"}
+					  },
+					   listvaluehide : {
+						background: {label : "背景", class:"background", value :"none", type: 'input', savetype : "input"}
+					  }
+				}
+			}
+		},
+		topStyle: {
+			tabname: "顶部",
+      			value: {
+					width: {
+					  type: "public",
+					  savetype: "style",
+					  label: "宽度",
+					  status:0,//0为显示选项，1为不显示选项，为1时，下面的value必须设为1，否则显示不出小组键
+					  value: 0,//0为默认状态，hide为隐藏状态，其他状态自行定义，如有自定义的，写法为listvalue+定义的值，如listvalue1，listvalue2等...
+					  listvalue : [
+							{label : "默认",value : "0"},
+							{label : "自定义",value : "1"}
+						],
+					  //选择值为0的时候显示的小组件集合
+					listvalue0 : {
+						width: {label : "宽度", style:"body", class:"width", value : "100%", type: 'containerWidth', savetype : "input"}
+					  },
+					  listvalue1 : {
+						width: {label : "宽度", style:"body", class:"width", value : "1920px", type: 'containerWidth', savetype : "input"}
+					  }
+					},
+					background: {
+					  type: "public",
+					  savetype: "style",
+					  label: "背景",
+					  status:0,//0为显示选项，1为不显示选项，为1时，下面的value必须设为1，否则显示不出小组键
+					  value: 0,//0为默认状态，hide为隐藏状态，其他状态自行定义，如有自定义的，写法为listvalue+定义的值，如listvalue1，listvalue2等...
+					  listvalue : [
+							{label : "默认",value : "0"},
+							{label : "自定义",value : "1"},
+							{label : "隐藏",value : "hide"}
+						],
+					  //选择值为0的时候显示的小组件集合
+					  listvalue0 : {
+						backgroundcolor: {label : "颜色", style:"body", class:"background-color", value : "#fff", type: 'input', savetype : "input"},
+						backgroundimage: {label : "图片", style:"body", class:"background-image", value : "none", type: 'images', savetype : "input"},
+						backgroundrepeat: {label : "显示方式", style:"body", class:"background-repeat", value : "none", type: 'backgroundRepeat', savetype : "select"},
+						backgroundattachment: {label : "显示方式", style:"body", class:"background-attachment", value : "scroll", type: 'backgroundRepeat', savetype : "select"}
+					  },  
+					  listvalue1 : {
+						backgroundcolor: {label : "颜色", style:"body", class:"background-color", value : "#fff", type: 'input', savetype : "input"},
+						backgroundimage: {label : "图片", style:"body", class:"background-image", value : "none", type: 'images', savetype : "input"},
+						backgroundrepeat: {label : "显示方式", style:"body", class:"background-repeat", value : "none", type: 'backgroundRepeat', savetype : "select"},
+						backgroundattachment: {label : "显示方式", style:"body", class:"background-attachment", value : "scroll", type: 'backgroundRepeat', savetype : "select"}
+					  },
+					   listvaluehide : {
+						background: {label : "背景", style:"body", class:"background", value :"none", type: 'input', savetype : "input"}
+					  }
+				}
+			}
+		},
+		bannerStyle: {
+			tabname: "横幅区",
+      			value: {
+					width: {
+					  type: "public",
+					  savetype: "style",
+					  label: "宽度",
+					  status:0,//0为显示选项，1为不显示选项，为1时，下面的value必须设为1，否则显示不出小组键
+					  value: 0,//0为默认状态，hide为隐藏状态，其他状态自行定义，如有自定义的，写法为listvalue+定义的值，如listvalue1，listvalue2等...
+					  listvalue : [
+							{label : "默认",value : "0"},
+							{label : "自定义",value : "1"}
+						],
+					  //选择值为0的时候显示的小组件集合
+					listvalue0 : {
+						width: {label : "宽度", style:"body", class:"width", value : "100%", type: 'containerWidth', savetype : "input"}
+					  },
+					  listvalue1 : {
+						width: {label : "宽度", style:"body", class:"width", value : "1920px", type: 'containerWidth', savetype : "input"}
+					  }
+					},
+					background: {
+					  type: "public",
+					  savetype: "style",
+					  label: "背景",
+					  status:0,//0为显示选项，1为不显示选项，为1时，下面的value必须设为1，否则显示不出小组键
+					  value: 0,//0为默认状态，hide为隐藏状态，其他状态自行定义，如有自定义的，写法为listvalue+定义的值，如listvalue1，listvalue2等...
+					  listvalue : [
+							{label : "默认",value : "0"},
+							{label : "自定义",value : "1"},
+							{label : "隐藏",value : "hide"}
+						],
+					  //选择值为0的时候显示的小组件集合
+					  listvalue0 : {
+						backgroundcolor: {label : "颜色", style:"body", class:"background-color", value : "#fff", type: 'input', savetype : "input"},
+						backgroundimage: {label : "图片", style:"body", class:"background-image", value : "none", type: 'images', savetype : "input"},
+						backgroundrepeat: {label : "显示方式", style:"body", class:"background-repeat", value : "none", type: 'backgroundRepeat', savetype : "select"},
+						backgroundattachment: {label : "显示方式", style:"body", class:"background-attachment", value : "scroll", type: 'backgroundRepeat', savetype : "select"}
+					  },  
+					  listvalue1 : {
+						backgroundcolor: {label : "颜色", style:"body", class:"background-color", value : "#fff", type: 'input', savetype : "input"},
+						backgroundimage: {label : "图片", style:"body", class:"background-image", value : "none", type: 'images', savetype : "input"},
+						backgroundrepeat: {label : "显示方式", style:"body", class:"background-repeat", value : "none", type: 'backgroundRepeat', savetype : "select"},
+						backgroundattachment: {label : "显示方式", style:"body", class:"background-attachment", value : "scroll", type: 'backgroundRepeat', savetype : "select"}
+					  },
+					   listvaluehide : {
+						background: {label : "背景", style:"body", class:"background", value :"none", type: 'input', savetype : "input"}
+					  }
+				}
+			}
+		},
+		contentStyle: {
+			tabname: "内容区",
+      			value: {
+					width: {
+					  type: "public",
+					  savetype: "style",
+					  label: "宽度",
+					  status:0,//0为显示选项，1为不显示选项，为1时，下面的value必须设为1，否则显示不出小组键
+					  value: 0,//0为默认状态，hide为隐藏状态，其他状态自行定义，如有自定义的，写法为listvalue+定义的值，如listvalue1，listvalue2等...
+					  listvalue : [
+							{label : "默认",value : "0"},
+							{label : "自定义",value : "1"}
+						],
+					  //选择值为0的时候显示的小组件集合
+					listvalue0 : {
+						width: {label : "宽度", class:"width", value : "100%", type: 'containerWidth', savetype : "input"}
+					  },
+					  listvalue1 : {
+						width: {label : "宽度", class:"width", value : "1920px", type: 'containerWidth', savetype : "input"}
+					  }
+					},
+					background: {
+					  type: "public",
+					  savetype: "style",
+					  label: "背景",
+					  status:0,//0为显示选项，1为不显示选项，为1时，下面的value必须设为1，否则显示不出小组键
+					  value: 0,//0为默认状态，hide为隐藏状态，其他状态自行定义，如有自定义的，写法为listvalue+定义的值，如listvalue1，listvalue2等...
+					  listvalue : [
+							{label : "默认",value : "0"},
+							{label : "自定义",value : "1"},
+							{label : "隐藏",value : "hide"}
+						],
+					  //选择值为0的时候显示的小组件集合
+					  listvalue0 : {
+						backgroundcolor: {label : "颜色", class:"background-color", value : "#fff", type: 'input', savetype : "input"},
+						backgroundimage: {label : "图片", class:"background-image", value : "none", type: 'images', savetype : "input"},
+						backgroundrepeat: {label : "显示方式", class:"background-repeat", value : "none", type: 'backgroundRepeat', savetype : "select"},
+						backgroundattachment: {label : "显示方式", class:"background-attachment", value : "scroll", type: 'backgroundRepeat', savetype : "select"}
+					  },  
+					  listvalue1 : {
+						backgroundcolor: {label : "颜色", class:"background-color", value : "#fff", type: 'input', savetype : "input"},
+						backgroundimage: {label : "图片", class:"background-image", value : "none", type: 'images', savetype : "input"},
+						backgroundrepeat: {label : "显示方式", class:"background-repeat", value : "none", type: 'backgroundRepeat', savetype : "select"},
+						backgroundattachment: {label : "显示方式", class:"background-attachment", value : "scroll", type: 'backgroundRepeat', savetype : "select"}
+					  },
+					   listvaluehide : {
+						background: {label : "背景", class:"background", value :"none", type: 'input', savetype : "input"}
+					  }
+				}
+			}
+		},
+		footStyle: {
+			tabname: "底部",
+      			value: {
+					width: {
+					  type: "public",
+					  savetype: "style",
+					  label: "宽度",
+					  status:0,//0为显示选项，1为不显示选项，为1时，下面的value必须设为1，否则显示不出小组键
+					  value: 0,//0为默认状态，hide为隐藏状态，其他状态自行定义，如有自定义的，写法为listvalue+定义的值，如listvalue1，listvalue2等...
+					  listvalue : [
+							{label : "默认",value : "0"},
+							{label : "自定义",value : "1"}
+						],
+					  //选择值为0的时候显示的小组件集合
+					listvalue0 : {
+						width: {label : "宽度", style:"body", class:"width", value : "100%", type: 'containerWidth', savetype : "input"}
+					  },
+					  listvalue1 : {
+						width: {label : "宽度", style:"body", class:"width", value : "1920px", type: 'containerWidth', savetype : "input"}
+					  }
+					},
+					background: {
+					  type: "public",
+					  savetype: "style",
+					  label: "背景",
+					  status:0,//0为显示选项，1为不显示选项，为1时，下面的value必须设为1，否则显示不出小组键
+					  value: 0,//0为默认状态，hide为隐藏状态，其他状态自行定义，如有自定义的，写法为listvalue+定义的值，如listvalue1，listvalue2等...
+					  listvalue : [
+							{label : "默认",value : "0"},
+							{label : "自定义",value : "1"},
+							{label : "隐藏",value : "hide"}
+						],
+					  //选择值为0的时候显示的小组件集合
+					  listvalue0 : {
+						backgroundcolor: {label : "颜色", style:"body", class:"background-color", value : "#fff", type: 'input', savetype : "input"},
+						backgroundimage: {label : "图片", style:"body", class:"background-image", value : "none", type: 'images', savetype : "input"},
+						backgroundrepeat: {label : "显示方式", style:"body", class:"background-repeat", value : "none", type: 'backgroundRepeat', savetype : "select"},
+						backgroundattachment: {label : "显示方式", style:"body", class:"background-attachment", value : "scroll", type: 'backgroundRepeat', savetype : "select"}
+					  },  
+					  listvalue1 : {
+						backgroundcolor: {label : "颜色", style:"body", class:"background-color", value : "#fff", type: 'input', savetype : "input"},
+						backgroundimage: {label : "图片", style:"body", class:"background-image", value : "none", type: 'images', savetype : "input"},
+						backgroundrepeat: {label : "显示方式", style:"body", class:"background-repeat", value : "none", type: 'backgroundRepeat', savetype : "select"},
+						backgroundattachment: {label : "显示方式", style:"body", class:"background-attachment", value : "scroll", type: 'backgroundRepeat', savetype : "select"}
+					  },
+					   listvaluehide : {
+						background: {label : "背景", style:"body", class:"background", value :"none", type: 'input', savetype : "input"}
+					  }
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+{
+	cpId:"picture",
+	type:"div",
+	group:"common",
+	template:"picture",
+	templateTpl:"",
+	target:"",
+	attrlayer:"3",
+	title:"图片",
+	btns : ["edit","setStyle", "setAnimation","hideBorder","textFloat"],
+	publicAttributes:{
+		isGlobal:false,
+		isFloat:true
+	},
+	cpAttributes:{
+		tab1:{
+			tabname:"常规",
+			pidname:"Uplpad_picture",
+			value:{
+				setlink : {
+					type : "input",
+					savetype : "input",
+					name:"setlink",
+					label : "设置链接",
+					value : ""
+				},
+				mousehover:{
+					label:'模块特效',
+					value:'',
+					savetype:"input",
+					type:"imageEffects"
+				},
+				setopacity : {
+					type : "opacity",
+					savetype : "input",
+					label : "透明度",
+					name:"setopacity",
+					value : "100",
+					max:"100",
+					unit:"%"
+				}
+			}
+		},
+		
+	},
+	children:[]
+}

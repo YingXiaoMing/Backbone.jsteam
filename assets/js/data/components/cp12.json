@@ -1,0 +1,378 @@
+{
+  cpId: "cp12",
+  type: "div",
+  group: "comp",
+  template: "navbar/navbar2",
+  templateTpl: "",
+  target: "TestItemView",
+  attrlayer: "3",
+  title: "菜单导航",
+  btns: [
+    "edit",
+    "copy",
+    "align",
+    "color"
+  ],
+  cpStyle: {
+    test: "test",
+    pleft: "200px",
+    position: {
+      type: "",
+      label: "导航位置",
+      value: ""
+    },
+  },
+  publicAttributes: {
+    isGlobal: true,
+    isFloat: true
+  },
+  cpAttributes: {
+    tab1: {
+      tabname: "导航设置",
+      value: {
+        logo: {
+          type: "input",
+          savetype: "input",
+          label: "标志",
+          value: "Logo"
+        },
+        value: {
+          type: "input",
+          savetype: "input",
+          label: "菜单名称",
+          value: ""
+        },
+        treeData: {
+          type: "tree",
+          savetype: "tree",
+          label: '菜单布局',
+          value: [
+            {
+              value: '菜单1',
+              href: '',
+              targetNav: '_self'
+            },
+            {
+              value: '菜单2',
+              href: '',
+              targetNav: '_self'
+            },
+            {
+              value: '菜单3',
+              href: '',
+              targetNav: '_self'
+            }
+          ]
+        },
+        href: {
+          type: "input",
+          savetype: "input",
+          label: "菜单链接",
+          value: ""
+        },
+        btn: {
+          label: '',
+          value: '更新菜单',
+          rel: 'updateHandler',
+          type: "button"
+        }
+      }
+    },
+    tab2: {
+      tabname: "样式",
+      value: {
+        more: {
+          type: "block2",
+          savetype: "block",
+          label: "显示更多",
+          value: 1,//当前选择的值
+          //选择块的值列表
+          listvalue : [{
+            label : "是",
+            value : "1"
+          },{
+            label : "否",
+            value : "0"
+          }],
+          //选择值为1的时候显示的小组件集合
+          listvalue1 : {
+            propName : {
+              type : "input",
+              savetype : "input",
+              label: '属性名称',
+              value: '', //初始值,默认值
+            },
+            fontFamily1: {
+              savetype: "select",
+              type: "select",
+              label: "字体",
+              value: [
+                {
+                  label: "宋体",
+                  selected: true,
+                  value: "SimSun"
+                },
+                {
+                  label: "新细明体",
+                  selected: false,
+                  value: "PMingLiU"
+                }
+              ]
+            },
+            //以下注释除了select不可保存（需换成上方select数据形式）以外可用
+            /*tab2: {
+              tabname: "样式",
+              value: {
+                more: {
+                  type: "block2",
+                  savetype: "block",
+                  label: "显示更多",
+                  value: 0,//当前选择的值
+                  //选择块的值列表
+                  listvalue : [{
+                    label : "是",
+                    value : "1"
+                  },{
+                    label : "否",
+                    value : "0"
+                  }],
+                  //选择值为1的时候显示的小组件集合
+                  listvalue1 : {
+                    propName : {
+                      type : "input",
+                      savetype : "input",
+                      label: '属性名称',
+                      value: '', //初始值,默认值
+                    },
+                    fontFamily1: {
+                      type: 'fontfamily',
+                      savetype : "select",
+                      random_id: '',
+                      label: '字体',
+                      value: 'SimSun'
+                    },
+                    fontFamily2: {
+                      type: 'fontfamily',
+                      savetype : "select",
+                      random_id: '',
+                      label: '字体',
+                      value: 'SimSun'
+                    },
+                    fontSize: {
+                      type: 'fontsize',
+                      savetype : "select",
+                      random_id: '',
+                      label: '字号',
+                      value: '12'
+                    },
+                    isDisplay: {
+                      type: 'checkbox',
+                      savetype : "checkbox",
+                      random_id: '',
+                      label: '是否显示',
+                      value: true
+                    },
+                    showMode: {
+                      type: "backgroundRepeat",
+                      savetype : "select",
+                      label: '显示方式',
+                      value: 'no-repeat'
+                    },
+                    width :{
+                      type: "width",
+                      savetype: "input",
+                      label: '宽度',
+                      value: '800'
+                    },
+                    uploadPicture: {
+                      type: "images",
+                      savetype: "input",
+                      label: '图片',
+                      value: 'http://images02.cdn86.net/kps01/M00/4B/B3/wKiAiVUL5fy27O9qAANNkc0xaA0293.png'
+                    },
+                    opacity:
+                    {
+                      type: "opacity",
+                      savetype: "input",
+                      label: '透明度',
+                      value: '100'
+                    },
+                    padding: {
+                      label: '内边距',
+                      type: 'padding',
+                      savetype:"block",
+                      value : 0,
+                      listvalue : [{
+                        label : "是",
+                        value : "1"
+                      },{
+                        label : "否",
+                        value : "0"
+                      }],
+                      listvalue1:{
+                        left: {
+                          type: 'input',
+                          savetype: 'input',
+                          value: '0',
+                          label: '左'
+                        },
+                        top: {
+                          type: 'input',
+                          savetype: 'input',
+                          value: '0',
+                          label: '上'
+                        },
+                        right: {
+                          type: 'input',
+                          savetype: 'input',
+                          value: '0',
+                          label: '右'
+                        },
+                        bottom: {
+                          type: 'input',
+                          savetype: 'input',
+                          value: '0',
+                          label: '下'
+                        }
+                      }
+
+                    }
+                  },
+                  //选择值为0的时候显示的小组件集合
+                  listvalue0 : {
+                    fontFamily: {
+                      type: 'fontfamily',
+                      savetype : "select",
+                      label : "字体",
+                      value : "SimSun"
+                    }
+                  }
+                },
+                height: {
+                  type: "block2",
+                  savetype: "block",
+                  label: "高度",
+                  value: 0,//当前选择的值
+                  //选择块的值列表
+                  listvalue : [{
+                    label : "是",
+                    value : "1"
+                  },{
+                    label : "否",
+                    value : "0"
+                  },{
+                    label : "否11111",
+                    value : "2111"
+                  }],
+                  //选择值为1的时候显示的小组件集合
+                  listvalue1 : {
+                    propName : {
+                      type: "input",
+                      savetype: "input",
+                      label: '属性名称',
+                      name: 'propName',
+                      //<input name="foo"/>输入域的name
+                      value: '',
+                      //初始值,默认值
+                    }
+                  },
+                  listvalue2111 : {
+                    propName : {
+                      type: "input",
+                      savetype: "input",
+                      label: '属性名称1111111111111111',
+                      name: 'propName',
+                      //<input name="foo"/>输入域的name
+                      value: '',
+                      //初始值,默认值
+                    }
+                  }
+                },
+                ccccc: {
+                  type: "block2",
+                  savetype: "block",
+                  label: "随便",
+                  value: 0,//当前选择的值
+                  //选择块的值列表
+                  listvalue : [{
+                    label : "111111111",
+                    value : "1"
+                  },{
+                    label : "222222222",
+                    value : "0"
+                  },{
+                    label : "3333333",
+                    value : "3"
+                  }],
+                  //选择值为1的时候显示的小组件集合
+                  listvalue1 : {
+                    propName : {
+                      type: "input",
+                      savetype: "input",
+                      label: '属性第一个radio',
+                      name: 'propName',
+                      //<input name="foo"/>输入域的name
+                      value: '',
+                      //初始值,默认值
+                    }
+                  },
+                  listvalue3 : {
+                    propName : {
+                      type: "input",
+                      savetype: "input",
+                      label: '属性第三个radio',
+                      name: 'propName',
+                      //<input name="foo"/>输入域的name
+                      value: '',
+                      //初始值,默认值
+                    }
+                  }
+                },
+                ddddd: {
+                  type: "block2",
+                  savetype: "block",
+                  label: "随便你",
+                  value: 5,//当前选择的值
+                  //选择块的值列表
+                  listvalue : [{
+                    label : "44444",
+                    value : "4"
+                  },{
+                    label : "55555",
+                    value : "5"
+                  }],
+                  //选择值为1的时候显示的小组件集合
+                  listvalue4 : {
+                    propName : {
+                      type: "block2",
+                      savetype: "block",
+                      label: '双层',
+                      value: 6,
+                      listvalue : [{
+                        label : "7777",
+                        value : "7"
+                      },{
+                        label : "8888",
+                        value : "8"
+                      }],
+                      listvalue7 : {
+                        propName : {
+                          type: "input",
+                          savetype: "input",
+                          label: '双层111',
+                          name: 'propName',
+                          value: ''
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }*/
+          }
+        }
+      }
+    }
+  },
+  children: []
+}

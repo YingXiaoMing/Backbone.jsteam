@@ -1,0 +1,24 @@
+/* CSS Document */
+.clear { clear:both; height:0; display:block; }
+/*quickLayoutShow*/
+.quickLayoutShow .control-label { line-height:40px; }
+.quickLayoutShow .listType { font-size:0; letter-spacing:0; }
+.quickLayoutShow .listType > a { cursor:pointer; display:inline-block; vertical-align:top; letter-spacing:0; position:relative; float: left; width: 117px; height: 141px; margin: 20px 25px 3px 0px; border: solid #bbb 1px; border-top: 0; border-left: 0; cursor: pointer; opacity: 1; filter: alpha(opacity=100);}
+.quickLayoutShow .listType > a.selected:before{content:"";position:absolute; right:0; bottom:0; width:31px; height:31px; display:block;background:url(../images/quickLayoutShow/layout.png) 2px -760px no-repeat;}
+.quickLayoutShow .listType > a.selected:after{content:''; position:absolute; right:0; bottom:0; width:31px; height:31px; display:block; background:url(../images/quickLayoutShow/layout.png) 2px -760px no-repeat;}
+.quickLayoutShow .listType > a:nth-child(1){ background:url(../images/quickLayoutShow/layout.png) 1px 0px;}
+.quickLayoutShow .listType > a:nth-child(2){ background:url(../images/quickLayoutShow/layout.png) -144px 0px;}
+.quickLayoutShow .listType > a:nth-child(3){ background:url(../images/quickLayoutShow/layout.png) -289px 0px;}
+.quickLayoutShow .listType > a:nth-child(4){ background:url(../images/quickLayoutShow/layout.png) -434px 0px;}
+.quickLayoutShow .listType > a:nth-child(5){ background:url(../images/quickLayoutShow/layout.png) -579px 0px;}
+.quickLayoutShow .listType > a:nth-child(6){ background:url(../images/quickLayoutShow/layout.png) -724px 0px;}
+.quickLayoutShow .listType > a:nth-child(7){ background:url(../images/quickLayoutShow/layout.png) -869px 0px;}
+.quickLayoutShow .listType > a:nth-child(8){ background:url(../images/quickLayoutShow/layout.png) -1014px 0px;}
+.quickLayoutShow .listType > a:nth-child(1):hover{ background:url(../images/quickLayoutShow/layout.png) 1px -380px;}
+.quickLayoutShow .listType > a:nth-child(2):hover{ background:url(../images/quickLayoutShow/layout.png) -144px -380px;}
+.quickLayoutShow .listType > a:nth-child(3):hover{ background:url(../images/quickLayoutShow/layout.png) -289px -380px;}
+.quickLayoutShow .listType > a:nth-child(4):hover{ background:url(../images/quickLayoutShow/layout.png) -434px -380px;}
+.quickLayoutShow .listType > a:nth-child(5):hover{ background:url(../images/quickLayoutShow/layout.png) -579px -380px;}
+.quickLayoutShow .listType > a:nth-child(6):hover{ background:url(../images/quickLayoutShow/layout.png) -724px -380px;}
+.quickLayoutShow .listType > a:nth-child(7):hover{ background:url(../images/quickLayoutShow/layout.png) -869px -380px;}
+.quickLayoutShow .listType > a:nth-child(8):hover{ background:url(../images/quickLayoutShow/layout.png) -1014px -380px;}

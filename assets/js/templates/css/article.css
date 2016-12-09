@@ -1,0 +1,289 @@
+/* CSS Document */
+.clear,
+.before:before,
+.clear_float:after{
+	clear:both;
+	height:0;
+	display:block;
+}
+.before:before,
+.clear_float:after{
+	content:"";
+}
+.ellipsis{
+	display:block;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.ellipsis1{
+	overflow:hidden;
+	display:-webkit-box;
+	-webkit-line-clamp:3;/*控制行数，超出用...省略*/
+	-webkit-box-orient:vertical;
+}
+.listArticle ul,
+.listArticle li{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.listArticle{
+  max-width:1003px;
+  margin:auto;
+}
+.listArticle .type{
+	position:relative;
+}
+.listArticle .type .tn{
+	font-size:15px;
+	line-height:34px;
+}
+.listArticle .type .tn:before{
+	content:'';
+	display:inline-block;
+  vertical-align:top;
+	width:5px;
+	height:16px;
+	background:#2b2b2b;
+	margin:9px 6px 0 0;
+}
+.listArticle .type .tn > a{
+	display:block;
+	position:absolute;
+	right:0;
+	top:50%;
+	line-height:24px;
+	margin-top:-12px;
+	font-size:12px;
+}
+.listArticle .type .line{
+	height:1px;
+	overflow:hidden;
+	background:#CCC;
+}
+.listArticle .default li,
+.listArticle .default3 > li{
+	position:relative;
+}
+.listArticle .default li a,
+.listArticle .default3 > li a{
+	padding-right:80px;
+	line-height:34px;
+	border-bottom:1px dashed #CCC;
+}
+.listArticle .default li span,
+.listArticle .default3 > li span{
+	position:absolute;
+	top:50%;
+	right:0;
+	line-height:24px;
+	margin-top:-12px;
+}
+.listArticle .default1 ul{
+	float:left;
+	width:32%;
+	margin:2% 0 0 2%;
+}
+.listArticle .default1 ul:nth-child(3n+1){
+	margin-left:0;
+	clear:both;
+}
+.listArticle .default1 ul .img img{
+	width:100%;
+}
+.listArticle .default1 ul .title{
+	font-size:15px;
+	line-height:34px;
+}
+.listArticle .default1 ul .nr{
+	font-size:12px;
+	line-height:22px;
+	height:44px;
+	-webkit-line-clamp:2;/*控制行数，超出用...省略*/
+}
+.listArticle .default2 ul,
+.listArticle .default2 ul img,
+.listArticle .default3 ul,
+.listArticle .default3 ul img{
+	height:80px;
+}
+.listArticle .default2 ul,
+.listArticle .default3 ul{
+	position:relative;
+	padding:2px 0;
+	margin-top:16px;
+}
+.listArticle .default2 ul img,
+.listArticle .default3 ul img{
+	position:absolute;
+	left:0;
+	top:0;
+	width:80px;
+	padding:1px;
+	background:white;
+	border:1px solid #CCC;
+}
+.listArticle .default2 ul li,
+.listArticle .default3 ul li{
+	margin:0 0 0 92px;
+}
+.listArticle .default2 ul li a,
+.listArticle .default3 ul li a{
+	font-size:15px;
+	line-height:30px;
+	position:relative;
+	padding-right:80px;
+}
+.listArticle .default2 ul li a span,
+.listArticle .default3 ul li a span{
+	display:block;
+	position:absolute;
+	right:0;
+	top:50%;
+	line-height:24px;
+	font-size:12px;
+	margin-top:-12px;
+}
+.listArticle .default2 ul li p,
+.listArticle .default3 ul li p{
+	margin:3px 0 0;
+	height:40px;
+	font-size:13px;
+	line-height:20px;
+	-webkit-line-clamp:2;/*控制行数，超出用...省略*/
+}
+.listArticle .default4{
+	position:relative;	
+}
+.listArticle .default4:after{
+	content:'';
+	display:block;
+	position:absolute;
+	top:0;
+	left:95px;
+	width:1px;
+	height:100%;
+	background:#DDD;
+}
+.listArticle .default4 ul{
+	position:relative;
+	margin-top:15px;
+}
+.listArticle .default4 ul span{
+	display:block;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.listArticle .default4 ul span{
+	display:block;
+	position:absolute;
+	left:0;
+	top:0;
+	line-height:30px;
+}
+.listArticle .default4 ul span:after{
+	display:block;
+	content:'';
+	position:absolute;
+	top:50%;
+	left:88px;
+	margin-top:-8px;
+	width:16px;
+	height:16px;
+	background:#EEE;
+	border-radius:100%;
+	z-index:1;
+	border:3px solid #CCC;
+}
+.listArticle .default4 ul li{
+	margin-left:120px;
+}
+.listArticle .default4 ul li a{
+	font-size:15px;
+	line-height:30px;
+}
+.listArticle .default4 ul li p{
+	margin:0;
+	line-height:20px;
+	font-size:13px;
+	height:40px;
+	-webkit-line-clamp:2;/*控制行数，超出用...省略*/
+}
+.listArticle .default5 ul li{
+	border-bottom:1px dashed #CCC;
+	padding:12px 0;
+}
+.listArticle .default5 ul li a{
+	font-size:15px;
+	line-height:30px;
+	position:relative;
+}
+.listArticle .default5 ul li a span{
+	display:block;
+	position:absolute;
+	font-size:12px;
+	line-height:24px;
+	right:0;
+	top:50%;
+	margin-top:-12px;
+}
+.listArticle .default5 ul li p{
+	margin:0;
+	line-height:20px;
+	font-size:13px;
+	height:40px;
+	-webkit-line-clamp:2;/*控制行数，超出用...省略*/
+}
+.listArticle .default6 ul{
+	border-bottom:1px dashed #CCC;
+	padding:12px 0;
+	position:relative;
+}
+.listArticle .default6 ul li{
+	margin-left:96px;
+}
+.listArticle .default6 ul li a{
+	font-size:15px;
+	line-height:30px;
+	position:relative;
+}
+.listArticle .default6 ul li a span{
+	display:block;
+	position:absolute;
+	font-size:12px;
+	line-height:24px;
+	right:0;
+	top:50%;
+	margin-top:-12px;
+}
+.listArticle .default6 ul li p{
+	margin:5px 0 8px;
+	line-height:20px;
+	font-size:13px;
+	height:40px;
+	-webkit-line-clamp:2;/*控制行数，超出用...省略*/
+}
+.listArticle .default6 ul dd{
+	position:absolute;
+	left:0;
+	top:12px;
+	width:84px;
+	height:84px;
+	overflow:hidden;
+	background:#f2f2f2;
+	text-align:center;
+	line-height:22px;
+  color:#666666;
+}
+.listArticle .default6 ul dd b{
+	display:block;
+	font-size:28px;
+	margin:24px 0 0;
+	font-weight:normal;
+}
+.listArticle .default6 ul dd span{
+	display:block;
+	font-size:14px;
+}

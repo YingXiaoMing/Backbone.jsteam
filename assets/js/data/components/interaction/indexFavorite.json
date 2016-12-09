@@ -1,0 +1,37 @@
+{
+	cpId : "indexFavorite",
+	type : "div",
+	group : "interaction",
+	template : "indexFavorite",
+	templateTpl : "",
+	target : "",
+	attrlayer : "2",
+	title : "收藏本站模块",
+	btns : ["edit", "textFloat","align", "color"],
+	cpStyle : {
+		test : "test",
+		pleft : "200px",
+		position : {
+			type : "",
+			label : "导航位置",
+			value:""
+		},
+	},
+	publicAttributes : {
+		isGlobal : false,
+		isFloat : true
+	},
+	cpAttributes : {
+				title: {
+					type: "input",
+					savetype: "input",
+					cls: 'col-xs-12',
+					labelcls: 'col-sm-2',
+					valuecls: 'col-sm-10',
+					label: "模块标题：",
+					value: "收藏本站"
+				}
+
+	},
+	children : []
+}

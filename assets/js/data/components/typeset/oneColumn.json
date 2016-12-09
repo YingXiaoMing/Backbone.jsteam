@@ -1,0 +1,99 @@
+{
+	//隐藏属性
+	//mdId: 模块独立ID(201..202..203)
+	cpId: "oneColumn",
+	type: "div",
+	group: "typeset",
+	template: "oneColumn",
+	templateTpl: "",
+	target: "",
+	title: "通栏排版",
+	btns: [
+		{
+			btntype : "editm",
+			label : "编辑",
+			url : "assets/js/templates/typeset/oneColumnModal.html"
+		},
+		"copy"
+	],
+	publicAttributes: {
+		isGlobal: true,
+		isFloat: true
+	},
+	dataAttributes: {
+		defaults: {
+			background: {
+				color: "transparent",
+				images: {}, //{src: "foo",_src: "foo", alt: "foo"}
+				showMode: 0
+			},
+			innerBackground: {
+				color: "transparent",
+				images: {},
+				showMode: 0
+			},
+			border: {
+				width: 1,
+				color: "transparent",
+				style: "solid",
+				position: "top-bottom"
+			},
+			scroll: {
+				//默认值
+				showTimeLong: 2,
+				delayTimeLong: 1
+			},
+			width: "100%",
+			//默认值
+			paddings: [
+				"0",
+				"0",
+				"0",
+				"0"
+			]
+		},
+		title: "模块通栏",
+		columnMode: "0",
+		page: "2",
+		background: [{
+			backgroundMode: 0,
+			color: "transparent",
+			images: {}, //{src: "foo",_src: "foo", alt: "foo"}
+			showMode: 0
+		}],
+		innerBackgroundMode: 0,
+		innerBackground: {
+			color: "transparent",
+			images: {},
+			showMode: 0
+		},
+		borderMode: 0,
+		//0默认 1隐藏 2自定义
+		border: {
+			width: 1,
+			color: "transparent",
+			style: "solid",
+			position: "top-bottom"
+		},
+		scrollMode: 0,
+		//0手动轮播 1自动轮播
+		scroll: {
+			//初始显示值及修改值
+			showTimeLong: 2, //停留时间
+			delayTimeLong: 1 //切换速度
+		},
+		widthMode: 0,
+		//0默认 1自定义
+		width: "1000px",
+		//初始显示值及修改值
+		paddingMode: 0,
+		//0默认 1自定义
+		paddings: [
+			"0",
+			"0",
+			"0",
+			"0"
+		]
+	},
+	children: []
+}

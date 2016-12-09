@@ -1,0 +1,87 @@
+{
+	cpId:"picture_bak",
+	type:"div",
+	group:"common",
+	template:"picture_bak",
+	templateTpl:"",
+	target:"",
+	attrlayer:"3",
+	title:"小组件组合",
+	btns:["floating", "edit", "copy"],
+	cpStyle : {
+		test : "test",
+		pleft : "200px",
+		position : {
+			type : "",
+			label : "导航位置",
+			value:""
+		},
+	},
+	publicAttributes:{
+		isGlobal:false,
+		isFloat:true
+	},
+	cpAttributes:{
+		tab1:{
+			tabname:"颜色拾取器",
+			value:{
+				color:{
+					label:'颜色：',
+					value:'555555',
+					savetype:"input",
+					type:"color"
+				},
+				
+				fontfamily:{
+					label:'样式：',
+					value:'微软雅黑',
+					savetype:"input",
+					type:"fontfamily"
+				},
+				fontsize:{
+					label:'大小：',
+					value:'12',
+					savetype:"input",
+					type:"fontsize"
+				},
+				formonline_sup:{
+					label:'选项排列方式：',
+					value:'',
+					savetype:"input",
+					type:"formonline_sup"
+				},
+				notic:{
+					label:'公告图标：',
+					value:'',
+					savetype:"input",
+					type:"notic_choice_panel"
+				},
+				mofang:{
+					label:'魔方多图：',
+					value:'',
+					savetype:"input",
+					type:"Rubikscube"
+				},
+				canshu :{
+					label:'展示参数：',
+					value:'',
+					savetype:"input",
+					type:"product_parameter"
+				}
+				
+			}
+		},
+		tab2:{
+			tabname:"按钮颜色",
+			value:{
+				name1:{
+					label:'按钮颜色',
+					value:'J_styleItem_item101',
+					savetype:"input",
+					type:"button_style"
+				}
+			}
+		}
+	},
+	children:[]
+}

@@ -1,0 +1,14 @@
+{
+	cpId : "threeColumn",
+	type : "div",
+	group : "typeset",
+	template : "threeColumn",
+	templateTpl : "",
+	target : "",
+	title : "三列排版",
+	btns : ["copy", "hide"],
+	publicAttributes : {
+		isGlobal : false,
+		isFloat : true
+	}
+}

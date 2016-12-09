@@ -1,0 +1,195 @@
+{
+	edit : {
+		type : 'button',
+		label : '编辑模块',
+		rel : 'editHandler',
+		cls : 'btn-primary'
+	},
+	editm : {
+		type : "button",
+		label : "编辑模块",
+		rel : "editModuleHandler",
+		cls : "btn-primary"
+	},
+	editRemote : {
+		type : "button",
+		label : "编辑模块2",
+		rel : "editRemoteHandler",
+		cls : "btn-primary"
+	},
+	setStyle : {
+		type : 'button',
+		label : '设置样式',
+		rel : 'setstyleHandler',
+		cls : 'btn-primary'
+	},
+	setAnimation : {
+		type : 'button',
+		label : '设置动画',
+		rel : 'setAnimationHandler',
+		cls : 'btn-primary'
+	},
+	hideBorder : {
+		type : 'button',
+		label : '隐藏外框',
+		rel : 'hideBorderHandler',
+		cls : 'btn-primary'
+	},
+	hide : {
+		type : 'button',
+		label : '隐藏',
+		rel : 'hideHandler',
+		cls : 'btn-primary'
+	},
+	copy : {
+		type : 'button',
+		label : '复制',
+		rel : 'copyHandler',
+		cls : 'btn-primary'
+	},
+	floating : {
+		type : 'button',
+		label : '浮动模块',
+		rel : 'floatHandler',
+		cls : 'btn-primary'
+	},
+	textFloat: {
+		type : 'button',
+		label : '锁定模块',
+		rel : 'textHandler',
+		cls : 'btn-primary'
+	},
+	topIndex: {
+		type : 'button',
+		label : '置于顶层',
+		rel : 'topIndexHandler',
+		cls : 'btn-primary'
+	},
+	bottomIndex: {
+		type : 'button',
+		label : '置于底层',
+		rel : 'bottomIndexHandler',
+		cls : 'btn-primary'
+	},
+	flutterm: {
+		type : 'button',
+		label : '飘动模块',
+		rel : 'fluttermHandler',
+		cls : 'btn-primary'
+	},
+	mbottom: {
+		type : 'button',
+		label : '跳到底部',
+		rel : 'mbottomHandler',
+		cls : 'btn-primary'
+	},
+	mzindex: {
+		type : 'button',
+		label : '浮到最前',
+		rel : 'mzindexHandler',
+		cls : 'btn-primary'
+	},
+	sidem: {
+		type : 'button',
+		label : '侧停模块',
+		rel : 'sidemHandler',
+		cls : 'btn-primary'
+	},
+	label : {
+		type : 'dropdown',
+		label : '标签占比',
+		cls : 'btn-primary',
+		rel : 'col-sm-2 col-sm-10',
+		menu : [{
+					label : '默认',
+					rel : 'col-sm-2 col-sm-10'
+				}, {
+					label : '0/12',
+					rel : 'hide col-sm-12'
+				}, {
+					label : '1/12',
+					rel : 'col-sm-1 col-sm-11'
+				}, {
+					label : '2/12',
+					rel : 'col-sm-2 col-sm-10'
+				}, {
+					label : '3/12',
+					rel : 'col-sm-3 col-sm-9'
+				}, {
+					label : '4/12',
+					rel : 'col-sm-4 col-sm-8'
+				}, {
+					label : '5/12',
+					rel : 'col-sm-5 col-sm-7'
+				}, {
+					label : '6/12',
+					rel : 'col-sm-6 col-sm-6',
+					cls : 'active'
+				}, {
+					label : '7/12',
+					rel : 'col-sm-7 col-sm-5'
+				}, {
+					label : '8/12',
+					rel : 'col-sm-8 col-sm-4'
+				}, {
+					label : '9/12',
+					rel : 'col-sm-9 col-sm-3'
+				}, {
+					label : '10/12',
+					rel : 'col-sm-10 col-sm-2'
+				}, {
+					label : '11/12',
+					rel : 'col-sm-11 col-sm-1'
+				}, {
+					label : '12/12',
+					rel : 'col-sm-12 col-sm-12'
+				}]
+	},
+	align : {
+		type : 'dropdown',
+		label : '对齐',
+		cls : 'btn-primary',
+		rel : 'col-sm-2 col-sm-10',
+		menu : [{
+					label : '默认',
+					rel : ''
+				}, {
+					label : '靠左',
+					rel : 'text-left'
+				}, {
+					label : '居中',
+					rel : 'text-center'
+				}, {
+					label : '靠右',
+					rel : 'text-right'
+				}]
+	},
+	color : {
+		type : 'dropdown',
+		label : '颜色',
+		cls : 'btn-primary',
+		rel : '',
+		menu : [{
+					label : '默认',
+					rel : ''
+				}, {
+					label : '灰色',
+					rel : 'text-muted'
+				}, {
+					label : '蓝色',
+					rel : 'text-primary'
+				}, {
+					label : '绿色',
+					rel : 'text-success'
+				}, {
+					label : '深蓝',
+					rel : 'text-info'
+				}, {
+					label : '黄色',
+					rel : 'text-warning'
+				}, {
+					label : '红色',
+					rel : 'text-danger'
+				}]
+	}
+}

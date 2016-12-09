@@ -1,0 +1,50 @@
+{
+	cpId : "shoppingCart",
+	type : "div",
+	group : "interaction",
+	template : "shoppingCart",
+	templateTpl : "",
+	target : "TestItemView",
+	attrlayer : "3",
+	title : "购物车模块",
+	btns : ["edit", "copy", "textFloat"],
+	cpStyle : {
+		test : "test",
+		pleft : "200px",
+		position : {
+			type : "",
+			label : "导航位置",
+			value:""
+		},
+	},
+	publicAttributes : {
+		isGlobal : false,
+		isFloat : true
+	},
+	cpAttributes : {
+		tab1: {
+			tabname:"常规",
+			value: {
+				carttitle: {
+					type: "input",
+					savetype: "input",
+					cls: 'col-xs-12',
+					labelcls: 'col-sm-2',
+					valuecls: 'col-sm-10',
+					label: "模块标题：",
+					value: "购物车"
+				},
+				cartButtonStyle: {
+					type: "cartButton",
+					savetype: "input",
+					cls: 'col-xs-12',
+					labelcls: 'col-sm-2',
+					valuecls: 'col-sm-10',
+					label: "按钮样式：",
+					value: "cartButton1"
+				}
+			}
+		}
+	},
+	children : []
+}

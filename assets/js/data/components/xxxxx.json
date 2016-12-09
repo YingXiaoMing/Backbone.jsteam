@@ -1,0 +1,91 @@
+{
+  cpId: "xxxxx",
+  type: "div",
+  group: "comp",
+  template: "xxxxx",
+  templateTpl: "",
+  target: "TestItemView",
+  attrlayer: "3",
+  title: "菜单导航",
+  btns: [
+    "edit",
+    "copy",
+    "align",
+    "color"
+  ],
+  cpStyle: {
+    test: "test",
+    pleft: "200px",
+    position: {
+      type: "",
+      label: "导航位置",
+      value: ""
+    },
+  },
+  publicAttributes: {
+    isGlobal: true,
+    isFloat: true
+  },
+  cpAttributes: {
+    tab1: {
+      tabname: "导航设置",
+      value: {
+        logo: {
+          type: "photoGroupStyle",
+          savetype: "???????????",
+          label: "1111",
+          value: "?????????"
+        },
+        logo1: {
+          type: "productStyleBox",
+          savetype: "???????????",
+          label: "2222",
+          value: "?????????"
+        },
+        logo7: {
+          type: "photoGroupStyle",
+          savetype: "???????????",
+          label: "7777",
+          value: "?????????"
+        },
+        logo8: {
+          type: "productStyleBox",
+          savetype: "???????????",
+          label: "8888",
+          value: "?????????"
+        },
+        logo2: {
+          type: "onlineService",
+          savetype: "???????????",
+          label: "3333",
+          value: "?????????"
+        },
+        logo3: {
+          type: "loginButton",
+          savetype: "???????????",
+          label: "4444",
+          value: "?????????"
+        },
+        logo4: {
+          type: "guestbookButton",
+          savetype: "???????????",
+          label: "5555",
+          value: "?????????"
+        },
+        logo5: {
+          type: "backTopIcon",
+          savetype: "???????????",
+          label: "6666",
+          value: "?????????"
+        },
+        logo10: {
+          type: "imageEffects",
+          savetype: "???????????",
+          label: "1010",
+          value: "?????????"
+        }
+      }
+    }
+  },
+  children: []
+}

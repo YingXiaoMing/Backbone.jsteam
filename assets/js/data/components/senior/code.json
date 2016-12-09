@@ -1,0 +1,40 @@
+{
+	cpId:"code",
+	type:"div",
+	group:"senior",
+	template:"code",
+	templateTpl:"",
+	target:"TestItemView",
+	classname:'default',
+	attrlayer:"3",
+	title:"Flash",
+	btns:["edit", "copy"],
+	publicAttributes:{
+		isGlobal:true,
+		isFloat:true
+	},
+	cpAttributes:{
+		tab1:{
+			tabname:"常规",
+			value:{
+				groupText:{
+          label:"想让插件在全站都有效？您可以尝试在 <a>高级设置</a> 中粘贴您的插件代码",
+          type:"groupText"
+				},
+				name:{
+					label:'模块标题',
+					value:'插件代码',
+					savetype:"input",
+					type:"input"
+				},
+        code:{
+					label:'插件代码',
+					savetype:"input",
+					type:"textarea",
+					value:"400"
+        }
+			}
+		}
+	},
+	children:[]
+}

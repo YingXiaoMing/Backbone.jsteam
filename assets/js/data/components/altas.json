@@ -1,0 +1,178 @@
+{
+  cpId: "altas",
+  type: "div",
+  group: "comp",
+  template: "altas",
+  templateTpl: "",
+  target: "",
+  attrlayer: "3",
+  title: "菜单导航",
+  editmurl : "test1.html",
+  btns: [
+    "edit",
+    {
+    	btntype : "editm",
+    	label : "test1",
+    	url : "../design/tcedit.html"
+    },
+    "copy",
+    "align",
+    "color"
+  ],
+  cpStyle: {
+    test: "test",
+    pleft: "200px",
+    position: {
+      type: "",
+      label: "导航位置",
+      value: ""
+    },
+  },
+  publicAttributes: {
+    isGlobal: true,
+    isFloat: true
+  },
+  dataAttributes:{
+	title : "图册",
+	mstyle : "0",
+	atlas: [{
+		atlasname: "图册标题1",
+		atlaslink: "http://images02.cdn86.net/kps01/M00/4D/9A/wKiAiVUUzqyYlGgPAAAw_AFUqrc359.jpg",
+		atlasid: "1"
+	},{
+		atlasname: "图册标题2",
+		atlaslink: "http://images02.cdn86.net/kps01/M00/4D/9A/wKiAiVUUzqyYlGgPAAAw_AFUqrc359.jpg",
+		atlasid: "2"
+	}],
+	isshowname: "0",
+	picsize: "12",
+	picwidth: "160",
+	pichigh: "160",
+	piczoom: "0",
+	picpaddinig:"0",
+	padding:"0"
+  },
+  cpAttributes: {
+    tab1: {
+      tabname: "导航设置",
+      value: {
+        logo: {
+          type: "input",
+          savetype: "input",
+          cls: 'col-xs-6',
+          labelcls: 'col-sm-2',
+          valuecls: 'col-sm-10',
+          label: "标志",
+          value: "Logo"
+        },
+        value: {
+          type: "input",
+          savetype: "input",
+          cls: 'col-xs-6',
+          labelcls: 'col-sm-2',
+          valuecls: 'col-sm-10',
+          label: "菜单名称",
+          value: ""
+        },
+        treeData: {
+          type: "tree",
+          savetype: "tree",
+          cls: 'col-xs-6',
+          labelcls: 'col-sm-2',
+          valuecls: 'col-sm-10',
+          label: '菜单布局',
+          value: [
+            {
+              value: '菜单1',
+              href: '',
+              targetNav: '_self'
+            },
+            {
+              value: '菜单2',
+              href: '',
+              targetNav: '_self'
+            },
+            {
+              value: '菜单3',
+              href: '',
+              targetNav: '_self'
+            }
+          ]
+        },
+        href: {
+          type: "input",
+          savetype: "input",
+          cls: 'col-xs-6',
+          labelcls: 'col-sm-2',
+          valuecls: 'col-sm-10',
+          label: "菜单链接",
+          value: ""
+        },
+        targetNav: {
+          type: "select",
+          savetype: "select",
+          cls: 'col-xs-6',
+          labelcls: 'col-sm-2',
+          valuecls: 'col-sm-10',
+          label: "打开方式",
+          dsType: "local",
+          ds: "select/openMode.json",
+          value: ""
+        },
+        btn: {
+          cls: 'col-xs-6',
+          labelcls: 'col-sm-6',
+          valuecls: 'col-sm-6',
+          label: '',
+          value: '更新菜单',
+          rel: 'updateHandler',
+          type: "button"
+        }
+      }
+    },
+    tab2: {
+      tabname: "样式",
+      value: {
+        more: {
+          type: "block2",
+          savetype: "block",
+          cls: 'col-xs-6',
+          labelcls: 'col-sm-2',
+          valuecls: 'col-sm-10',
+          label: "显示更多",
+          value: 0,//当前选择的值
+          //选择块的值列表
+          listvalue : [{
+          		label : "是",
+          		value : "1"
+          	},{
+          		label : "否",
+          		value : "0"
+          }],
+          //选择值为1的时候显示的小组件集合
+          listvalue1 : {
+          	propName : {
+          		type : "input",
+	          	savetype : "input",
+	          	cls: 'col-xs-6',
+	          	labelcls: 'col-sm-2',
+	          	valuecls: 'col-sm-10',
+	          	label : "属性名称",
+	          	value : ""
+          	}
+          },
+          //选择值为0的时候显示的小组件集合
+          listvalue0 : {
+          	fontFamily: {
+          		 type: 'fontfamily',
+          		 savetype : "select",
+          		 value : "SimSun",
+          		 label : "字体",
+          	}
+          }
+        }
+      }
+    }
+  },
+  children: []
+}

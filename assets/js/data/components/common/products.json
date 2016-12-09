@@ -1,0 +1,274 @@
+{
+	cpId:"products",
+	type:"div",
+	group:"common",
+	template:"products",
+	templateTpl:"",
+	target:"TestItemView",
+	attrlayer:"3",
+	title:"产品展示模块",
+	btns:["floating", "edit", "copy"],
+	cpStyle : {
+		test : "test",
+		pleft : "200px",
+		position : {
+			type : "",
+			label : "导航位置",
+			value:""
+		},
+	},
+	publicAttributes:{
+		isGlobal:false,
+		isFloat:true
+	},
+	cpAttributes:{
+		tab1:{
+			tabname:"常规",
+			value:{
+				title:{
+					label:'模块标题：',
+					value:'',
+					savetype:"input",
+					type:"input"
+				},
+				
+				modelstyle:{
+					label:'模块样式：',
+					value:'productStyleBox1',
+					savetype:"input",
+					type:"productStyleBox"
+				},
+				ccccc: {
+				  type: "block2",
+				  savetype: "block",
+				  label: "设置产品列表",
+				  value: 0,//当前选择的值
+				  //选择块的值列表
+				  listvalue : [{
+					label : "选择指定产品",
+					value : "0"
+				  },{
+					label : "使用筛选条件",
+					value : "1"
+				  }],
+				  //选择值为1的时候显示的小组件集合
+				 
+				  listvalue0 : {
+					propName : {
+					  	label:'',
+						value:'',
+						savetype:"input",
+						type:"specifyProduct"
+					}
+				  },
+				  listvalue1: {
+					propName : {
+					  type: "input",
+					  savetype: "input",
+					  label: '属性第三个radio',
+					  name: 'propName',
+					  //<input name="foo"/>输入域的name
+					  value: '',
+					  //初始值,默认值
+					}
+				  }
+				},
+				
+				
+			}
+		},
+		tab2:{
+			tabname:"图片特效",
+			value:{
+				mousehover:{
+					label:'',
+					value:'',
+					savetype:"input",
+					type:"imageEffects"
+				}
+			}
+		},
+		tab3:{
+			tabname:"展示设置",
+			value:{
+				texiaotext:{
+					label:'基本设置',
+					value:'',
+					savetype:"style",
+					type:"public"
+				},
+				texiaoradio: {
+				  type: "block2",
+				  savetype: "block",
+				  label: "分页展示：",
+				  value: 0,//当前选择的值
+				  //选择块的值列表
+				  listvalue : [{
+					label : "是",
+					value : "0"
+				  },{
+					label : "否",
+					value : "1"
+				  }],
+				  //选择值为1的时候显示的小组件集合
+				 
+				  listvalue0: {
+					pagepro : {
+					  type: "input",
+					  savetype: "input",
+					  label: '每页产品个数：',
+					  name: 'pagepro',
+					  //<input name="foo"/>输入域的name
+					  value: '',
+					  //初始值,默认值
+					}
+				  },
+				  listvalue1: {
+					allpro : {
+					  type: "input",
+					  savetype: "input",
+					  label: '显示产品个数：',
+					  name: 'allpro',
+					  //<input name="foo"/>输入域的name
+					  value: '',
+					  //初始值,默认值
+					}
+					
+				  }
+				},
+				groupText1:{
+						  label:"跳转设置",
+						type:"groupText"
+				},
+				more:{
+				  savetype:"block",
+				  type:"block2",
+				  label:"显示更多：",
+				  value:1,
+				  listvalue:[{
+						label:"是",
+						value:"1"
+					},{
+						label:"否",
+						value:"0"
+				  }],
+				  listvalue1:{
+					linkType:{
+					  label: '跳转方式：',
+					  savetype:"block",
+					  type:"block2",
+					  value: '1',
+					  listvalue:[
+						{
+						  label:"默认",
+						  value:"1"
+						},
+						{
+						  label:"自定义",
+						  value:"2"
+						}
+					  ],
+					  listvalue1:[
+						{
+						  savetype:"select",
+						  type:"select",
+						  label:"打开方式：",
+						  value:[{
+							  label:"新窗口",
+							  selected:true,
+							  value:"_blank"
+							},{
+							  label:"当前窗口",
+							  selected:false,
+							  value:"_self"
+						  }]
+						}
+					  ],
+					  listvalue2:[
+						{
+						  savetype:"input",
+						  type:"input",
+						  label:"链接地址",
+						  value:"",
+						}
+					  ]
+					}
+				  }
+				},
+				banners:{
+				  savetype:"block",
+				  type:"block2",
+				  label:"支持幻灯片：",
+				  value:1,
+				  listvalue:[{
+						label:"是",
+						value:"1"
+					},{
+						label:"否",
+						value:"0"
+				  }],
+				  
+				},
+				pro_target:{
+				  savetype:"block",
+				  type:"block2",
+				  label:"点击产品弹出：",
+				  value:1,
+				  listvalue:[{
+						label:"产品详情页面：",
+						value:"1"
+					},{
+						label:"幻灯片",
+						value:"0"
+				  }],
+				  listvalue1:[
+					{
+					  savetype:"select",
+					  type:"select",
+					  label:"详情打开方式：",
+					  value:[{
+						  label:"新窗口",
+						  selected:true,
+						  value:"_blank"
+						},{
+						  label:"当前窗口",
+						  selected:false,
+						  value:"_self"
+					  }]
+					}
+				  ],
+				  
+				},
+			}
+		},
+		tab4:{
+			tabname:"展示参数",
+			value:{
+				parameterstyle:{
+					label:'参数布局样式',
+					value:'',
+					savetype:"input",
+					type:"product_parameter"
+				},
+				setcanshu: {
+				  type: "block2",
+				  savetype: "block",
+				  label: "",
+				  value: 0,//当前选择的值
+				  //选择块的值列表
+				  listvalue : [{
+					label : " 显示参数名",
+					value : "0"
+				  },{
+					label : "自定义参数顺序",
+					value : "1"
+				  }],
+				  //选择值为1的时候显示的小组件集合
+				 
+				}
+				
+			}
+		}
+	},
+	children:[]
+}

@@ -1,0 +1,42 @@
+{
+	cpId : "menu",
+	type : "div",
+	group : "common",
+	template : "menu",
+	templateTpl : "",
+	target : "",
+	attrlayer : "3",
+	title : "编辑器测试",
+	btns : ["edit", "copy", "align", "color"],
+	cpStyle : {
+		test : "test",
+		pleft : "200px",
+		position : {
+			type : "",
+			label : "导航位置",
+			value:""
+		},
+	},
+	publicAttributes : {
+		isGlobal : false,
+		isFloat : true
+	},
+	cpAttributes : {
+		tab1:{
+			tabname:"样式",
+			value:{
+				colorStyle : {
+					type : "menu",
+					savetype : "input",
+					name:"colorStyle",
+					label : "风格",
+					value : "主栏目菜单"
+				}
+			}
+		}
+		
+		
+		
+	},
+	children : []
+}

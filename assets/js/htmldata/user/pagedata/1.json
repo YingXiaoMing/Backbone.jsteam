@@ -1,0 +1,48 @@
+<div class="content-layout form-horizontal" id="design"><div class="design group sortable ui-sortable" style="min-height: 330px;"><div class="box box-element ui-draggable sortable-items" data-group="comp" data-template="navbar/navbar" id="201">
+<div class="view">
+	<div role="navigation" class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button data-target="#bs-example-navbar-collapse-11" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+					<span class="sr-only">响应菜单</span> <span class="icon-bar"></span>
+					<span class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">Logo</a>
+			</div>
+			<div style="height: 1px;" id="bs-example-navbar-collapse-11" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav ">
+					 
+					 	<li>
+							<a href="" target="_self">菜单1 </a>
+							
+							
+					   		
+						</li>
+					 
+					 	<li>
+							<a href="" target="_self">菜单2 </a>
+							
+							
+					   		
+						</li>
+					 
+					 	<li>
+							<a href="" target="_self">菜单3 </a>
+							
+							
+					   		
+						</li>
+					 
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</div><div class="box box-element ui-draggable sortable-items" data-group="comp" data-template="cp4test" id="202">
+<div class="view">
+  <div>Logoffffffffffffffffffffffdddddddddddddddd</div>
+  <div>Logoffffffffffffffffffffffdddddddddddddddd2222</div>
+</div></div></div>
+<div id="preview">
+  <div class="container-fluid"></div>
+</div></div>

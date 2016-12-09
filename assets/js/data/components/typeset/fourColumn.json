@@ -1,0 +1,14 @@
+{
+	cpId : "fourColumn",
+	type : "div",
+	group : "typeset",
+	template : "fourColumn",
+	templateTpl : "",
+	target : "",
+	title : "四列排版",
+	btns : ["copy", "hide"],
+	publicAttributes : {
+		isGlobal : false,
+		isFloat : true
+	}
+}

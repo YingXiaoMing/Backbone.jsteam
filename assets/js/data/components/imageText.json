@@ -1,0 +1,66 @@
+{
+	cpId : "imageText",
+	type : "div",
+	group : "comp",
+	template : "imageText",
+	templateTpl : "",
+	target : "",
+	attrlayer : "2",
+	title : "编辑器测试",
+	btns : ["edit", "copy", "align", "color"],
+	cpStyle : {
+		test : "test",
+		pleft : "200px",
+		position : {
+			type : "",
+			label : "导航位置",
+			value:""
+		},
+	},
+	publicAttributes : {
+		isGlobal : false,
+		isFloat : true
+	},
+	cpAttributes : {
+		name : {
+			type : "input",
+			savetype : "input",
+			cls : 'col-xs-12',
+			labelcls : 'col-sm-2',
+			valuecls : 'col-sm-2',
+			label : "模块标题",
+			value : ""
+		},
+		style : {
+			type : "option",
+			savetype : "option",
+			cls : 'col-xs-12',
+			labelcls : 'col-sm-2',
+			valuecls : 'col-sm-10',
+			label : "模块样式",
+			value:[{
+							type :'radio',
+							value:'选项一',
+							checked: 'checked'
+						},{
+							type :'radio',
+							value:'选项二',
+							checked: ''
+						},{
+							type :'radio',
+							value:'选项三',
+							checked: ''
+						}]
+		},
+		content : {
+			type : "editor",
+			savetype : "editor",
+			cls : 'col-xs-6',
+			labelcls : 'col-sm-2',
+			valuecls : 'col-sm-10',
+			label : "标志",
+			value : "Logoffffffffffffffffffffffdddddddddddddddd"
+		}		
+	},
+	children : []
+}

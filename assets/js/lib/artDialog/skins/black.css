@@ -1,0 +1,50 @@
+@charset "utf-8";
+.aui_main{visibility:visible!important}
+.aui_border tr:hover{background:0 0}
+table.aui_border,table.aui_dialog{border:0;margin:0;width:auto}
+.aui_c,.aui_e,.aui_footer,.aui_header,.aui_main,.aui_n,.aui_ne,.aui_nw,.aui_s,.aui_se,.aui_sw,.aui_tdIcon,.aui_w{padding:0}
+.aui_buttons button,.aui_header{font-size:12px}
+.aui_title{color:#FFF;font-size:15px;height:40px;line-height:40px;overflow:hidden;text-indent:5px;text-overflow:ellipsis}
+.aui_state_noTitle .aui_title{display:none}
+.aui_close{display:block;position:absolute;text-decoration:none;outline:0}
+.aui_close:active,.aui_close:focus,.aui_close:hover,.aui_close:visited{text-decoration:none;color:#FFF}
+.aui_main{background:#FFF;min-width:9em;min-width:0 \9;vertical-align:top}
+.aui_content{border:none}
+.aui_content.aui_state_full{display:block;width:100%;margin:0;padding:0!important;height:100%}
+.aui_loading{width:96px;height:32px;text-align:left;text-indent:-999em;overflow:hidden;background:url(icons/loading.gif) no-repeat center center}
+.aui_icon{background:#FFF;vertical-align:middle}
+.aui_icon div{width:48px;height:48px;margin:0 0 0 10px;background-position:center center;background-repeat:no-repeat}
+.aui_buttons{padding:7px 5px 5px;text-align:right;white-space:nowrap}
+.aui_buttons button{background:#DDD;border:none;color:#666;cursor:pointer;display:inline-block;margin:0 0 0 10px;padding:3px 13px;text-align:center;overflow:visible;width:auto}
+.aui_buttons button::-moz-focus-inner{border:0;padding:0;margin:0}
+.aui_buttons button:focus{outline:none 0;border-color:#426DC9}
+.aui_buttons button:hover{color:#000;border-color:#666}
+.aui_buttons button:active{border-color:#666}
+.aui_buttons button[disabled]{cursor:default;color:silver;background:#DDD;box-shadow:none}
+button.aui_state_highlight{color:#FFF;background:#06D}
+button.aui_state_highlight:hover{color:#FFF;background:#04C}
+button.aui_state_highlight:active{border-color:#04C}
+
+button.aui_state_normal{ background: #5BB75B; color: #FFF; }
+button.aui_state_normal:hover{ background: #51A351; color: #FFF; }
+
+.aui_inner{background:#FFF}
+.aui_titleBar{width:100%;height:0;position:relative;bottom:40px}
+.aui_nw{width:15px;height:38px}
+.aui_ne{width:15px;height:38px}
+.aui_sw{border-radius:0 0 0 5px;height:5px;width:5px}
+.aui_se{border-radius:0 0 5px 0;height:5px;width:5px}
+.aui_close{color:#FFF;font-size:23px;top:10px;right:5px}
+.aui_icon,.aui_main{padding:5px 0}
+.aui_n,.aui_ne,.aui_nw{background:#27A9E3}
+.aui_s,.aui_se,.aui_sw{background:#FFF}
+.aui_nw{width:5px;height:40px;border-radius:5px 0 0 0}
+.aui_ne{width:5px;height:40px;border-radius:0 5px 0 0}
+.aui_e,.aui_w{background:url(black/KF_DialogBackground.png) bottom repeat-x #FFF}
+.aui_state_noTitle .aui_ne,.aui_state_noTitle .aui_nw,.aui_state_noTitle .aui_se,.aui_state_noTitle .aui_sw{width:3px;height:3px}
+.aui_state_noTitle .aui_n,.aui_state_noTitle .aui_nw,.aui_state_noTitle .aui_ne{background: #FFF!important}
+.aui_state_noTitle .aui_inner{background:#FFF}
+.aui_state_noTitle .aui_outer{box-shadow:none}
+.aui_state_noTitle .aui_titleBar{bottom:0}
+.aui_state_noTitle .aui_close{top:0;right:0;width:18px;height:18px;line-height:18px;text-align:center;text-indent:0;font-size:20px;text-decoration:none;color:#214FA3;background:0 0}
+.aui_state_noTitle .aui_close:active,.aui_state_noTitle .aui_close:hover{text-decoration:none;color:#900}

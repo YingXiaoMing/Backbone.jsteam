@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+.clear{ height:0; line-height:0; overflow:hidden; clear:both;}
+.flBtnStyle{ clear:both; }
+.flBtnStyle:after{ clear:both; overflow:hidden; height:0; content:""; display:block;}
+.flBtnStyle .buttonStyleSelect {
+    width: 385px;
+    height: 200px;
+    float: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid #ebeaef;
+    text-align: left;
+}
+.StyleListTitle {
+    margin: 10px 0 0 25px;
+    font-size: 12px;
+    color: #666;
+}
+.flBtnStyle .styleList {
+    width: 336px;
+    height: 60px;
+    margin: 0 auto;
+}
+.flBtnStyle .styleItem{width:103px;height:44px;float:left;cursor:pointer;margin:4px; display:inline; background-image:url(../images/button_style/buttonStyle.png);background-repeat:no-repeat }
+.flBtnStyle .styleList .item101{background-position:3px 5px}
+.flBtnStyle .styleList .item102{background-position:3px -35px}
+.flBtnStyle .styleList .item103{background-position:3px -75px}
+.flBtnStyle .styleList .item104{background-position:3px -115px}
+.flBtnStyle .styleList .item105{background-position:3px -155px}
+.flBtnStyle .styleList .item106{background-position:3px -195px}
+.flBtnStyle .styleList .item201{background-position:3px -235px}
+.flBtnStyle .styleList .item202{background-position:3px -275px}
+.flBtnStyle .styleList .item203{background-position:3px -315px}
+.flBtnStyle .styleList .item204{background-position:3px -355px}
+.flBtnStyle .styleList .item205{background-position:3px -395px}
+.flBtnStyle .styleList .item206{background-position:3px -435px}
+.flBtnStyle .styleList .item301{background-position:3px -476px}
+.flBtnStyle .styleList .item302{background-position:3px -522px}
+.flBtnStyle .styleList .item303{background-position:3px -568px}
+.flBtnStyle .styleList .item304{background-position:3px -617px}
+.flBtnStyle .styleList .item305{background-position:3px -663px}
+.flBtnStyle .styleList .item306{background-position:3px -710px}
+.flBtnStyle .styleList .item401{background-position:3px -757px}
+.flBtnStyle .styleList .item402{background-position:3px -798px}
+.flBtnStyle .styleList .item403{background-position:3px -840px}
+.flBtnStyle .styleList .item404{background-position:3px -881px}
+.flBtnStyle .styleList .item405{background-position:3px -922px}
+.flBtnStyle .styleList .item406{background-position:3px -964px}
+.flBtnStyle .styleList .styleItem_choice { border: 2px solid #b4b4b4;margin: 2px;-moz-border-radius: 5px;border-radius: 5px; -webkit-box-sizing:content-box; -moz-box-sizing:content-box; box-sizing:content-box;}

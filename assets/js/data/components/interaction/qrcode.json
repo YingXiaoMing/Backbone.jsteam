@@ -1,0 +1,56 @@
+{
+	cpId : "qrcode",
+	type : "div",
+	group : "interaction",
+	template : "qrcode",
+	templateTpl : "",
+	//target : "TestItemView",
+	attrlayer : "3",
+	title : "图文展示",
+	btns : ["edit","textFloat"],
+	cpStyle : {
+		test : "test",
+		pleft : "200px",
+		position : {
+			type : "",
+			label : "导航位置",
+			value:"123"
+		},
+	},
+	publicAttributes : {
+		isGlobal : false,
+		isFloat : true
+	},
+	cpAttributes:{
+		tab1:{
+			tabname:"常规",
+			value:{
+					name : {
+						type : "input",
+						savetype : "input",
+						label : "模块标题",
+						value : "网站二维码"
+					},									
+					alt : {
+						type : "input",
+						savetype : "input",
+						label : "图片描述",
+						value:'手机扫描查看二维码',
+					},
+					site : {
+						type : "input",
+						savetype : "input",
+						label : "地址",
+						value:'http://www.kenfor.com'
+					},
+					width : {
+						type : "width",
+						savetype : "input",
+						label : "图片尺寸",
+						value:'130',
+					}
+			}
+		}
+	},
+	children:[]
+}

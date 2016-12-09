@@ -1,0 +1,35 @@
+{
+	cpId : "simpleText",
+	type : "div",
+	group : "common",
+	template : "base",
+	templateTpl : "",
+	target : "",
+	attrlayer : "2",
+	value:"默认文本",
+	title : "文本",
+	btns : ["edit"],
+	cpStyle : {
+		position : {
+			type : "",
+			label : "导航位置",
+			value:""
+		}
+	},
+	publicAttributes : {
+		isGlobal : false,
+		isFloat : true
+	},
+	cpAttributes : {
+		text : {
+			type : "editor",
+			savetype : "editor",
+			cls : 'col-xs-6',
+			labelcls : 'col-sm-2',
+			valuecls : 'col-sm-10',
+			label : "内容",
+			value : "文本"
+		}
+	},
+	children : []
+}

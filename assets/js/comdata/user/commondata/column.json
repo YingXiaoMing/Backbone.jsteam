@@ -1,0 +1,23 @@
+{
+	maxColumnId : 1,
+	maxCpId : 200,
+	columnes : [{
+		colId : 1,
+		mds : [{
+			mdId : 200,
+			mdName : "tests"
+		}]
+	},{
+		colId : 2,
+		mds : [{
+			mdId : 200,
+			mdName : "tests"
+		}]
+	},{
+		colId : 3,
+		mds : [{
+			mdId : 200,
+			mdName : "tests"
+		}]
+	}]
+}

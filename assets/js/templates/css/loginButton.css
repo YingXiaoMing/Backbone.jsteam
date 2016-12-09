@@ -1,0 +1,20 @@
+/* CSS Document */
+.clear { clear:both; height:0; display:block; }
+/*imageEffects*/
+.loginButton .control-label { line-height:40px; }
+.loginButton .listType {letter-spacing:0;width: 385px;height: 165px;overflow-y: auto;overflow-x: hidden;border: 1px solid #ebeaef;text-align: left;}
+.loginButton .listType > a { cursor:pointer; display:inline-block; vertical-align:top; letter-spacing:0; position:relative; width: 165px; height: 37px; float: left; cursor: pointer; margin: 8px; _margin: 8px 6px 8px 4px; text-align:center; line-height:37px; color:#fff;}
+.loginButton .listType > a.selected:before, .loginButton .listType > a:hover:before { content:""; display:block; position:absolute; left:-2px; right:-2px; top:-2px; bottom:-2px; border:2px solid #b4b4b4; }
+.loginButton .listType > a.selected:after, .loginButton .listType > a:hover:after { content:''; position:absolute; right:0; bottom:0; width:165px; height:37px; display:block;border:1px solid #ffffff;}
+#loginButton1 {background: url(../../../img/buttonStyle.png) 1px 1px no-repeat;}
+#loginButton2 {background: url(../../../img/buttonStyle.png) 1px -69px no-repeat;}
+#loginButton3 {background: url(../../../img/buttonStyle.png) 1px -139px no-repeat;}
+#loginButton4 {background: url(../../../img/buttonStyle.png) 1px -209px no-repeat;}
+#loginButton5 {background: url(../../../img/buttonStyle.png) 1px -279px no-repeat;}
+#loginButton6 {background: url(../../../img/buttonStyle.png) 1px -348px no-repeat;}
+#loginButton7 {background: url(../../../img/buttonStyle.png) 1px -417px no-repeat;}
+#loginButton8 {background: url(../../../img/buttonStyle.png) 1px -487px no-repeat;}
+#loginButton9 {background: url(../../../img/buttonStyle.png) 1px -557px no-repeat;}
+#loginButton10 {background: url(../../../img/buttonStyle.png) 1px -627px no-repeat;}
+#loginButton11 {background: url(../../../img/buttonStyle.png) 1px -697px no-repeat;}
+#loginButton12 {background: url(../../../img/buttonStyle.png) 1px -767px no-repeat;}

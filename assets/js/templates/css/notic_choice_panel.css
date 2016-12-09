@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.clear{ height:0; line-height:0; overflow:hidden; clear:both;}
+.notic_choice_panel{  clear:both;}
+.notic_choice_panel:after{ clear:both; overflow:hidden; height:0; content:""; display:block;}
+.notic_choice_panel input,.notic_choice_panel img{ vertical-align:middle; margin-right:3px;}
+
+
+/*魔方多图*/

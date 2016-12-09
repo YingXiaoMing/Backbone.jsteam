@@ -1,0 +1,146 @@
+/* CSS Document 留言模块前端显示页面的CSS*/
+.clear{
+    clear:both;
+    height:0;
+    display:block;
+}
+.msg_container{
+    min-width: 300px;
+    font-family: "微软雅黑";
+    color: #666666;
+    font-size: 14px;
+}
+.msg_container .msg_bg1{
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin-top: 16px;
+    background: url("../images/interaction/frombg1.png") no-repeat scroll center center;
+}
+.msg_container .msg_title{
+    color: #2b2b2b;
+    font-family: '微软雅黑';
+    font-weight: normal;
+    font-size: 16px;
+    height: 45px;
+    line-height: 45px;
+}
+.msg_container .msg_boderbottom{
+    width: auto;
+    border-bottom: 1px solid #cccccc;
+}
+.msg_container .msg_form{
+    margin-top: 8px;
+    float: left;
+}
+.msg_container .msg_form .msg_express{
+    font-size: 14px;
+    font-weight: bolder;
+    height: 30px;
+    line-height: 30px;
+}
+.msg_container .msg_form .msg_float{
+    float: left;
+    margin-top:5px;
+    margin-left:10px;
+    min-width: 300px;
+}
+.msg_container .msg_form .msg_width{
+    width: 60px;
+    overflow: hidden;
+    text-align: right;
+    text-overflow: hidden;
+    white-space: nowrap;
+    float: left;
+
+}
+.msg_container .msg_form .msg_input{
+    border: 1px solid #8f8f8f;
+    height: 19px;
+    line-height: 19px;
+    padding:1px;
+    width: 100px;
+    float: left;
+}
+.msg_container .msg_form .msg_teatarea{
+    font-family: "微软雅黑";
+    line-height: 26px;
+    border: 1px solid #8f8f8f;
+    width: 100px;
+}
+.msg_container .msg_form .msg_container .msg_form div{
+    float: left;
+    height: 25px;
+    line-height: 25px;
+
+}
+.msg_container .msg_form .msg_sub{
+    float: left;
+    margin-left: 70px;
+    margin-top: 5px;
+    width: 70px;
+}
+.msg_container .msg_form .msg_tip{
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 5px;
+}
+
+
+.msg_container .msg_express1{
+    color: #2b2b2b;
+    font-family: '微软雅黑';
+    font-weight: normal;
+    font-size: 16px;
+    height: 45px;
+    line-height: 45px;
+}
+.msg_container .msg_form .msg_float1{
+    float: left;
+    margin:0 0 15px -30px;
+    min-width: 330px;
+}
+.msg_container .msg_form .msg_input1{
+    border: 1px solid #dadada;
+    height: 30px;
+    line-height: 30px;
+    padding:1px;
+    text-indent: 6px;
+    width: 200px;
+    float: left;
+}
+.msg_container .msg_form .msg_width1{
+    width: 106px;
+    overflow: hidden;
+    text-align: right;
+    text-overflow: hidden;
+    white-space: nowrap;
+    float: left;
+    height: 34px;
+    line-height: 34px;
+
+}
+.msg_container .msg_bottom1{
+    color: #FFF;
+    cursor: pointer;
+    float: left;
+    margin-left: 56px;
+    font-size:14px;
+    height: 44px;
+    line-height:44px;
+    max-width: 219px;
+    width: 58%;
+}
+.loginButton1 {background: url(../images/interaction/red_middle.png)  repeat-x scroll 0 center;border:0;}
+.loginButton2 {background:#f54f4f;border:0;}
+.loginButton3 {background: url(../images/interaction/yellow_middle.png)  repeat-x scroll 0 center;border:0;}
+.loginButton4 {background:#ffad2b;border:0;}
+.loginButton5 {background: url(../images/interaction/blue_middle.png)  repeat-x scroll 0 center;border:0;}
+.loginButton6 {background:#5ab4ff;border:0;}
+.loginButton7 {background: url(../images/interaction/green_middle.png)  repeat-x scroll 0 center;border:0;}
+.loginButton8 {background:#85c300;border:0;}
+.loginButton9 {background: url(../images/interaction/pink_middle.png)  repeat-x scroll 0 center;border:0;}
+.loginButton10 {background:#e13e8d;border:0;}
+.loginButton11 {background: url(../images/interaction/black_middle.png) repeat-x scroll 0 center;border:0;}
+.loginButton12 {background:#8e8e8e;border:0;}

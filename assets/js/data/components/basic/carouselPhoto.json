@@ -1,0 +1,195 @@
+{
+	cpId:"carouselPhoto",
+	type:"div",
+	group:"basic",
+	template:"carouselPhoto",
+	templateTpl:"",
+	target:"TestItemView",
+	attrlayer:"3",
+	title:"轮播多图",
+	btns:["floating", "edit", "copy","hide","textFloat","topIndex","bottomIndex","flutterm","mbottom","mzindex","sidem"],
+	cpStyle : {
+		test : "test",
+		pleft : "200px",
+		position : {
+			type : "",
+			label : "导航位置",
+			value:""
+		},
+	},
+	publicAttributes:{
+		isGlobal:false,
+		isFloat:true
+	},
+	cpAttributes:{
+		tab1:{
+			tabname:"常规",
+			value:{
+				name:{
+					label:'模块标题',
+					value:'轮播多图',
+					savetype:"input",
+					type:"input"
+				},
+				carouselPhoto:{
+					label:'模块样式',
+					value:'carouselPhoto1',
+					savetype:"input",
+					type:"carouselPhoto"
+				}
+			}
+		},
+		tab2:{
+			tabname:"图片特效",
+			value:{
+				name1:{
+					label:'模块标题',
+					value:'轮播多图',
+					savetype:"input",
+					type:"input"
+				},
+				imageEffects:{
+					label:'鼠标悬停效果',
+					value:'imageEffects1',
+					savetype:"input",
+					type:"imageEffects"
+				}
+			}
+		},
+		tab3:{
+			tabname:"展示设置",
+			value:{
+				name1:{
+					label:'模块标题',
+					value:'轮播多图',
+					savetype:"input",
+					type:"input"
+				},
+        a: {
+          type: "block2",
+          savetype: "block",
+          label: "轮播设置",
+          value: 1,//当前选择的值
+          //选择块的值列表
+          listvalue : [{
+            label : "自动轮播",
+            value : "1"
+          },{
+            label : "手动轮播",
+            value : "0"
+          }],
+          //选择值为1的时候显示的小组件集合
+          listvalue1 : {
+            time1 : {
+              type: "input",
+              savetype: "input",
+              label: '展示时间（毫秒）',
+              name: 'time1',
+              //<input name="foo"/>输入域的name
+              value: '2500',
+              //初始值,默认值
+            },
+			time2 : {
+              type: "input",
+              savetype: "input",
+              label: '切换速度（毫秒）',
+              name: 'time2',
+              //<input name="foo"/>输入域的name
+              value: '500',
+              //初始值,默认值
+            }
+          }
+        },
+        b: {
+          type: "block2",
+          savetype: "block",
+          label: "显示更多",
+          value: 0,//当前选择的值
+          //选择块的值列表
+          listvalue : [{
+            label : "是",
+            value : "1"
+          },{
+            label : "否",
+            value : "0"
+          }],
+          //选择值为1的时候显示的小组件集合
+          listvalue1 : {
+			open1: {
+				label : '"更多"链接：', 
+				class:"open", 
+value: [{
+							value: "0",
+							label: "默认",
+							selected: true
+						},{
+							value: "1",
+							label: "关于我们",
+							selected: false
+						},{
+							value: "2",
+							label: "产品中心",
+							selected: false
+						},{
+							value: "3",
+							label: "新闻资讯",
+							selected: false
+						},{
+							value: "4",
+							label: "联系我们",
+							selected: false
+						}], 
+				type: 'linkOpen', 
+				savetype : "select",
+			}
+					  ,
+			open2: {
+				label : "打开方式", 
+				class:"open", 
+				value: [{
+							value: "0",
+							label: "当前窗口",
+							selected: true
+						}], 
+				type: 'linkOpen', 
+				savetype : "select",
+			}
+          }
+        },
+        c: {
+          type: "block2",
+          savetype: "block",
+          label: "点击图片弹出",
+          value: 0,//当前选择的值
+          //选择块的值列表
+          listvalue : [{
+            label : "图片链接页面",
+            value : "2"
+          },{
+            label : "幻灯片",
+            value : "1"
+          },{
+            label : "无效果",
+            value : "0"
+          }
+		  ],
+          //选择值为1的时候显示的小组件集合
+          listvalue2 : {
+			open2: {
+				label : "打开方式", 
+				class:"open", 
+				value: [{
+							value: "0",
+							label: "当前窗口",
+							selected: true
+						}], 
+				type: 'linkOpen', 
+				savetype : "select",
+			}
+          }
+        }		
+			}
+		}
+	},
+	children:[]
+}

@@ -1,0 +1,156 @@
+{
+	cpId : "listPhoto",
+	type : "div",
+	group : "common",
+	template : "listPhoto",
+	templateTpl : "",
+	target : "TestItemView",
+	attrlayer : "3",
+	title : "图文展示",
+	btns : ["edit", "copy", "align", "color"],
+	cpStyle : {
+		test : "test",
+		pleft : "200px",
+		position : {
+			type : "",
+			label : "导航位置",
+			value:"123"
+		},
+	},
+	publicAttributes : {
+		isGlobal : false,
+		isFloat : true
+	},
+	cpAttributes:{
+		tab1:{
+			tabname:"常规",
+			value:{
+				name : {
+					type : "input",
+					savetype : "input",
+					label : "模块标题",
+					value : "列表多图"
+				},
+				showStyle : {
+					type : "productStyleBox",
+					savetype : "input",
+					label : "展示样式",
+					value : "待定"
+				}
+			}
+		},
+		tab2:{
+			tabname: "图片特效",
+			value: {
+				mouseHoverStyle : {
+					type : "imageEffects",
+					savetype : "input",
+					label : "鼠标悬停效果",
+					value : "待定"
+				}
+			}
+		},
+		tab3:{
+			tabname: "展示设置",
+			value: {
+				showSetting : {
+					type: "block2",
+					savetype: "block",
+					label : "显示分页",
+					value : 0,
+					listvalue : [{
+						label : "是",
+						value : "1"
+					},{
+						label : "否",
+						value : "0"
+					}],
+					listvalue1 : {
+						propName : {
+							type : "input",
+							savetype : "input",
+							label : "每页图片",
+							value : ""
+						}
+					}
+				},
+				more : {
+					type: "block2",
+					savetype: "block",
+					label : "显示更多",
+					value : 0,
+					listvalue : [{
+						label : "是",
+						value : "1"
+					},{
+						label : "否",
+						value : "0"
+					}],
+					listvalue1 : {
+						link : {
+							type : "linkOpen",
+							savetype : "select",
+							label : "'更多'链接",
+							value : [{
+								value: "000",
+								label: "默认",
+								selected: true
+							},{
+								value: "_blank",
+								label: "新建窗口",
+								selected: false
+							}]
+						},
+						openMode : {
+							type : "linkOpen",
+							savetype : "select",
+							label : "打开方式",
+							value : [{
+								value: "000",
+								label: "默认",
+								selected: true
+							},{
+								value: "_blank",
+								label: "新建窗口",
+								selected: false
+							}]
+						}
+					}
+				},
+				clickEffect : {
+					type: "block2",
+					savetype: "block",
+					label : "点击图片弹出",
+					value : 0,
+					listvalue : [{
+						label : "图片链接页面",
+						value : "1"
+					},{
+						label : "幻灯片",
+						value : "2"
+					},{
+						label : "无效果",
+						value : "0"
+					}],
+					listvalue1 : {
+						openMode : {
+							type : "linkOpen",
+							savetype : "select",
+							label : "打开方式",
+							value : [{
+								value: "000",
+								label: "默认",
+								selected: true
+							},{
+								value: "_blank",
+								label: "新建窗口",
+								selected: false
+							}]
+						}
+					}
+				}
+			}
+		},
+	},
+	children:[]
+}

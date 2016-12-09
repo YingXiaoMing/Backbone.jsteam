@@ -1,0 +1,156 @@
+{
+	cpId : "imageText",
+	type : "div",
+	group : "common",
+	template : "imageText",
+	templateTpl : "",
+	//target : "TestItemView",
+	attrlayer : "3",
+	title : "图文展示",
+	btns : ["edit","textFloat","copy", "align", "color"],
+	cpStyle : {
+		test : "test",
+		pleft : "200px",
+		position : {
+			type : "",
+			label : "导航位置",
+			value:"123"
+		},
+	},
+	publicAttributes : {
+		isGlobal : false,
+		isFloat : true
+	},
+	cpAttributes:{
+		tab1:{
+			tabname:"常规",
+			value:{
+					name : {
+						type : "input",
+						savetype : "input",
+						label : "模块标题",
+						value : "图文展示"
+					},									
+					style : {
+						type : "moduleStyle",
+						savetype : "input",
+						label : "模块样式",
+						value:'text',
+						class:'moduleStyle_c',
+					},
+					src : {
+						type : "uploadImage",
+						savetype : "input",
+						label : "图片地址",
+						value:'',
+						class:'moduleStyle_c',
+					},									
+					width : {
+						type : "width",
+						savetype : "input",
+						label : "图片宽度",
+						value:'',
+						class:'moduleStyle_c',
+					},									
+					height:  {
+						type : "width",
+						savetype : "input",
+						label : "图片高度",
+						value:'',
+						class:'moduleStyle_c',
+					},									
+					href : {
+						type : "input",
+						savetype : "input",
+						label : "链接地址",
+						value:'text',
+						class:'moduleStyle_c',
+					},									
+					alt : {
+						type : "input",
+						savetype : "input",
+						label : "图片描述",
+						value:'text',
+						class:'moduleStyle_c',
+					},					
+															
+					content : {
+						type : "editor",
+						savetype : "editor",
+						label : "内容",
+						value : "广东今科道同科技股份有限公司成立于1998年，是国内发展早、规模大、服务网络广的企业信息化服务商，包括网站建设、推广运营、网站管理和网络应用四大方面。迄今已先后在广州、深圳、珠海、中山、成都、江门、顺德、佛山、东莞、长沙、重庆、贵阳开设了分公司。自成立以来，今科科技一直致力于为企业提供全方位的信息化解决方案，是国内率先通过ISO9001质量体系认证的企业信息化服务商。公司的主营业务主要为通过SaaS模式，依靠自主研发的应用软件系统，为全国中小企业提供一站式企业信息化服务平台。公司的核心产品为“商务e云平台”，此平台通过“网站、推广、管理、应用”四位一体方式最大限度地为企业提供一站式的信息化服务。“商务e云平台”提供的具体产品或服务包括：企业网站建设、移动网站建设、商城建设、企业邮箱、网站推广、即时通讯、云监控、"
+					}
+			}
+		},
+		tab2:{
+			tabname:"高级",
+			value:{
+				
+        link: {
+          savetype: "style",
+          type: "public",
+          status:0,//0为显示选项，1为不显示选项，为1时，下面的value必须设为1，否则显示不出小组键
+          label: "是否显示更多",
+
+          value: 0,//当前选择的值
+          //选择块的值列表
+          listvalue : [{
+          		label : "是",
+          		value : "1"
+          	},{
+          		label : "否",
+          		value : "0"
+          }],
+          listvalue0 : {
+
+          },
+          listvalue1 : {
+			  link: {
+				  label : '"更多"链接',  
+				  value: [{
+							value: "0",
+							label: "默认",
+							selected: true
+						},{
+							value: "1",
+							label: "关于我们",
+							selected: false
+						},{
+							value: "2",
+							label: "产品中心",
+							selected: false
+						},{
+							value: "3",
+							label: "新闻资讯",
+							selected: false
+						},{
+							value: "4",
+							label: "联系我们",
+							selected: false
+						}], 
+				  type: 'linkOpen', 
+				  savetype : "select"
+			  },
+			  open: {
+				  label : "打开方式", 
+				  class:"open", 
+				  value: [{
+							value: "0",
+							label: "当前窗口",
+							selected: true
+						},{
+							value: "_blank",
+							label: "新建窗口",
+							selected: false
+						}], 
+				  type: 'linkOpen', 
+				  savetype : "select"
+			  }			  
+			  
+          }
+        }
+			}
+		}
+	},
+	children:[]
+}

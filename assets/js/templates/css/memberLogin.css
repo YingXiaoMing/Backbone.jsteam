@@ -1,0 +1,103 @@
+/* CSS Document */
+.clear{
+    clear:both;
+    height:0;
+    display:block;
+}
+.memberLoginContainer{
+    min-width: 200px;
+    height: 100%;
+    overflow: hidden;
+    cursor: move;
+}
+.titleLeft{
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin-top: 16px;
+    background: url("../images/interaction/frombg1.png") no-repeat scroll center center;
+}
+.titleRight{
+    color: #2b2b2b;
+    font-family: '微软雅黑';
+    font-weight: normal;
+    font-size: 16px;
+    height: 45px;
+    line-height: 45px;
+}
+.titleBottom{
+    width: auto;
+    border-bottom: 1px solid #cccccc;
+
+}
+
+.memberLoginPanel{
+    padding-top: 20px;
+    color: #6d6d6d;
+    font-size: 12px;
+    font-family: '微软雅黑';
+    margin: 0 auto;
+    max-width: 260px;
+    max-height: 200px;
+    overflow: hidden;
+    width: 95%;
+
+}
+.memberLoginItem {
+    display: inline-block;
+    margin-bottom: 13px;
+    width: 97%;
+}
+.memberLoginInput{
+    border:1px solid #e9e9e9;
+    font-family:"微软雅黑";
+    font-size: 12px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 auto;
+    max-width: 251px;
+    min-width: 151px;
+    outline-color: #dedede;
+    padding-left: 25px;
+    width: 98%;
+}
+.memberLoginUser{
+    background: url("../images/interaction/icon_user.jpg") no-repeat scroll 0 center;
+}
+.memberLoginPassword{
+    background: url("../images/interaction/icon_pwd.jpg") no-repeat scroll 0 center;
+}
+.memberLoginBtn{
+    color:#FFF;
+    cursor: pointer;
+    display: inline-block;
+    height: 44px;
+    font-size: 14px;
+    line-height: 44px;
+    text-align: center;
+    width: 98%;
+}
+.memberLoginSignup{
+    margin-top: 4px;
+    text-align: right;
+    width: 95%;
+}
+.memberLoginSignup .memberLoginReg{
+    font-size: 14px;
+    font-weight: normal;
+    color: #666666;
+    font-family: '微软雅黑';
+    text-decoration: none;
+}
+.loginButton1 {background: url(../images/interaction/red_middle.png)  repeat-x scroll 0 center;border:0;}
+.loginButton2 {background:#f54f4f;border:0;}
+.loginButton3 {background: url(../images/interaction/yellow_middle.png)  repeat-x scroll 0 center;border:0;}
+.loginButton4 {background:#ffad2b;border:0;}
+.loginButton5 {background: url(../images/interaction/blue_middle.png)  repeat-x scroll 0 center;border:0;}
+.loginButton6 {background:#5ab4ff;border:0;}
+.loginButton7 {background: url(../images/interaction/green_middle.png)  repeat-x scroll 0 center;border:0;}
+.loginButton8 {background:#85c300;border:0;}
+.loginButton9 {background: url(../images/interaction/pink_middle.png)  repeat-x scroll 0 center;border:0;}
+.loginButton10 {background:#e13e8d;border:0;}
+.loginButton11 {background: url(../images/interaction/black_middle.png) repeat-x scroll 0 center;border:0;}
+.loginButton12 {background:#8e8e8e;border:0;}

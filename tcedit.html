@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+	<div>
+		模块标题：<input type="text" name="title" id="title" class="field" value="" data-savetype="input"/>
+	</div>
+	<div>
+		模块样式：<input type="radio" name="mstyle" id="mystyle0" value="0" class="field" data-savetype="radio"/>样式一
+		<input type="radio" name="mstyle" id="mystyle1" value="1"/>样式二
+		<input type="radio" name="mstyle" id="mystyle2" value="2"/>样式三
+	</div>
+	<div>
+		图册目录：
+		<div id="tcml">
+			
+		</div>
+	</div>
+	<div>
+		图册名称：<input type="radio" name="isshowname" id="isshowname1" value="1" class="field" data-savetype="radio"/>显示
+		<input type="radio" name="isshowname" id="isshowname0" value="0"/>隐藏
+	</div>
+	<div>
+		图片大小：<input type="radio" name="picsize" id="picsize0" value="0" class="field" data-savetype="radio"/>默认
+		<input type="radio" name="picsize" id="picsize1" value="1"/>自定义
+	</div>
+	<div>
+		图片缩放：<input type="radio" name="piczoom" id="piczoom0" value="0" class="field" data-savetype="radio"/>等比例
+		<input type="radio" name="piczoom" id="piczoom1" value="1"/>拉伸
+	</div>
+	<div>
+		图片间距：<input type="radio" name="picpaddinig" id="picpaddinig0" value="0" class="field" data-savetype="radio"/>默认
+		<input type="radio" name="picpaddinig" id="picpaddinig1" value="1"/>自定义
+	</div>
+</body>
+<script type="text/javascript">
+	var checkform = function(){
+		alert('check不通过，不能提交');
+		return true;
+	};
+	
+	var initData = function(data){
+		if(data){
+			$("#title").val(data.title);
+			$("input[name='mstyle'][value="+data.mstyle+"]").attr("checked",true);
+			var atlas = data.atlas;
+			$.each(atlas,function(i,obj){
+				$("input[name='atlas'][value="+obj.atlasid+"]").data(obj);
+				$("input[name='atlas'][value="+obj.atlasid+"]").attr("checked","checked");
+			});
+			//$("input[name='mstyle'][checked]")
+		}
+	}
+	
+	var saveData = function(){
+		var data = {
+			title : "图册",
+			mstyle : "",
+			atlas: [{
+				atlasname: "图册标题",
+				atlaslink: "http://images02.cdn86.net/kps01/M00/4D/9A/wKiAiVUUzqyYlGgPAAAw_AFUqrc359.jpg",
+				atlasid: "1"
+			}],
+			isshowname: "0",
+			picsize: "12",
+			picwidth: "160",
+			pichigh: "160",
+			piczoom: "0",
+			picpaddinig:"0",
+			padding:"0"	
+		};
+		data.title = $("#title").val();
+		var atlas = [];
+		$("input[name='atlas']:checked").each(function(i,obj){
+			atlas.push($(obj).data());
+		});
+		data.atlas = atlas;
+		return data;
+	}
+	
+	$(document).ready(function(){
+		/*$.ajax({
+			url : "/module/getTc.do",
+			type : "POST",
+			success : function(data){
+				$.each(data,function(i,item){
+					var domData = '<input type="checkbox" class="field" name="atlas" value="'+item.tcId+'" data-savetype="checkbox">'+item.tcMc+'</input>';
+					var jobj = $(domData);
+					jobj.data(item);
+					$("#tcml").append(jobj);
+				});
+			}
+		});*/
+	});
+</script>
+</html>

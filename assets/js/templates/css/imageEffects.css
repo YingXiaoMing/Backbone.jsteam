@@ -1,0 +1,26 @@
+/* CSS Document */
+.clear { clear:both; height:0; display:block; }
+/*imageEffects*/
+.imageEffects_box .control-label { line-height:40px; }
+.imageEffects_box .listType { font-size:0; letter-spacing:0; }
+.imageEffects_box .listType > a { cursor:pointer; display:inline-block; vertical-align:top; letter-spacing:0; position:relative; border:1px solid #bbb; margin:0px 20px 20px 0px; width:121px; height:80px; }
+.imageEffects_box .listType > a:first-child { margin-left:0; }
+.imageEffects_box .listType > a.selected:before, .imageEffects .listType > a:hover:before { content:""; display:block; position:absolute; left:-1px; right:-1px; top:-1px; bottom:-1px; border:2px solid #8bc429; }
+.imageEffects_box .listType > a.selected:after { content:''; position:absolute; right:0; bottom:0; width:24px; height:16px; display:block;}
+.imageEffects_box .listType > a:nth-child(1){ background:url(../images/imageEffects/imageEffects_1.jpg) center center no-repeat;}
+.imageEffects_box .listType > a:nth-child(2){ background:url(../images/imageEffects/imageEffects_2.jpg) center center no-repeat;}
+.imageEffects_box .listType > a:nth-child(3){ background:url(../images/imageEffects/imageEffects_3.jpg) center center no-repeat;}
+.imageEffects_box .listType > a:nth-child(4){ background:url(../images/imageEffects/imageEffects_4.jpg) center center no-repeat;}
+.imageEffects_box .listType > a:nth-child(5){ background:url(../images/imageEffects/imageEffects_5.jpg) center center no-repeat;}
+.imageEffects_box .listType > a:nth-child(6){ background:url(../images/imageEffects/imageEffects_6.jpg) center center no-repeat;}
+.imageEffects_box .listType > a:nth-child(7){ background:url(../images/imageEffects/imageEffects_7.jpg) center center no-repeat;}
+.imageEffects_box .listType > a:nth-child(8){ background:url(../images/imageEffects/imageEffects_8.jpg) center center no-repeat;}
+
+.imageEffects_box .listType > a:nth-child(2):hover{ background:url(../images/imageEffects/imageEffects_2.gif) center center no-repeat;}
+.imageEffects_box .listType > a:nth-child(3):hover{ background:url(../images/imageEffects/imageEffects_3.gif) center center no-repeat;}
+.imageEffects_box .listType > a:nth-child(4):hover{ background:url(../images/imageEffects/imageEffects_4.gif) center center no-repeat;}
+.imageEffects_box .listType > a:nth-child(5):hover{ background:url(../images/imageEffects/imageEffects_5.gif) center center no-repeat;}
+.imageEffects_box .listType > a:nth-child(6):hover{ background:url(../images/imageEffects/imageEffects_6.gif) center center no-repeat;}
+.imageEffects_box .listType > a:nth-child(7):hover{ background:url(../images/imageEffects/imageEffects_7.gif) center center no-repeat;}
+.imageEffects_box .listType > a:nth-child(8):hover{ background:url(../images/imageEffects/imageEffects_8.gif) center center no-repeat;}
+

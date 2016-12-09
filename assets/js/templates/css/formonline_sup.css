@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+.clear{ height:0; line-height:0; overflow:hidden; clear:both;}
+
+.formonline_sup_div{ clear:both;}
+.formonline_sup_div:after{ clear:both; overflow:hidden; height:0; content:""; display:block;}
+.formonline_sup_typeForm {
+    float: left;
+    width: 90px;
+    height: 120px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+}
+.formonline_sup_typeForm .formImg {
+    margin-left: -1px;
+    margin-top: -1px;
+    border: 2px solid #8bc429;
+	width: 88px;
+    height: 84px;
+    border: 1px solid #bbb;
+}
+.formonline_sup_typeForm .arrangeStyleImg1 {
+    background: url(../images/formonline_sup/autoArrange.jpg) center center no-repeat;
+}
+.formonline_sup_typeForm .arrangeStyleImg2{
+    background: url(../images/formonline_sup/fixArrange.jpg) center center no-repeat;
+}
+
+
+.formonline_sup_typeForm .labelDiv {
+    text-align: center; margin-top:5px;
+}
+.formonline_sup_choose .checked{ display:block; position: absolute;
+    bottom: -12px;
+    right: -18px;
+    height: 40px;
+    width: 58px;
+    background:url(../images/formonline_sup/chose_check.png) no-repeat center center;
+}
+
+
+/*在线表单-高级-选项排列方式*/

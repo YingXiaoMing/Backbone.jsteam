@@ -1,0 +1,122 @@
+/* CSS Document */
+.clear{
+	clear:both;
+	height:0;
+	display:block;
+}
+.productSearch ul,
+.productSearch li,
+.productSearch dl,
+.productSearch dd{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.productSearch div,
+.productSearch ul,
+.productSearch li{
+	line-height:200%;
+	font-size:12px;
+}
+.productSearch .type{
+	font-size:0;
+	letter-spacing:-1px;
+}
+.productSearch .type a,
+.productSearch .type span{
+	font-size:12px;
+	letter-spacing:0;
+	display:inline-block;
+	vertical-align:top;
+	line-height:20px;
+	-webkit-user-select:none;
+	user-select:none;
+	text-decoration:none;
+}
+.productSearch .type a{
+	cursor:pointer;
+	margin-right:2px;
+	padding:1px 6px;
+}
+.productSearch .type a:hover{
+	border:1px solid #3298fe;
+	background:#e8f3fe;
+	padding:0 5px;
+}
+.productSearch .type a.selected{
+	font-weight:bold;
+	color:#2277da;
+}
+.productSearch .type span{
+	background:#2277da;
+	color:white;
+	padding:0 5px;
+	position:relative;
+	margin-right:12px;
+}
+.productSearch .type span:after{
+	display:block;
+	position:absolute;
+	left:100%;
+	top:7px;
+	content:"";
+	border:3px solid transparent;
+	border-left-color:#2277da;
+}
+.productSearch .select_model{
+	margin:10px 0 0;
+	border:1px solid #bfbfbf;
+}
+.productSearch .select_model ul{
+	height:380px;
+	overflow:auto;
+	font-size:0;
+	letter-spacing:-1px;
+}
+.productSearch .select_model ul li{
+	display:inline-block;
+	width:20%;
+	letter-spacing:0;
+}
+.productSearch .select_model ul li a{
+	display:block;
+	margin:10px;
+	position:relative;
+	cursor:pointer;
+}
+.productSearch .select_model ul li a img{
+	width:100%;
+}
+.productSearch .select_model ul li:hover a i{
+  display:none;
+}
+.productSearch .select_model ul li:hover a i,
+.productSearch .select_model ul li.selected a i{
+	display:block;
+	position:absolute;
+	left:-4px;
+	right:-4px;
+	bottom:-4px;
+	top:-4px;
+	border:2px solid #d2d2d2;
+	border-radius:4px;
+}
+.productSearch .select_model ul li.selected a i{
+	border-color:#308cf3;
+}
+.productSearch .select_model ul li a b{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  display:none;
+  color:white;
+  text-align:center;
+  line-height:20px;
+  font-size:12px;
+  background:rgba(0,0,0,0.4);
+}
+.productSearch .select_model ul li:hover a b,
+.productSearch .select_model ul li.selected a b{
+	display:block;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>可视化布局系统 - 今科科技</title>
+<meta name="title" content="可视化布局系统">
+<meta name="description" content="可拖放排序在线编辑可视化布局系统">
+<meta name="keywords" content="可视化,布局,系统">
+<!--[if lt IE 9]>
+<script src="assets/js/lib/html5shiv.min.js"></script>
+<![endif]-->
+<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="assets/js/lib/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+<link rel="stylesheet" href="assets/js/lib/toastr/build/toastr.css">
+<link rel="stylesheet" href="assets/js/lib/kindeditor/themes/default/default.css">
+<link rel="stylesheet" href="assets/js/lib/artDialog/skins/black.css">
+<link rel="stylesheet" href="assets/css/lxui-layout.css">
+<style id="public_style"></style>
+</head>
+
+<body data-template="${id}" class="edit devfullview">
+<nav id="head" class="navbar navbar-default navbar-fixed-top layout-navbar" role="navigation"></nav>
+<div class="container-fluid clearfix">
+	<div class="sidebar-nav" id="sideBar"></div>
+	<div class="content-layout form-horizontal" id="design" lab="0" initlab="0"></div>
+</div>
+<script>
+	window.UEDITOR_HOME_URL = "assets/js/lib/ueditor_offline/";
+	var globalApp = {
+		baseUrl: '${BASE_PATH}',
+		template: "${id}",
+		editorPath: {
+			height: "350px",
+			width: '100%',
+			syncType: "form",
+			filterMode: false,
+			pagebreakHtml: '<hr class="pageBreak" \/>',
+			allowFileManager: true,
+			filePostName: "file",
+			cssPath: ['assets/js/lib/kindeditor/plugins/code/prettify.css'],
+			afterChange: function () {
+				this.sync();
+			}
+		}
+	}
+</script>
+<script charset="utf-8" src="assets/js/lib/kindeditor/kindeditor-min.js"></script>
+<script charset="utf-8" src="assets/js/lib/kindeditor/swfupload.cookies.js"></script>
+<script charset="utf-8" src="assets/js/lib/kindeditor/lang/zh_CN.js"></script>
+<script charset="utf-8" src="assets/js/lib/ueditor_offline/third-party/zeroclipboard/ZeroClipboard.min.js"></script>
+
+<div id="upload_ue" class="hide"></div>
+
+<script data-main="assets/js/main.js" src="assets/js/lib/require.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+/* CSS Document */
+.clear { clear:both; height:0; display:block; }
+.optionTitle{ float:left;line-height: 22px; font-size:12px;}
+.moreCusUrl_input { width: 116px; height:20px; float: left; line-height:20px; font-size:12px !important; padding:0px 2px;border-radius:0px;}
+.moreCusUrl_btn { float: left; margin-left: 6px; padding: 0 10px; border: #CCC 1px solid; cursor: pointer; height:20px; line-height: 20px; font-size:12px; }

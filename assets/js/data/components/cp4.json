@@ -1,0 +1,55 @@
+{
+	cpId : "cp4",
+	type : "div",
+	group : "comp",
+	template : "cp4test",
+	templateTpl : "",
+	target : "",
+	attrlayer : "3",
+	title : "编辑器测试",
+	btns : ["edit", "copy", "align", "color"],
+	cpStyle : {
+		test : "test",
+		pleft : "200px",
+		position : {
+			type : "",
+			label : "导航位置",
+			value:""
+		},
+	},
+	publicAttributes : {
+		isGlobal : false,
+		isFloat : true
+	},
+	cpAttributes : {
+		tab1 : {
+			tabname : "素材库",
+			value : {
+				nr : {
+					type : "editor",
+					savetype : "editor",
+					label : "标志",
+					value : "Logoffffffffffffffffffffffdddddddddddddddd"
+				},
+				aaaaa : {
+					type : "editor",
+					savetype : "editor",
+					label : "标志",
+					value : "Logoffffffffffffffffffffffdddddddddddddddd"
+				}
+			}
+		},
+		tab2 : {
+			tabname : "图形图标",
+			value : {
+				nr2 : {
+					type : "editor",
+					savetype : "editor",
+					label : "标志",
+					value : "Logoffffffffffffffffffffffdddddddddddddddd2222"
+				}
+			}
+		}
+	},
+	children : []
+}

@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+.moduleStyle .moduleStyle_list a{
+	display:inline-block;
+	float:left;
+	margin-right:20px;
+	border:1px solid #bbbbbb;
+	position:relative;
+	cursor:pointer;
+}
+.moduleStyle .moduleStyle_list a img{
+	display:block;
+	margin:6px;
+	width:56px;
+	height:38px;
+}
+.moduleStyle .moduleStyle_list a:hover,.moduleStyle .moduleStyle_list a.checked{
+	border:2px solid #8bc429;
+}
+.moduleStyle .moduleStyle_list a:hover img,.moduleStyle .moduleStyle_list a.checked img{
+	margin:5px;
+}
+.moduleStyle .moduleStyle_list a span{
+	display:block;
+	background:url(../images/moduleStyle/yes.png) no-repeat;
+	width:24px;
+	height:16px;
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	visibility:hidden;
+}
+.moduleStyle .moduleStyle_list a.checked span{
+	visibility:visible;
+	
+}

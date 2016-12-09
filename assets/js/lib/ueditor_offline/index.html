@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>UEditor</title>
+<script src="ueditor.config.js" type="text/javascript" charset="utf-8"></script>
+<script src="ueditor.all.js" type="text/javascript" charset="utf-8"></script>
+<script src="jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+var _editor;
+$(function() {
+    _editor = UE.getEditor('upload_ue',{
+    	toolbars: [['simpleupload','insertimage','attachment']],
+    	wordCount:false,
+    	elementPathEnabled:false,
+    	initialFrameHeight:300,
+    	initialFrameWidth:600,
+    	isShow:true//是否显示
+    });
+    _editor.ready(function () {
+        //设置编辑器不可用
+		//_editor.setDisabled();
+        //侦听图片上传
+        _editor.addListener('beforeInsertImage', function (t, arg) {
+        	$("#select").html(JSON.stringify(arg))
+            //将地址赋值给相应的input,只去第一张图片的路径
+            //$("#picture").attr("value", arg[0].src);
+            //图片预览
+            //$("#preview").attr("src", arg[0].src);
+            //alert(arg[0].src);
+        })
+        //侦听文件上传，取上传文件列表中第一个上传的文件的路径
+        _editor.addListener('afterUpfile', function (t, arg) {
+            $("#file").attr("value", _editor.options.filePath + arg[0].url);
+        })
+    });
+    UE.Editor.prototype.getActionUrl = function(action) {
+    	var actionName = this.getOpt(action) || action,
+        imageUrl = this.getOpt('imageUrl'),
+        serverUrl = this.getOpt('serverUrl');
+    	if(!serverUrl && imageUrl) {
+            serverUrl = imageUrl.replace(/^(.*[\/]).+([\.].+)$/, '$1controller$2');
+        }
+    	
+    	//alert(action)
+    	//自定义接口------------------------------------------
+    	if (action == 'uploadimage') {//拦截图片上传请求
+	        //这里调用自定义接口
+	        return 'http://192.168.4.100/ueditor/imageUploadServlet?action=uploadimage';
+	    }
+    	//--------------------------------------------------
+		
+    	var result
+        if(serverUrl) {
+            serverUrl = serverUrl + (serverUrl.indexOf('?') == -1 ? '?':'&') + 'action=' + (actionName || '');
+            result = UE.utils.formatUrl(serverUrl);
+        } else {
+        	result = '';
+        }
+    	return result;
+	}
+});    
+//弹出图片上传的对话框
+function upImage() {
+    var myImage = _editor.getDialog("insertimage");
+    myImage.open();
+}
+//弹出文件上传的对话框
+function upFiles() {
+    var myFiles = _editor.getDialog("attachment");
+    myFiles.open();
+}
+</script>
+</head>
+
+
+<body>
+<div id="upload_ue" style=""></div>
+<a href="javascript:void(0);" onclick="upImage();">上传图片</a>
+<a href="javascript:void(0);" onclick="upFiles();">上传文件</a>
+<br />
+<h3>上传后的json返回</h3>
+<div id="json">
+	
+</div>
+<h3>图片list的json返回</h3>
+<div id="list">
+	
+</div>
+<h3>选中图片的json返回(设置_editor.setDisabled()则获取不到图片)</h3>
+<div id="select">
+	
+</div>
+</body>
+</html>

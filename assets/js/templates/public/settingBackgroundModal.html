@@ -1,0 +1,187 @@
+<script src="assets/js/templates/js/jquery.minicolors.js"></script>
+<link rel="stylesheet" href="assets/js/templates/css/jquery.minicolors.css"/>
+<style>
+    .preinstall-color span{ border: 1px solid #999; border-radius: 100%; cursor: pointer; display: block; float: left; height: 30px; line-height: 28px; margin: 0 5px; position: relative; text-align: center; width: 30px; }
+    .preinstall-color .selected:after{ background: url(../design/assets/img/mbg01.png) no-repeat 1px -294px; content: ''; height: 14px; left: 50%; margin: -7px; position: absolute; top: 50%; width: 14px; }
+    .backgroundPictures img{ margin-top: 15px; }
+</style>
+<div class="group-widget form-group clearfix">
+    <label class="col-xs-2 control-label">背景</label>
+    <div class="col-xs-10">
+        <div class="clearfix">
+            <label class="radio-inline">
+                <input type="radio" value="0" name="background-mode"> 默认
+            </label>
+            <label class="radio-inline">
+                <input type="radio" value="1" name="background-mode"> 自定义
+            </label>
+        </div>
+        <div class="setting-background" style="display: none;">
+            <div class="preinstall-color clearfix">
+                <span data-preinstall-color="transparent" style="background: transparent">无</span>
+                <span data-preinstall-color="#e9e9e9" style="background: #E9E9E9"></span>
+                <span data-preinstall-color="#dae8ff" style="background: #DAE8FF"></span>
+                <span data-preinstall-color="#dfdaff" style="background: #DFDAFF"></span>
+                <span data-preinstall-color="#eedeff" style="background: #EEDEFF"></span>
+                <span data-preinstall-color="#eef8f7" style="background: #EEF8F7"></span>
+                <span data-preinstall-color="#ffe5dc" style="background: #FFE5DC"></span>
+                <span data-preinstall-color="#fff7e9" style="background: #FFF7E9"></span>
+                <span data-preinstall-color="#f4ffd7" style="background: #F4FFD7"></span>
+                <span data-preinstall-color="#ffe9c7" style="background: #FFE9C7"></span>
+                <span data-preinstall-color="#e1fcff" style="background: #E1FCFF"></span>
+                <span data-preinstall-color="#dbdbdb" style="background: #DBDBDB"></span>
+            </div>
+        </div>
+        <div class="setting-background lose-margin" style="display: none;">
+            <div class="form-group clearfix">
+                <label class="col-xs-2 control-label">颜色</label>
+                <div class="col-xs-10">
+                    <input class="form-control field" type="text" name="backgroundColor" id="backgroundColor" color-picker>
+                </div>
+            </div>
+            <div class="form-group clearfix">
+                <label class="col-xs-2 control-label">图片</label>
+                <div class="col-xs-10">
+                    <span class="btn btn-primary" onclick="editorUpImage(backgroundImage);">上传图片</span>
+                    <div id="backgroundPictures" class="backgroundPictures clearfix"></div>
+                </div>
+            </div>
+            <div class="form-group clearfix">
+                <label class="col-xs-2 control-label">显示方式</label>
+                <div class="col-xs-10">
+                    <select class="field form-control" id="backgroundShowMode">
+                        <option value="0">不平铺</option>
+                        <option value="1">平铺</option>
+                        <option value="2">横向平铺</option>
+                        <option value="3">纵向平铺</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var originData;
+    /**
+     * 选择图片回调处理
+     */
+    function backgroundImage() {
+        $(".edui-okbutton").off("click.settingBackground").on("click.settingBackground", function () {
+            var tempPictureList = window.tempPictureList,
+                    html = "";
+            //console.log(tempPictureList);
+            $.map(tempPictureList, function (item, key) {
+                if (key == 0) {
+                    html += '<div class="pull-left"><img height="100" width="100" alt="' + item.alt + '" src="' + item.src + '"/></div>';
+                }
+                else {
+                    html += '<div class="pull-left" style="margin-left: 5px;"><img height="100" width="100" alt="' + item.alt + '" src="' + item.src + '"/></div>';
+                }
+            });
+            $("#backgroundPictures").html(html).data("pictures", tempPictureList);
+            window.tempPictureList = undefined;
+        });
+    }
+    var backgroundModal = function () {
+        return {
+            initData: function (data, _index) {
+                originData = data;
+                /**
+                 * 初始化背景选项
+                 */
+                function setBackground() {
+                    var $background = $("[name='background-mode']");
+                    var $settingBackground = $(".setting-background");
+                    for (var i in $background) {
+                        if ($background.eq(i).val() == data.background[_index].backgroundMode) {
+                            $background.eq(i).prop("checked", true);
+                            $settingBackground.eq(i).show();
+                        }
+                    }
+                    if ("src" in data.background[_index].images) {
+                        var html = '<div class="pull-left"><img height="100" width="100" alt="' + data.background[_index].images.alt + '" src="' + data.background[_index].images.src + '"/></div>';
+                        $("#backgroundPictures").html(html);
+                    }
+                    $background.off("change").on("change", function () {
+                        var i = $("[name='background-mode']:checked").val();
+                        $settingBackground.hide();
+                        $settingBackground.eq(i).show();
+                    });
+                    var $preinstalColor = $("[data-preinstall-color]");
+                    $preinstalColor.off("click").on("click", function () {
+                        $preinstalColor.removeClass("selected");
+                        $(this).addClass("selected");
+                    });
+                    if (data.background[_index].backgroundMode == 0) {
+                        for (var i = 0; i < $preinstalColor.length; i++) {
+                            if (data.background[_index].color == $preinstalColor.eq(i).data("preinstall-color")) {
+                                $preinstalColor.eq(i).addClass("selected");
+                                break;
+                            }
+                        }
+                    }
+                    var $backgroundColor = $("#backgroundColor");
+                    $backgroundColor.val(data.background[_index].color);
+                    $backgroundColor.off("blur").on("blur",function(){
+                        var value = $(this).val(),
+                                reg = new RegExp("^#[0-9a-fA-F]{6}$"),
+                                boole;
+                        boole = reg.test(value);
+                        if (!boole && value != "transparent") {
+                            toastr.clear();
+                            toastr.error("请使用HEX颜色编码！");
+                            $(this).val(data.defaults.background.color);
+                        }
+                    });
+                    var $backgroundShowMode = $("#backgroundShowMode option");
+                    for (var i in $backgroundShowMode) {
+                        if ($backgroundShowMode.eq(i).val() == data.background[_index].showMode) {
+                            $backgroundShowMode.eq(i).attr("selected", true);
+                        }
+                    }
+                }
+                setBackground();
+                /**
+                 * 绑定颜色拾取器
+                 */
+                function bindColorPicker(){
+                    $("[color-picker]").each(function() {
+                        $(this).minicolors({
+                            change: function (hex, opacity) {
+                                if (!hex)
+                                    return;
+                                if (opacity)
+                                    hex += ', ' + opacity;
+                                try {
+                                    console.log(hex);
+                                } catch (e) {
+                                }
+                            },
+                            theme: 'bootstrap'
+                        });
+                    });
+                }
+                bindColorPicker();
+            },
+            saveData : function(_index){
+                var data = {};
+                data = $.extend(true, originData, data);
+                data.background[_index].backgroundMode = $("[name='background-mode']:checked").val();
+                if (data.background[_index].backgroundMode == 0) {
+                    data.background[_index].color = $('.preinstall-color .selected').data("preinstall-color");
+                    data.background[_index].images = data.defaults.background.images;
+                    data.background[_index].showMode = data.defaults.background.showMode;
+                }
+                else if (data.background[_index].backgroundMode == 1) {
+                    data.background[_index].color = $("#backgroundColor").val();
+                    var $BackgroundPictures = $("#backgroundPictures");
+                    if ($BackgroundPictures.data("pictures")) {
+                        data.background[_index].images = $BackgroundPictures.data("pictures")[0];
+                    }
+                    data.background[_index].showMode = $('#backgroundShowMode option:selected').val();
+                }
+                return data;
+            }
+        }
+    };
+</script>

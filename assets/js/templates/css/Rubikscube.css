@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+.clear{ height:0; line-height:0; overflow:hidden; clear:both;}
+.Rubikscube_Containerdiv{overflow: hidden; margin:0 auto;}
+.Rubikscube_Containerdiv:after{ clear:both; overflow:hidden; height:0; content:""; display:block;}
+.Rubikscube_Container {width: 650px;height: 240px;padding:5px;border: 1px solid #dcdcdc;overflow-y: scroll;overflow-x: hidden;}
+.Rubikscube_Container .itemCard0{background-image: url(../images/Rubikscube/Rubikscube0.jpg);}
+.Rubikscube_Container .itemCard1{background-image: url(../images/Rubikscube/Rubikscube1.jpg);}
+.Rubikscube_Container .itemCard2{background-image: url(../images/Rubikscube/Rubikscube2.jpg);}
+.Rubikscube_Container .itemCard3{background-image: url(../images/Rubikscube/Rubikscube3.jpg);}
+.Rubikscube_Container .itemCard4{background-image: url(../images/Rubikscube/Rubikscube4.jpg);}
+.Rubikscube_Container .itemCard5{background-image: url(../images/Rubikscube/Rubikscube5.jpg);}
+.Rubikscube_Container .itemCard6{background-image: url(../images/Rubikscube/Rubikscube6.jpg);}
+.Rubikscube_Container .itemCard7{background-image: url(../images/Rubikscube/Rubikscube7.jpg);}
+.Rubikscube_Container .itemCard8{background-image: url(../images/Rubikscube/Rubikscube8.jpg);}
+.Rubikscube_Container .itemCard9{background-image: url(../images/Rubikscube/Rubikscube9.jpg);}
+.Rubikscube_Container .itemCard10{background-image: url(../images/Rubikscube/Rubikscube10.jpg);}
+.Rubikscube_Container .itemCard11{background-image: url(../images/Rubikscube/Rubikscube11.jpg);}
+.Rubikscube_Container .itemCard12{background-image: url(../images/Rubikscube/Rubikscube12.jpg);}
+
+
+.Rubikscube_Container .cardStyleItem { position: relative;  float: left; width: 118px; height: 88px; border: 1px solid #ccc; margin:15px; background-repeat: no-repeat;background-position: center center;cursor: pointer;}
+.Rubikscube_Containerdiv .Rubikscube_Container .cardStyleChoice{ border: 2px solid #8bc429; }
+
+.Rubikscube_Container .cardStyleChoice .checked{ position: absolute; bottom: 10px; right: 6px; height: 17px; width: 25px; display: block; background:url(../images/picture/chose_check.png) no-repeat;}
+
+
+/*魔方多图*/

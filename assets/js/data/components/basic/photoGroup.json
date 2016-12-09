@@ -1,0 +1,197 @@
+{
+	cpId:"photoGroup",
+	type:"div",
+	group:"basic",
+	template:"photoGroup",
+	templateTpl:"",
+	target:"TestItemView",
+	attrlayer:"3",
+	title:"相册目录",
+	btns:["floating", "edit", "copy"],
+	cpStyle : {
+		test : "test",
+		pleft : "200px",
+		position : {
+			type : "",
+			label : "导航位置",
+			value:""
+		},
+	},
+	publicAttributes:{
+		isGlobal:false,
+		isFloat:true
+	},
+	cpAttributes:{
+		tab1:{
+			tabname:"常规",
+			value:{
+				name:{
+					label:'模块标题',
+					value:'画册目录',
+					savetype:"input",
+					type:"input"
+				},
+
+
+
+				photoGroup:{
+					label:'模块样式',
+					value:'photoGroup1',
+					savetype:"input",
+					type:"photoGroup"
+				},
+				
+        a: {
+          type: "block2",
+          savetype: "block",
+          label: "模块样式",
+          value:0,//当前选择的值
+          //选择块的值列表
+          listvalue : [{
+            label : "效果一",
+            value : "0"
+          },{
+            label : "效果二",
+            value : "1"
+          }
+		  
+		  ],
+          //选择值为1的时候显示的小组件集合
+          listvalue0 : {  
+
+			a: {
+          type: "block2",
+          savetype: "block",
+          label: "展示方式",
+          value: 0,//当前选择的值
+          //选择块的值列表
+          listvalue : [{
+            label : "纵向",
+            value : "0"
+          },{
+            label : "横向",
+            value : "1"
+          }
+		  ]
+        }
+          	
+          },
+	     listvalue1 : {
+			 
+			a: {
+          type: "block2",
+          savetype: "block",
+          label: "相册名称",
+          value: 0,//当前选择的值
+          //选择块的值列表
+          listvalue : [{
+            label : "显示",
+            value : "0"
+          },{
+            label : "隐藏",
+            value : "1"
+          }
+		  ]
+        },
+
+
+        b: {
+          type: "block2",
+          savetype: "block",
+          label: "图片大小",
+          value: 0,//当前选择的值
+          //选择块的值列表
+          listvalue : [{
+            label : "默认",
+            value : "0"
+          },{
+            label : "自定义",
+            value : "1"
+          }],
+          //选择值为1的时候显示的小组件集合
+          listvalue1 : {
+            width : {
+              type: "input",
+              savetype: "input",
+              label: '宽度',
+              name: 'width',
+              //<input name="foo"/>输入域的name
+              value: '',
+              //初始值,默认值
+            },
+			height : {
+              type: "input",
+              savetype: "input",
+              label: '高度',
+              name: 'height',
+              //<input name="foo"/>输入域的name
+              value: '',
+              //初始值,默认值
+            }
+          }
+        },
+
+			c: {
+          type: "block2",
+          savetype: "block",
+          label: "图片缩放",
+          value: 0,//当前选择的值
+          //选择块的值列表
+          listvalue : [{
+            label : "等比例",
+            value : "0"
+          },{
+            label : "拉伸",
+            value : "1"
+          }
+		  ]
+        },
+
+
+
+        d: {
+          type: "block2",
+          savetype: "block",
+          label: "图片间距",
+          value: 0,//当前选择的值
+          //选择块的值列表
+          listvalue : [{
+            label : "默认",
+            value : "0"
+          },{
+            label : "自定义",
+            value : "1"
+          }],
+          //选择值为1的时候显示的小组件集合
+          listvalue1 : {
+            width : {
+              type: "input",
+              savetype: "input",
+              label: '间距',
+              name: 'padding',
+              //<input name="foo"/>输入域的name
+              value: '',
+              //初始值,默认值
+            }
+          }
+        },
+
+	 
+          }
+        },
+						buttonpic : {
+					type: "picture",
+					savetype: "input",
+					label: '图片',
+					name: 'buttonpic',
+					//<input name="foo"/>输入域的name
+					value: '',
+					//初始值,默认值
+				},
+				
+				
+			}
+		}
+	},
+	children:[]
+}

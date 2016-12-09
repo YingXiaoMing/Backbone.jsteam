@@ -1,0 +1,283 @@
+/*魔方多图*/
+@charset "utf-8";
+.clear { clear:both; }
+.photoMore_box{ width:600px; margin:0 auto;}
+.photoMoreCard { position:relative; overflow:hidden }
+.photoMoreCardOuter { margin:0 auto; overflow:hidden }
+.photoMoreCardInner { margin:0 auto; padding:0 5px }
+.photoMoreCardInner table td { padding:0; cursor:auto }
+.photoMoreCardInner .cardImgViewHide { visibility:hidden }
+.moreCardTd { position:relative; min-width:70px; float:left;overflow:hidden;}
+.moreCardDrag { position:relative }
+.cardImgView { position:relative }
+/*cardStyle0*/
+.cardStyle0 { margin:10px auto 18px auto }
+.cardStyle0 .photoMoreCard0 { width:100%; height:470px }
+.cardStyle0 .photoMoreCard1 { width:100%; height:230px; overflow:hidden }
+.cardStyle0 .photoMoreCard2 { width:100%; height:225px; overflow:hidden }
+.cardStyle0 .photoMoreCard3 { width:100%; height:225px; overflow:hidden }
+.cardStyle0 .photoMoreCard4{ display:none;}
+.cardStyle0 .photoMoreCard5{ display:none;}
+.cardStyle0 .photoMoreCard6{ display:none;}
+.cardStyle0 .moreCardTd0{width: 194.25px; height: 409px; padding-top: 15px; padding-left: 15px;}
+.cardStyle0 .moreCardTd1{width: 360.75px; height: 197px; padding-top: 15px; padding-left: 15px;}
+.cardStyle0 .moreCardTd2{width: 172.875px; height: 197px; padding-top: 15px; padding-left: 15px;}
+.cardStyle0 .moreCardTd3{width: 172.875px; height: 197px; padding-top: 15px; padding-left: 15px;}
+/*cardStyle1*/
+.cardStyle1 { margin:10px auto 18px auto }
+.cardStyle1 .cardTd0 { width:33.73% }
+.cardStyle1 .photoMoreCard0 { width:100%; height:470px; overflow:hidden }
+.cardStyle1 .photoMoreCard1 { width:100%; height:225px; overflow:hidden }
+.cardStyle1 .photoMoreCard2 { width:100%; height:225px; overflow:hidden }
+.cardStyle1 .photoMoreCard3 { width:100%; height:230px; overflow:hidden }
+.cardStyle1 .moreCardTd0{width: 200px; height: 409px; padding-top: 15px; padding-left: 15px;}
+.cardStyle1 .moreCardTd1{width: 150px; height: 197px; padding-top: 15px; padding-left: 15px;}
+.cardStyle1 .moreCardTd2{width: 150px; height: 197px; padding-top: 15px; padding-left: 15px;}
+.cardStyle1 .moreCardTd3{width: 300px; height: 197px; padding-top: 15px; padding-left: 15px;}
+.cardStyle1 .moreCardTd4{display:none;}
+.cardStyle1 .moreCardTd5{ display:none;}
+.cardStyle1 .moreCardTd6{ display:none;}
+
+/*cardStyle2*/
+.cardStyle2 { margin:10px auto 18px auto }
+.cardStyle2 .cardTd0 { width:30.32% }
+.cardStyle2 .cardTd1 { width:40.45% }
+.cardStyle2 .cardTd2 { width:29.21% }
+.cardStyle2 .photoMoreCard0 { width:100%; height:475px; overflow:hidden }
+.cardStyle2 .photoMoreCard1 { width:100%; height:230px; overflow:hidden }
+.cardStyle2 .photoMoreCard2 { width:100%; height:230px; overflow:hidden }
+.cardStyle2 .photoMoreCard3 { width:100%; height:230px; overflow:hidden }
+.cardStyle2 .photoMoreCard4 { width:100%; height:230px; overflow:hidden }
+.cardStyle2 .moreCardTd0{width: 189px; height: 415px; padding-top: 15px; padding-left: 15px;}
+.cardStyle2 .moreCardTd1{width: 175.5px; height: 200px; padding-top: 15px; padding-left: 15px;}
+.cardStyle2 .moreCardTd2{width: 150px; height: 200px; padding-top: 15px; padding-left: 15px;}
+.cardStyle2 .moreCardTd3{width: 175.5px; height: 200px; padding-top: 15px; padding-left: 15px;}
+.cardStyle2 .moreCardTd4{width: 175.5px; height: 200px; padding-top: 15px; padding-left: 15px;}
+.cardStyle2 .moreCardTd5{ display:none;}
+.cardStyle2 .moreCardTd6{ display:none;}
+/*cardStyle3*/
+.cardStyle3 { margin:10px auto 18px auto }
+.cardStyle3 .cardTd0 { width:33.73% }
+.cardStyle3 .photoMoreCard0 { width:100%; height:475px; overflow:hidden }
+.cardStyle3 .photoMoreCard1 { width:100%; height:475px; overflow:hidden }
+.cardStyle3 .photoMoreCard2 { width:100%; height:475px; overflow:hidden }
+.cardStyle3 .photoMoreCard3 { width:100%; height:475px; overflow:hidden }
+.cardStyle3 .photoMoreCard4 { width:100%; height:475px; overflow:hidden }
+.cardStyle3 .moreCardTd0{width: 194.25px; height: 192px; padding-top: 15px; padding-left: 15px;}
+.cardStyle3 .moreCardTd1{width: 360.75px; height: 192px; padding-top: 15px; padding-left: 15px;}
+.cardStyle3 .moreCardTd2{width: 194.25px; height: 192px; padding-top: 15px; padding-left: 15px;}
+.cardStyle3 .moreCardTd3{width: 172.875px; height: 192px; padding-top: 15px; padding-left: 15px;}
+.cardStyle3 .moreCardTd4{width: 172.875px; height: 192px; padding-top: 15px; padding-left: 15px;}
+.cardStyle3 .moreCardTd5{ display:none;}
+.cardStyle3 .moreCardTd6{ display:none;}
+/*cardStyle4*/
+.cardStyle4 { margin:10px auto 18px auto }
+.cardStyle4 .cardTd0 { width:66.39% }
+.cardStyle4 .photoMoreCard0 { width:100%; height:475px; overflow:hidden }
+.cardStyle4 .photoMoreCard1 { width:100%; height:475px; overflow:hidden }
+.cardStyle4 .photoMoreCard2 { width:100%; height:475px; overflow:hidden }
+.cardStyle4 .photoMoreCard3 { width:100%; height:475px; overflow:hidden }
+.cardStyle4 .photoMoreCard4 { width:100%; height:475px; overflow:hidden }
+.cardStyle4 .moreCardTd0{width: 360.75px; height: 192px; padding-top: 15px; padding-left: 15px;}
+.cardStyle4 .moreCardTd1{width: 194.25px; height: 192px; padding-top: 15px; padding-left: 15px;}
+.cardStyle4 .moreCardTd2{width: 172.875px; height: 192px; padding-top: 15px; padding-left: 15px;}
+.cardStyle4 .moreCardTd3{width: 172.875px; height: 192px; padding-top: 15px; padding-left: 15px;}
+.cardStyle4 .moreCardTd4{width: 194.25px; height: 192px; padding-top: 15px; padding-left: 15px;}
+.cardStyle4 .moreCardTd5{ display:none;}
+.cardStyle4 .moreCardTd6{ display:none;}
+/*cardStyle5*/
+.cardStyle5 { margin:10px auto 18px auto }
+.cardStyle5 .cardTd0 { width:33.14% }
+.cardStyle5 .cardTd1 { width:33.14% }
+.cardStyle5 .cardTd2 { width:33.71% }
+.cardStyle5 .photoMoreCard0 { width:100%; height:475px; overflow:hidden }
+.cardStyle5 .photoMoreCard1 { width:100%; height:475px; overflow:hidden }
+.cardStyle5 .photoMoreCard2 { width:100%; height:475px; overflow:hidden }
+.cardStyle5 .photoMoreCard3 { width:100%; height:475px; overflow:hidden }
+.cardStyle5 .photoMoreCard4 { width:100%; height:475px; overflow:hidden }
+.cardStyle5 .moreCardTd0{width: 172.875px; height: 192px; padding-top: 15px; padding-left: 15px;}
+.cardStyle5 .moreCardTd1{width: 172.875px; height: 192px; padding-top: 15px; padding-left: 15px;}
+.cardStyle5 .moreCardTd2{width: 189px; height: 192px; padding-top: 15px; padding-left: 15px;}
+.cardStyle5 .moreCardTd3{width: 360.75px; height: 192px; padding-top: 15px; padding-left: 15px;}
+.cardStyle5 .moreCardTd4{width: 194.25px; height: 192px; padding-top: 15px; padding-left: 15px;}
+.cardStyle5 .moreCardTd5{ display:none;}
+.cardStyle5 .moreCardTd6{ display:none;}
+/*cardStyle6*/
+.cardStyle6 { margin:15px auto 23px }
+.cardStyle6 .cardTd0 { width:25% }
+.cardStyle6 .cardTd1 { width:25% }
+.cardStyle6 .cardTd2 { width:25% }
+.cardStyle6 .cardTd3 { width:25% }
+.cardStyle6 .photoMoreCard0 { width:100%; height:475px; overflow:hidden }
+.cardStyle6 .photoMoreCard1 { width:100%; height:475px; overflow:hidden }
+.cardStyle6 .photoMoreCard2 { width:100%; height:475px; overflow:hidden }
+.cardStyle6 .photoMoreCard3 { width:100%; height:475px; overflow:hidden }
+.cardStyle6 .photoMoreCard4 { width:100%; height:475px; overflow:hidden }
+.cardStyle6 .photoMoreCard5 { width:100%; height:475px; overflow:hidden }
+.cardStyle6 .photoMoreCard6 { width:100%; height:475px; overflow:hidden }
+
+.cardStyle6 .moreCardTd0{width: 137.5px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle6 .moreCardTd1{width: 137.5px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle6 .moreCardTd2{width: 137.5px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle6 .moreCardTd3{width: 137.5px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle6 .moreCardTd4{width: 285px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle6 .moreCardTd5{width: 137.5px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle6 .moreCardTd6{width: 137.5px; height: 207px; padding-top: 10px; padding-left: 10px;}
+/*cardStyle7*/
+.cardStyle7 { margin:15px auto 23px auto; padding:0 10px }
+.cardStyle7 .cardTd0 { width:33.74% }
+.cardStyle7 .photoMoreCard0 { width:100%; height:475px; overflow:hidden }
+.cardStyle7 .photoMoreCard1 { width:100%; height:475px; overflow:hidden }
+.cardStyle7 .photoMoreCard2 { width:100%; height:475px; overflow:hidden }
+.cardStyle7 .photoMoreCard3 { width:100%; height:475px; overflow:hidden }
+.cardStyle7 .photoMoreCard4 { width:100%; height:475px; overflow:hidden }
+
+.cardStyle7 .moreCardTd0{width: 184.8px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle7 .moreCardTd1{width: 190.4px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle7 .moreCardTd2{width: 184.8px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle7 .moreCardTd3{width: 285px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle7 .moreCardTd4{width: 285px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle7 .moreCardTd5{ display:none;}
+.cardStyle7 .moreCardTd6{ display:none;}
+/*cardStyle8*/
+.cardStyle8 { margin:15px auto 23px auto; padding:0 10px }
+.cardStyle8 .cardTd0 { width:50.21% }
+.cardStyle8 .photoMoreCard0 { width:100%; height:475px; overflow:hidden }
+.cardStyle8 .photoMoreCard1 { width:100%; height:475px; overflow:hidden }
+.cardStyle8 .photoMoreCard2 { width:100%; height:475px; overflow:hidden }
+.cardStyle8 .photoMoreCard3 { width:100%; height:475px; overflow:hidden }
+.cardStyle8 .photoMoreCard4 { width:100%; height:475px; overflow:hidden }
+
+.cardStyle8 .moreCardTd0{width: 184.8px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle8 .moreCardTd1{width: 190.4px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle8 .moreCardTd2{width: 184.8px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle8 .moreCardTd3{width: 285px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle8 .moreCardTd4{width: 285px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle8 .moreCardTd5{ display:none;}
+.cardStyle8 .moreCardTd6{ display:none;}
+/*cardStyle9*/
+.cardStyle9 { margin:15px auto 23px auto; padding:0 10px }
+.cardStyle9 .cardTd0 { width:50% }
+.cardStyle9 .photoMoreCard0 { width:100%; height:475px; overflow:hidden }
+.cardStyle9 .photoMoreCard1 { width:100%; height:475px; overflow:hidden }
+.cardStyle9 .photoMoreCard2 { width:100%; height:475px; overflow:hidden }
+
+.cardStyle9 .moreCardTd0{width: 285px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle9 .moreCardTd1{width: 285px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle9 .moreCardTd2{width: 580px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle9 .moreCardTd3{display:none;}
+.cardStyle9 .moreCardTd4{display:none;}
+.cardStyle9 .moreCardTd5{ display:none;}
+.cardStyle9 .moreCardTd6{ display:none;}
+/*cardStyle10*/
+.cardStyle10 { margin:15px auto 23px auto; padding:0 10px }
+.cardStyle10 .cardTd0 { width:100% }
+.cardStyle10 .photoMoreCard0 { width:100%; height:475px; overflow:hidden }
+.cardStyle10 .photoMoreCard1 { width:100%; height:475px; overflow:hidden }
+.cardStyle10 .photoMoreCard2 { width:100%; height:475px; overflow:hidden }
+
+.cardStyle10 .moreCardTd0{width: 580px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle10 .moreCardTd1{width: 285px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle10 .moreCardTd2{width: 285px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle10 .moreCardTd3{display:none;}
+.cardStyle10 .moreCardTd4{display:none;}
+.cardStyle10 .moreCardTd5{ display:none;}
+.cardStyle10 .moreCardTd6{ display:none;}
+/*cardStyle11*/
+.cardStyle11 { margin:15px auto 23px auto; padding:0 10px }
+.cardStyle11 .cardTd0 { width:65.73% }
+.cardStyle11 .photoMoreCard0 { width:100%; height:475px; overflow:hidden }
+.cardStyle11 .photoMoreCard1 { width:100%; height:475px; overflow:hidden }
+.cardStyle11 .photoMoreCard2 { width:100%; height:475px; overflow:hidden }
+.cardStyle11 .photoMoreCard3 { width:100%; height:475px; overflow:hidden }
+
+.cardStyle11 .moreCardTd0{width: 370.5px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle11 .moreCardTd1{width: 199.5px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle11 .moreCardTd2{width: 199.5px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle11 .moreCardTd3{width: 370.5px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle11 .moreCardTd4{display:none;}
+.cardStyle11 .moreCardTd5{ display:none;}
+.cardStyle11 .moreCardTd6{ display:none;}
+/*cardStyle12*/
+.cardStyle12 { margin:15px auto 23px auto; padding:0 10px }
+.cardStyle12 .cardTd0 { width:47.78% }
+.cardStyle12 .cardTd1 { width:29.6% }
+.cardStyle12 .photoMoreCard0 { width:100%; height:475px; overflow:hidden }
+.cardStyle12 .photoMoreCard1 { width:100%; height:475px; overflow:hidden }
+.cardStyle12 .photoMoreCard2 { width:100%; height:475px; overflow:hidden }
+.cardStyle12 .photoMoreCard3 { width:100%; height:475px; overflow:hidden }
+.cardStyle12 .photoMoreCard4 { width:100%; height:475px; overflow:hidden }
+.cardStyle12 .photoMoreCard5 { width:100%; height:475px; overflow:hidden }
+
+.cardStyle12 .moreCardTd0{width: 240.8px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle12 .moreCardTd1{width: 190.4px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle12 .moreCardTd2{width: 128.8px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle12 .moreCardTd3{width: 128.8px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle12 .moreCardTd4{width: 190.4px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle12 .moreCardTd5{width: 240.8px; height: 207px; padding-top: 10px; padding-left: 10px;}
+.cardStyle12 .moreCardTd6{ display:none;}
+/*cardStyle13*/
+.cardStyle13 { margin:15px auto 23px auto }
+.cardStyle13 .cardTd0 { width:34.27% }
+.cardStyle13 .cardTd1 { width:34.27% }
+.cardStyle13 .photoMoreCard0 { width:100%; height:475px; overflow:hidden }
+.cardStyle13 .photoMoreCard1 { width:100%; height:475px; overflow:hidden }
+.cardStyle13 .photoMoreCard2 { width:100%; height:475px; overflow:hidden }
+.cardStyle13 .photoMoreCard3 { width:100%; height:475px; overflow:hidden }
+.cardStyle13 .photoMoreCard4 { width:100%; height:475px; overflow:hidden }
+.ui-resizable-photoCard-handle { border-right:2px solid #2b73ba; background:#fff; left:auto; right:-9px; width:1px }
+.editBut { bottom:0; right:25px; width:24px; height:24px; border-left:1px solid #3178c0; background:url(/image/bg.png?v=201611281833) -311px -182px no-repeat; background-color:#4f97df; position:absolute }
+.editBut:hover { background-color:#3b85d0 }
+.deleteBut { bottom:0; right:0; width:24px; height:24px; border-left:1px solid #3178c0; background:url(/image/bg.png?v=201611281833) -310px -221px no-repeat; background-color:#4f97df; position:absolute }
+.deleteBut:hover { background-color:#3b85d0 }
+.photoHover { position:absolute; background-color:rgba(65, 136, 198, 0.6); width:90px; height:76px }
+.operating { display:none; height:24px; width:100%; position:absolute; background-color:#4f97df; bottom:0 }
+.photoMoreCardEdit:hover .operating { display:block }
+.photoMoreCardHelperWrap { overflow:hidden }
+.bgc { position:absolute; width:100%; height:100%; background-color:rgba(65, 136, 198, 0.6); z-index:1 }
+.photoMoreCard { overflow:hidden }
+.addMorePhoto { position:relative; width:100%; height:100%; text-align:center; cursor:pointer; color:#b7b7b7 }
+.addMorePhoto:hover { color:#5b5b5b; background-color:#f7f7f7 }
+.addMorePhotoPic { position:relative; font-size:50px }
+.addMorePhotoText { position:relative; font-size:14px }
+.dragHover { z-index:1; background:url(/image/bg04.png?v=201607111726) -353px -6px no-repeat }
+.cardTdManage { box-sizing:border-box }
+.dragPlaceholder { width:99%; height:99%; border:1px dashed #2b73ba }
+/*动作*/
+.imageEffects { position:absolute; opacity:0; -webkit-opacity:0; -moz-opacity:0; -khtml-opacity:0; filter:alpha(opacity=0) }
+.imageEffectsAnimate { transition:opacity .8s;
+-moz-transition:opacity .8s;
+-webkit-transition:opacity .8s;
+-o-transition:opacity .8s
+}
+.imageEffectsAnimate_Half { transition:bottom .5s;
+-moz-transition:bottom .5s;
+-webkit-transition:bottom .5s;
+-o-transition:bottom .5s
+}
+.imageEffectsAnimate_Magnify { transition:all ease .5s;
+-moz-transition:all ease .5s;
+-webkit-transition:all ease .5s;
+-o-transition:all ease .5s
+}
+.imageEffectsAnimate_MoveLeft { transition:margin-left ease .5s;
+-moz-transition:margin-left ease .5s;
+-webkit-transition:margin-left ease .5s;
+-o-transition:margin-left ease .5s
+}
+.imageEffects_Border { border:1px solid #000; background:0 }
+.imageEffects_Magnifier { background:url(../images/imageEffects/imageEffetc_magnifier.png) center no-repeat; _background:url(/image/imageEffects/imageEffetc_magnifier_ie6.gif?v=201411042016) center no-repeat }
+.imageEffects_FullMaks { overflow:hidden }
+.imageEffects_HalfMaks { bottom:0; background:url(/image/imageEffects/imageEffetc_maks.png?v=201411121552) repeat }
+.imageEffects .props { width:100%; height:auto; text-align:center }
+.imageEffects .props .propList { width:85%; height:auto; overflow:hidden; margin:0 auto 5px auto; color:#fff }
+.imageEffects .props .propList a { color:#fff }
+.imageEffects .props .propList .prop { line-height:21px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden }
+.imageEffects .props .propList .imgEffPropName { word-wrap:break-word }
+.imageEffects .props .propBuy { width:68px; height:20px; line-height:20px; margin:5px auto 0 auto; border:1px solid #fffffd; border-radius:3px; vertical-align:middle }
+.imageEffects .props .propBuy span { letter-spacing:5px; color:#fff; font:12px "微软雅黑", "宋体"; line-height:20px; height:20px; padding-left:5px; _padding-left:2px }
+.imageEffects .props .propBuy_hover { background-color:#9e191a; border-color:#9e191a; opacity:1; -webkit-opacity:1; -moz-opacity:1; -khtml-opacity:1; filter:alpha(opacity=100) }
+.imageEffects .props .noNameWrap { display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap }
+.imageEffects .photoFullMask .propList { margin:0 auto }
+.imageEffects .photoFullMask .propList .photoName { text-align:center; width:100%; font-size:14px; color:#fff }
+.imageEffects .photoFullMask .propList .photoDisc { width:100%; font-size:12px; color:#fff; text-align:left; word-wrap:break-word }

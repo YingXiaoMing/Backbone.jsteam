@@ -1,0 +1,14 @@
+{
+	cpId : "twoColumn",
+	type : "div",
+	group : "typeset",
+	template : "twoColumn",
+	templateTpl : "",
+	target : "",
+	title : "二列排版",
+	btns : ["copy", "hide"],
+	publicAttributes : {
+		isGlobal : false,
+		isFloat : true
+	}
+}

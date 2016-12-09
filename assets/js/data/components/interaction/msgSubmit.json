@@ -1,0 +1,119 @@
+{
+	cpId : "msgSubmit",
+	type : "div",
+	group : "interaction",
+	template : "msgSubmit",
+	templateTpl : "",
+	target : "TestItemView",
+	attrlayer : "3",
+	title : "留言提交模块",
+	btns : ["edit", "copy","textFloat"],
+	cpStyle : {
+		test : "test",
+		pleft : "200px",
+		position : {
+			type : "",
+			label : "导航位置",
+			value:""
+		},
+	},
+	publicAttributes : {
+		isGlobal : false,
+		isFloat : true
+	},
+	cpAttributes : {
+		tab1: {
+			tabname:"常规",
+			value: {
+              msgSubmitTitle: {
+                      type: "input",
+                      savetype: "input",
+                      label: "模块标题：",
+                      value: "留言提交"
+                },
+              msgSubmitContent: {
+                      type: "block2",
+                      savetype: "block",
+                      label: "模块样式：",
+                      value: 1,
+                      listvalue : [{
+                        //type:"guestbookButton",
+                          label:"默认",
+                          value : "0"
+                      },{
+                        //type:"guestbookButton",
+                          label:"自定义",
+                          value : "1"
+                      }],
+                      //选择值为1的时候显示的小组件集合
+                      listvalue1 : {
+                          propName : {
+                              type: "loginButton",
+                              savetype: "input",
+                              cls: 'col-xs-12',
+                              labelcls: 'col-sm-2',
+                              valuecls: 'col-sm-10',
+                              label: '按钮样式:',
+                              //<input name="foo"/>输入域的name
+                              value: 'loginButton1',
+                              //初始值,默认值
+                          }
+                      }
+				}
+
+			}
+		},
+		tab2: {
+          tabname: "高级",
+          value: {
+            showmore: {
+              type: "block2",
+              savetype: "block",
+              label: "显示更多：",
+              value: 1,
+              listvalue: [
+                {
+                  label: "是",
+                  value: "0"
+                },
+                {
+                  label: "否",
+                  value: "1"
+                }
+              ],
+            },
+            msgSubmitWidth: {
+              type: "block2",
+              savetype: "block",
+              cls: 'col-xs-12',
+              labelcls: 'col-sm-3',
+              valuecls: 'col-sm-9',
+              label: "留言项参数宽度：",
+              value: 0,
+              listvalue: [
+                {
+                  label: "默认",
+                  value: "0"
+                },
+                {
+                  label: "自定义",
+                  value: "1"
+                }
+              ],
+              //选择值为1的时候显示的小组件集合
+              listvalue1: {
+                propName: {
+                  type: "width",
+                  savetype: "input",
+                  label: '',
+                  //<input name="foo"/>输入域的name
+                  value: '60',
+                  //初始值,默认值
+                }
+              }
+            }
+          }
+        }
+	},
+	children : []
+}
