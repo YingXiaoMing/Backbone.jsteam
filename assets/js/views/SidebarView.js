@@ -25,8 +25,11 @@ define(function(require) {
 			*/			$("#addModule ul.type_list li").click(function(e) {
 				$("#addModule ul.type_list li").removeClass("active");
 				$(this).addClass("active");
-			
 			});
+			$("#useModule ul.type_list li").click(function (e) {
+				$("#useModule ul.type_list li").removeClass("active");
+				$(this).addClass("active");
+            })
 			$("#setSiteStyle ul.type_list li").click(function(e) {
 				$("#setSiteStyle ul.type_list li").removeClass("active");
 				$(this).addClass("active");

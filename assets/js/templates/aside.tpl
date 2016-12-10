@@ -14,7 +14,16 @@
           </ul>
           <div class="sideBarButton scrollbar"></div>
         </div>
-        <div class="stab_con" id="useModule">22222</div>
+
+        <div class="stab_con" id="useModule">
+            <ul class="type_list nav">
+                <%_.each(modules,function(item,i){ %>
+                <li class="<% if(i=='0'){%>active<% }%>"><a href="#${item.groupId}">${item.groupName}</a></li>
+                <% }); %>
+            </ul>
+            <div class="moduleButton"></div>
+        </div>
+
         <div class="stab_con" id="setSiteStyle">
         	<ul class="type_list">
         	<% var k=0;

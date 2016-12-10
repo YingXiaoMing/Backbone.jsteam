@@ -590,6 +590,7 @@ define(function (require) {
             this.options.isRender = typeof this.options.isRender !== 'undefined' ? this.options.isRender : true;
             var buttons = [];
             var btnjson = eval("[" + btns + "]")[0];
+            console.log("btnjson:"+btnjson);
             _.reduce(this.model.attributes.btns, function (o, v, k) {
                 if (typeof v == "object") {
                     if (v.btntype) {

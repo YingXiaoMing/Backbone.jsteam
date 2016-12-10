@@ -18,7 +18,7 @@ define(function(require) {
 			this.options = this.options || {};
 			this.options = _.extend(this.options, options);
 			//从new view()中传递过来的数据，从this.options取就可以了。
-			this.$el.html(_.template(tpl)({fields : this.options.model.attributes, styles : this.options.collection.attributes,configTemplates: configTemplates}));//({fields : this.model.attributes}))获取app.js里面注入的josn数据
+			this.$el.html(_.template(tpl)({fields : this.options.model.attributes, styles : this.options.collection.attributes,configTemplates: configTemplates,modules:this.options.view.attributes}));//({fields : this.model.attributes}))获取app.js里面注入的josn数据
 			this.change_style();
 			$(".kenfor_sidebar nav .list").click(function(e) {
 				$(".kenfor_sidebar nav .list").removeClass("hover");

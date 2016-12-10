@@ -8,6 +8,7 @@ define(function (require) {
     var DesignView = require("views/DesignView");
     var SidebarView = require("views/SidebarView");
     var groupJson = require("text!data/group.json");
+    var moduleJson = require("text!data/module.json");
     var jsUtil = require("kenforJsUtil");
     var AsideView = require("views/AsideView");
     var colTool = require("data/col");
@@ -15,6 +16,8 @@ define(function (require) {
     var styleJson = require("text!data/public_css.json");
     var ItemModel = require("models/ItemModel");
     var toastr = require("toastr");
+    var moduleView = require("views/ModuleView");
+
     _.templateSettings = {
         interpolate: /\$\{(.+?)\}/g,
         evaluate: /<%([\s\S]+?)%>/g
@@ -161,7 +164,9 @@ define(function (require) {
         initView: function () {
             var appthiz = this;
             var url = window.location.href;
+            //拿到路由的参数
             var id = jsUtil.getUrlParam(url, "id");
+            console.log(id);
             require(["text!comdata/user/commondata/column.json"], function (data) {
                 colTool.setCols(eval("(" + data + ")"));
                 colTool.setCurrColById(id);
@@ -226,7 +231,7 @@ define(function (require) {
             if (id) {
                 require(["text!comdata/user/commondata/comm.json"], function (data) {
                     var datas = eval("(" + data + ")");
-                    //alert(datas.children);
+                    alert(datas.children);
                     initData(datas.children);
                 });
 
@@ -246,7 +251,8 @@ define(function (require) {
 
             new AsideView({
                 model: new ItemModel(eval(groupJson)),
-                collection: new ItemModel(eval("(" + styleJson + ")"))
+                collection: new ItemModel(eval("(" + styleJson + ")")),
+                view: new ItemModel(eval("("+ moduleJson +")"))
             });//注入josn数据
 
             // 侧边栏初始化
@@ -254,6 +260,9 @@ define(function (require) {
                 collection: new GroupCollection(eval(groupJson))//注入josn数据
                 // 初始化全局事件
             });
+            new moduleView({
+                collection : new GroupCollection(eval(moduleJson))
+            })
             this.initGlobalEvent();
             this.initView();
         }

@@ -1,0 +1,14 @@
+[{
+  groupName: '当前栏目',
+  groupId: 'current',
+  collection : [{
+    cpId : "simpleText",
+    cpData : "common/simpleText",//保存组件jason数据路径
+    cpName : "文本",
+    cpImg : "",
+    typeclass : "simpleText"
+  }]
+},{
+  groupName: '其他栏目',
+  groupId: 'other'
+}]

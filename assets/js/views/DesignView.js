@@ -33,8 +33,11 @@ define(function(require) {
 		            	var initlab = 0;
 						//colTool.getInitLab(event.target)
 		            	var moduleData = thiz.modelattributes.cpData;
+
 		            	require(["text!data/components/"+moduleData+".json"],function(data){
+
 		            		var itemObj = eval("("+data+")");
+		            		//生成外边框201
 		            		itemObj.mdId = colTool.getMaxCpId() + 1;
 		            		var md = {
 	            				mdId : itemObj.mdId,
@@ -49,6 +52,7 @@ define(function(require) {
                                 if ($target.hasClass("kenfor-column")) {
                                     $target.removeClass("kenfor-addible");
                                 }
+                                console.log(ui.item);
                                 dynModules.createView(itemObj, $(ui.item));
                             });
 		            	});

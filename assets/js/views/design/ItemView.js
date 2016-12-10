@@ -26,23 +26,6 @@ define(function (require) {
                     separator : itemSeparator,
                     fields: cpAttributes
                 });
-                //$.each(cpAttributes,function(name,item){
-//					content += _.template(threelayer)({
-//						fields : item
-//					});
-//					content += _.template(main)({
-//						title : thiz.model.get("title"),
-//						fields : item.value,
-//						layername : name,
-//						separator : itemSeparator,
-//						configTemplates : configTemplates
-//					});
-//				});
-//				content = _.template(threelayer)({
-//					title : this.model.get("title"),
-//					fields : this.model.get("cpAttributes"),
-//					configTemplates : configTemplates
-//				});
             } else {
                 content = _.template(main)({
                     title: this.model.get("title"),
